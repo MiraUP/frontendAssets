@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="perspective">
+    <path class="cls-1" d="M25.87,24.36l-17.94,2.99c-2.06.34-3.94-1.25-3.94-3.33V7.99c0-2.09,1.88-3.68,3.94-3.33l17.94,2.99c1.23.21,2.13,1.27,2.13,2.52v11.68c0,1.25-.9,2.31-2.13,2.52Z"/>
+    <line class="cls-1" x1="4.34" y1="15.99" x2="27.85" y2="15.99"/>
+    <polygon class="cls-1" points="22 7 14.28 5.71 14.28 26.26 22 24.98 22 7"/>
+  </g>
+</svg>

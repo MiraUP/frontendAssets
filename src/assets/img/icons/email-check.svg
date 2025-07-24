@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="email-check">
+    <path class="cls-1" d="M19.99,24.9c-4.37.23-8.73.08-13.1-.43-1.05-.13-2.13-1.12-2.33-2.16-.77-4.2-.77-8.41,0-12.61.2-1.05,1.27-2.03,2.33-2.16,6.07-.72,12.13-.72,18.2,0,1.05.13,2.13,1.11,2.33,2.16.38,2.1.58,4.21.58,6.31"/>
+    <line class="cls-1" x1="7.99" y1="12" x2="16" y2="17.71"/>
+    <line class="cls-1" x1="24" y1="12" x2="16" y2="17.71"/>
+    <polyline class="cls-1" points="21.33 21.33 24 24 28 20"/>
+  </g>
+</svg>

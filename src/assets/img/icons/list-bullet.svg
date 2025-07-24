@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="list-bullet">
+    <line class="cls-1" x1="14.66" y1="9.33" x2="26.67" y2="9.33"/>
+    <line class="cls-1" x1="14.66" y1="16" x2="26.67" y2="16"/>
+    <line class="cls-1" x1="14.66" y1="22.67" x2="26.67" y2="22.67"/>
+    <line class="cls-1" x1="5.33" y1="9.33" x2="8" y2="9.33"/>
+    <line class="cls-1" x1="5.33" y1="16" x2="8" y2="16"/>
+    <line class="cls-1" x1="5.33" y1="22.67" x2="8" y2="22.67"/>
+  </g>
+</svg>

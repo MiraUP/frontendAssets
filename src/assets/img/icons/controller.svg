@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="controller">
+    <path class="cls-1" d="M27.96,20.46l-1.46-8.94c-.33-2.03-2.09-3.52-4.14-3.52-.1,0-.2.03-.3.03-.11,0-.22-.03-.33-.03h-11.45c-.11,0-.22.02-.33.03-.1,0-.2-.03-.3-.03h0c-2.06,0-3.81,1.49-4.14,3.52l-1.46,8.94c-.42,2.55,1.55,4.87,4.14,4.87h0c1.82,0,3.39-1.16,3.97-2.84h7.71c.57,1.67,2.15,2.84,3.97,2.84,2.59,0,4.56-2.32,4.14-4.87Z"/>
+    <line class="cls-1" x1="16" y1="8" x2="16" y2="6.67"/>
+    <line class="cls-1" x1="12.02" y1="18.67" x2="12.02" y2="13.33"/>
+    <line class="cls-1" x1="9.36" y1="16" x2="14.69" y2="16"/>
+    <line class="cls-1" x1="20" y1="17.33" x2="20" y2="17.33"/>
+    <line class="cls-1" x1="22.67" y1="14.67" x2="22.67" y2="14.67"/>
+  </g>
+</svg>

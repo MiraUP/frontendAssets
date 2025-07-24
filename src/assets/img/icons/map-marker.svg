@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="map-marker">
+    <path class="cls-1" d="M25.33,13.33c0-5.67-5.06-10.16-10.91-9.21-2.72.44-5.15,2.13-6.52,4.53-3.79,6.6,2.02,14.37,5.61,18.24,1.35,1.45,3.63,1.45,4.98,0,2.77-2.98,6.85-8.27,6.85-13.56Z"/>
+    <circle class="cls-1" cx="16" cy="13.33" r="2.67"/>
+  </g>
+</svg>

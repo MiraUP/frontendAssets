@@ -1,0 +1,697 @@
+.pageasset {
+  .asset-content-main {
+    border-top: px(1) solid var(--mui-palette-background-border);
+
+    .previews {
+      padding: px(30) 0 px(340) 0;
+      margin-bottom: px(-310);
+      background-size: 12px;
+      background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2" style="fill: %23DFE0E415"/></svg>');
+
+      @include mode-light {
+        background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 20 20"><circle cx="10" cy="10" r="2" style="fill: %2335405025"/></svg>');
+      }
+
+      .stroke-path-primary,
+      .stroke-path-secondary {
+        stroke-width: px(2);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    }
+
+    .header {
+      &-title {
+        .MuiTypography {
+          &-h2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            font-size: px(33);
+            line-height: px(40);
+            margin-bottom: px(10);
+          }
+
+          &-subtitle1 {
+            font-size: px(18);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+
+      &-btns {
+        display: flex;
+        justify-content: end;
+        align-items: start;
+      }
+    }
+
+    .MuiImageList {
+      &-root {
+        overflow: visible;
+        margin-top: px(30);
+      }
+
+      &Item-root {
+        overflow: hidden;
+        border-radius: px(4);
+        position: relative;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: var(--mui-palette-violet-c100a160);
+          background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style> .cls-1 { fill: none; stroke: %23DFE0E4; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; } </style></defs><g id="search-plus"><circle class="cls-1" cx="15.34" cy="15.34" r="9.99"/><line class="cls-1" x1="22.67" y1="22.66" x2="26.67" y2="26.66"/><line class="cls-1" x1="15.34" y1="18.68" x2="15.34" y2="12"/><line class="cls-1" x1="12" y1="15.34" x2="18.67" y2="15.34"/></g></svg>');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 100px 100px;
+          cursor: pointer;
+          @include prefix(backdrop-filter, blur(px(5)), moz webkit ms o);
+          @include prefix(transform, scale(0.9), moz webkit ms o);
+          @include prefix(transform-origin, center, moz webkit ms o);
+          opacity: 0;
+          @include anima-basic;
+
+          @include mode-light {
+            background-color: var(--mui-palette-blue-c900a200);
+          }
+        }
+
+        &:hover {
+          &::before {
+            @include prefix(transform, scale(1), moz webkit ms o);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .info {
+    padding: px(30) 0;
+    width: px(350);
+    border-left: px(1) solid var(--mui-palette-background-border);
+    border-right: px(1) solid var(--mui-palette-background-border);
+    opacity: 1;
+    @include anima-basic;
+    @include media-max($sm) {
+      width: 100%;
+    }
+
+    &.close {
+      width: 0;
+      opacity: 0;
+    }
+
+    height: auto;
+    overflow: visible;
+
+    .sticky {
+      position: sticky;
+      top: px(100);
+      height: calc(100vh - px(120));
+      align-self: flex-start;
+      overflow: hidden;
+
+      .overflow-auto {
+        height: calc(100vh - px(400));
+      }
+
+      .scroll-config {
+        width: 100%;
+        overflow: hidden;
+
+        .color-custom {
+          margin-top: px(30);
+          margin-bottom: 0;
+
+          input {
+            width: px(67);
+            height: px(30);
+            outline: none;
+            background: none;
+            text-transform: uppercase;
+          }
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          .MuiStack-root {
+            border-radius: px(4) px(4) 0 0;
+          }
+
+          &:nth-child(even) {
+            margin-top: 0;
+
+            .MuiStack-root {
+              border-top: solid px(1) var(--mui-palette-background-border);
+              border-radius: 0 0 px(4) px(4);
+            }
+          }
+        }
+      }
+    }
+
+    .MuiContainer-root {
+      width: px(332);
+
+      @include media-max($sm) {
+        margin: 0 px(20);
+        width: calc(100% - px(40));
+      }
+    }
+
+    .content {
+      &-group {
+        border-bottom: px(1) solid var(--mui-palette-background-border);
+        border-radius: 0;
+        margin-top: px(30);
+        padding-bottom: px(30);
+        width: 100%;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        .MuiTypography {
+          &-h4 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: px(30);
+          }
+
+          &-body1 {
+            margin: px(15) 0;
+          }
+        }
+      }
+    }
+
+    .compatibility {
+      .MuiGrid-root {
+        svg {
+          opacity: 0.3;
+          @include anima-basic;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .details {
+      .MuiTypography {
+        &-h4 {
+          margin-bottom: px(20);
+        }
+      }
+
+      .MuiList-root {
+        margin-left: px(-15);
+        width: calc(100% + px(30));
+      }
+    }
+  }
+
+  .details {
+    position: relative;
+    z-index: 1;
+
+    .zebra-striping {
+      padding: px(50);
+
+      &:first-child {
+        border-radius: px(8) px(8) 0 0;
+      }
+    }
+
+    .MuiTypography {
+      &-h2 {
+        color: var(--mui-palette-blue-main);
+        text-transform: uppercase;
+        font-size: px(24);
+        margin-bottom: px(15);
+      }
+    }
+
+    .emphasis {
+      .MuiList-root {
+        column-count: 2;
+        column-gap: px(20);
+
+        @include media-max($sm) {
+          column-count: 1;
+        }
+      }
+    }
+  }
+
+  .comments {
+    margin: px(70) auto px(50) auto;
+
+    .content {
+      &-group {
+        padding: px(40) px(5);
+        border-bottom: px(1) solid var(--mui-palette-background-border);
+        border-radius: 0;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+    .MuiTypography {
+      &-h4 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: px(30);
+      }
+
+      &-body1 {
+        margin: px(15) 0;
+      }
+    }
+
+    .comment {
+      &-title {
+        padding: px(40) 0;
+
+        @include media-max($lg) {
+          border: none;
+          padding-bottom: px(20);
+        }
+      }
+
+      &-single {
+        padding: px(35) 0 px(30) 0;
+        background: none;
+        overflow: visible;
+
+        .MuiCardHeader {
+          &-root {
+            padding: 0;
+          }
+
+          &-title {
+            font-size: px(18);
+            font-weight: 600;
+
+            .MuiChip {
+              &-root {
+                border-radius: px(3);
+                height: min-content;
+                opacity: 0;
+                cursor: default;
+                @include anima-basic;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+
+              &-label {
+                font-weight: 300;
+                font-size: px(11);
+              }
+            }
+          }
+
+          &-subheader {
+            font-size: px(14);
+            font-weight: 100;
+          }
+
+          &-action {
+            opacity: 0;
+            @include anima-basic;
+          }
+        }
+
+        &:hover {
+          .MuiCardHeader {
+            &-action {
+              opacity: 1;
+            }
+          }
+
+          .MuiChip {
+            &-root {
+              opacity: 0.3;
+            }
+          }
+        }
+
+        .MuiCardContent-root {
+          padding-bottom: 0;
+          font-size: px(16);
+        }
+      }
+
+      &-new {
+        padding: px(35) 0;
+
+        .MuiFormLabel-root {
+          color: var(--mui-palette-black-c900);
+
+          @include mode-light {
+            color: var(--mui-palette-white-c100);
+          }
+        }
+
+        .MuiFilledInput {
+          &-multiline {
+            background-color: var(--mui-palette-black-c300);
+            margin-bottom: px(15);
+            border-radius: px(4);
+            @include prefix(
+              box-shadow,
+              0 px(65.7) 0 var(--mui-palette-black-c300),
+              moz webkit ms o
+            );
+
+            @include mode-light {
+              background-color: var(--mui-palette-white-c800);
+              @include prefix(
+                box-shadow,
+                0 px(65.7) 0 var(--mui-palette-white-c800),
+                moz webkit ms o
+              );
+            }
+
+            &::before,
+            &::after {
+              display: none;
+            }
+
+            .MuiInputBase-input {
+              min-height: px(100);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .category-icon {
+    position: relative;
+    .filter {
+      &-styles,
+      &-category {
+        .MuiListItem {
+          &-root {
+            padding: px(2) 0;
+
+            .MuiButtonBase {
+              &-root {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: px(5);
+
+                .count {
+                  font-size: px(12);
+                  display: inline-block;
+                  background-color: var(--mui-palette-blue-main);
+                  padding: px(2) px(8);
+                  border-radius: px(6);
+                  min-width: px(30);
+                  text-align: center;
+                  color: var(--mui-palette-white-c500);
+                }
+
+                &.Mui-selected {
+                  background-color: var(--mui-palette-blue-main);
+                  color: var(--mui-palette-white-c500);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-styles {
+        .MuiListItem {
+          &-root {
+            .MuiButtonBase {
+              &-root {
+                .count {
+                  background-color: var(--mui-palette-cyan-main);
+                  color: var(--mui-palette-black-c500);
+                }
+
+                &.Mui-selected {
+                  background-color: var(--mui-palette-cyan-main);
+                  color: var(--mui-palette-black-c500);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .header {
+      gap: px(20);
+      justify-content: center;
+      align-items: center;
+      @include anima-basic;
+
+      &-title {
+        padding: px(20) 0;
+      }
+
+      &.scroll {
+        top: px(80);
+        position: sticky;
+        z-index: 2;
+        overflow: hidden;
+        margin: auto px(-25);
+        height: px(0);
+        opacity: 0;
+        background-color: var(--mui-palette-black-c400);
+        border-bottom: px(1) solid var(--mui-palette-background-border);
+
+        @include mode-light {
+          background-color: var(--mui-palette-white-c700);
+        }
+
+        &.show {
+          height: auto;
+          opacity: 1;
+          margin-bottom: px(-89);
+        }
+      }
+    }
+
+    .infinite-scroll-component {
+      overflow: visible !important;
+    }
+
+    .preview {
+      &-item {
+        border: px(1) solid var(--mui-palette-background-border);
+        background-color: var(--mui-palette-black-c400);
+        height: 100vh;
+        max-height: px(120);
+        margin: 0 0 px(-1) px(-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        @include anima-(100ms);
+
+        svg {
+          @include anima-(100ms);
+        }
+
+        @include mode-light {
+          background-color: var(--mui-palette-white-c700);
+          color: var(--mui-palette-black-c700);
+        }
+
+        &.seleted {
+          border: px(2) solid var(--mui-palette-cyan-main);
+          color: var(--mui-palette-cyan-c700);
+          z-index: 1;
+
+          .MuiTypography-caption {
+            opacity: 1;
+          }
+
+          @include mode-light {
+            border: px(2) solid var(--mui-palette-blue-main);
+            color: var(--mui-palette-blue-c700);
+          }
+        }
+
+        .MuiTypography-caption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: px(5);
+          text-align: center;
+          opacity: 0;
+          @include anima-basic;
+        }
+
+        &:hover {
+          background-color: var(--mui-palette-black-c300a200);
+
+          @include mode-light {
+            background-color: var(--mui-palette-white-c400);
+          }
+
+          .MuiTypography-caption {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .customizer {
+    .custom {
+      &-tumbnail {
+        padding: px(10) 0 px(20) 0;
+
+        &::after {
+          content: 'Pré-visualização';
+          position: absolute;
+          top: px(-5);
+          left: px(30);
+          font-size: px(12);
+          padding: px(5) px(10);
+          color: var(--mui-palette-background-border);
+          background-color: var(--mui-palette-black-c400);
+
+          @include mode-light {
+            background-color: var(--mui-palette-white-c700);
+          }
+        }
+
+        .MuiBox-root {
+          display: flex;
+          justify-content: center;
+          border: px(1) solid var(--mui-palette-background-border);
+          border-radius: px(5);
+          height: px(200);
+          align-items: center;
+          position: relative;
+          margin-bottom: px(20);
+          overflow: hidden;
+        }
+
+        .MuiPaper-root {
+          background-color: var(--mui-palette-green-c100);
+          min-width: px(130);
+
+          .MuiMenuItem-root {
+            justify-content: center;
+          }
+        }
+      }
+
+      &-group {
+        margin-bottom: px(30);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .custom-setting {
+      .MuiPaper-root {
+        background-color: var(--mui-palette-black-c300a200);
+      }
+
+      .MuiAccordionSummary-content {
+        margin: 0;
+      }
+
+      .MuiAccordionDetails {
+        padding: 0 px(16);
+      }
+    }
+  }
+}
+
+.notification-error {
+  .MuiPaper-root {
+    overflow: visible;
+    background-color: var(--mui-palette-black-c300);
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: px(50);
+      width: px(50);
+      border-radius: px(5);
+      top: px(-25);
+      left: px(-25);
+      background-color: var(--mui-palette-red-main);
+      z-index: -1;
+    }
+
+    &::after {
+      top: auto;
+      left: auto;
+      height: px(30);
+      width: px(30);
+      bottom: px(-15);
+      right: px(-15);
+      z-index: 1;
+    }
+
+    @include mode-light {
+      background-color: var(--mui-palette-white-c700);
+    }
+
+    .MuiGrid-container.form {
+      margin-bottom: px(20) !important;
+
+      @include media-max($sm) {
+        margin-bottom: px(68) !important;
+      }
+    }
+    footer {
+      @include media-max($sm) {
+        position: fixed;
+        bottom: px(20);
+        left: 0;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .MuiButtonBase-root {
+        margin: 20px 0 -20px -24px;
+        width: calc(100% + 48px);
+        padding: 20px 0;
+      }
+    }
+  }
+}

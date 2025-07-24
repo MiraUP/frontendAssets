@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="platch">
+    <rect class="cls-1" x="10.09" y="3.45" width="11.82" height="25.1" rx="5.91" ry="5.91" transform="translate(16 -6.63) rotate(45)"/>
+    <rect class="cls-1" x="10.09" y="10.09" width="11.82" height="11.82" transform="translate(16 -6.63) rotate(45)"/>
+    <line class="cls-1" x1="16" y1="12.66" x2="16" y2="12.66"/>
+    <line class="cls-1" x1="19.34" y1="16" x2="19.34" y2="16"/>
+    <line class="cls-1" x1="12.66" y1="16" x2="12.66" y2="16"/>
+    <line class="cls-1" x1="16" y1="19.34" x2="16" y2="19.34"/>
+  </g>
+</svg>

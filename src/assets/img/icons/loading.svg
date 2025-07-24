@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="loading">
+    <ellipse class="cls-1" cx="16" cy="25.33" rx=".38" ry="1.33"/>
+    <ellipse class="cls-1" cx="10.51" cy="23.55" rx="1.33" ry=".47" transform="translate(-14.72 18.23) rotate(-54.04)"/>
+    <ellipse class="cls-1" cx="7.12" cy="18.89" rx="1.33" ry=".54" transform="translate(-5.48 3.12) rotate(-17.96)"/>
+    <ellipse class="cls-1" cx="7.12" cy="13.11" rx=".67" ry="1.33" transform="translate(-7.55 15.84) rotate(-72.04)"/>
+    <ellipse class="cls-1" cx="10.51" cy="8.45" rx=".79" ry="1.33" transform="translate(-2.96 7.78) rotate(-35.96)"/>
+    <path class="cls-1" d="M16,6.66c0-.74,0-1.33,0-1.33,0,0,0,.6,0,1.33s0,1.33,0,1.33c0,0,0-.6,0-1.33Z"/>
+    <ellipse class="cls-1" cx="21.48" cy="8.45" rx="1.33" ry=".07" transform="translate(2.03 20.88) rotate(-54.04)"/>
+    <ellipse class="cls-1" cx="24.88" cy="13.11" rx="1.33" ry=".13" transform="translate(-2.83 8.31) rotate(-17.96)"/>
+    <ellipse class="cls-1" cx="24.87" cy="18.89" rx=".18" ry="1.33" transform="translate(-.76 36.72) rotate(-72.04)"/>
+    <ellipse class="cls-1" cx="21.48" cy="23.55" rx=".27" ry="1.33" transform="translate(-9.74 17.1) rotate(-35.96)"/>
+  </g>
+</svg>

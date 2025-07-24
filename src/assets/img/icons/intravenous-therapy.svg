@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="intravenous-therapy">
+    <line class="cls-1" x1="12" y1="22.67" x2="12" y2="25.33"/>
+    <path class="cls-1" d="M20,22.67v2.7c0,1.45,1.18,2.63,2.63,2.63h2.7"/>
+    <path class="cls-1" d="M22.48,6.67h-2.48l-1.64-1.64c-1.31-1.31-3.42-1.31-4.73,0l-1.64,1.64h-2.48c-1.58,0-2.85,1.28-2.85,2.85v10.3c0,1.58,1.28,2.85,2.85,2.85h12.97c1.58,0,2.85-1.28,2.85-2.85v-10.3c0-1.57-1.28-2.85-2.85-2.85Z"/>
+    <line class="cls-1" x1="25.33" y1="12" x2="20" y2="12"/>
+    <line class="cls-1" x1="25.33" y1="17.33" x2="21.33" y2="17.33"/>
+  </g>
+</svg>

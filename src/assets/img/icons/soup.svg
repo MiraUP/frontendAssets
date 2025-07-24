@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="soup">
+    <path class="cls-1" d="M26.67,16H5.33c0,5.89,4.78,10.67,10.67,10.67s10.67-4.78,10.67-10.67Z"/>
+    <path class="cls-1" d="M6.63,12h18.73c.72,0,1.3.58,1.3,1.3v2.7H5.33v-2.7c0-.72.58-1.3,1.3-1.3Z"/>
+    <line class="cls-1" x1="8" y1="8" x2="10.66" y2="5.33"/>
+    <line class="cls-1" x1="14.67" y1="8" x2="17.33" y2="5.33"/>
+    <line class="cls-1" x1="21.34" y1="8" x2="24" y2="5.33"/>
+    <line class="cls-1" x1="8" y1="26.67" x2="24" y2="26.67"/>
+  </g>
+</svg>

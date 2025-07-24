@@ -1,0 +1,13 @@
+::selection {
+  color: var(--mui-palette-white-main);
+  background-color: rgba(81, 12, 193, 0.8);
+}
+
+.page-anima {
+  @include anima-fade-left;
+}
+
+:link {
+  color: currentColor;
+  text-decoration: none;
+}

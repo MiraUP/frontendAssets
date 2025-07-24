@@ -1,0 +1,19 @@
+.MuiBadge-root {
+  &.wave {
+    .MuiBadge-badge {
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        top: -0.5px;
+        right: -0.5px;
+        height: px(10);
+        width: px(10);
+        background: var(--mui-palette-green-main);
+        border-radius: px(50);
+        z-index: 10;
+        @include anima-badge;
+      }
+    }
+  }
+}

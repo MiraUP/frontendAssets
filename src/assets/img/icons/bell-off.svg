@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="bell-off">
+    <line class="cls-1" x1="8" y1="14.8" x2="6.68" y2="22.67"/>
+    <path class="cls-1" d="M25.35,22.67l-1.57-9.43c-.63-3.8-3.92-6.58-7.76-6.58h0c-2.53,0-4.81,1.2-6.26,3.1"/>
+    <line class="cls-1" x1="16.02" y1="6.67" x2="16.02" y2="4"/>
+    <path class="cls-1" d="M23.33,23.33c1.56-.27,3.13-.63,4.69-1.08"/>
+    <path class="cls-1" d="M4.02,22.26c4.44,1.27,8.88,1.83,13.31,1.69"/>
+    <path class="cls-1" d="M13.35,27.89c1.78.11,3.56.11,5.34,0"/>
+    <line class="cls-1" x1="5.33" y1="5.33" x2="26.67" y2="26.67"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="car">
+    <path class="cls-1" d="M25.34,21.33c1.47,0,2.66-1.19,2.66-2.66v-4.03c0-.72-.59-1.31-1.31-1.31H7.32c-1.38,0-2.56,1-2.79,2.36l-.5,2.99c-.23,1.39.84,2.65,2.24,2.65"/>
+    <line class="cls-1" x1="12.3" y1="21.33" x2="20" y2="21.33"/>
+    <path class="cls-1" d="M26.67,13.33H9.4l2.44-3.26c.98-1.31,2.52-2.08,4.16-2.08h5.34c1.63,0,3.13.92,3.86,2.38l1.48,2.95Z"/>
+    <line class="cls-1" x1="20" y1="8" x2="20" y2="13.06"/>
+    <circle class="cls-1" cx="22.67" cy="21.33" r="2.67"/>
+    <circle class="cls-1" cx="9.33" cy="21.33" r="2.67"/>
+  </g>
+</svg>

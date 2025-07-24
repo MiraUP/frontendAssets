@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="cup-top-go">
+    <path class="cls-1" d="M24,13.33H7.96l1.09,11.97c.14,1.52,1.41,2.68,2.94,2.68h7.99c1.53,0,2.8-1.16,2.94-2.68l1.09-11.97Z"/>
+    <rect class="cls-1" x="5.33" y="9.35" width="21.34" height="4" rx="2" ry="2"/>
+    <path class="cls-1" d="M24,9.35H8l1.12-4.49c.13-.51.58-.86,1.11-.86h11.55c.52,0,.98.36,1.11.86l1.12,4.49Z"/>
+    <circle class="cls-1" cx="16" cy="20.67" r="2"/>
+  </g>
+</svg>

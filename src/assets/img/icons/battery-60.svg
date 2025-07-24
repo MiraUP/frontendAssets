@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="battery-60">
+    <path class="cls-1" d="M25.33,12v-1.33c0-1.48-1.2-2.67-2.67-2.67H6.63c-1.45,0-2.63,1.18-2.63,2.63v10.73c0,1.45,1.18,2.63,2.63,2.63h16.03c1.48,0,2.67-1.2,2.67-2.67v-1.33l1.3-.65c.84-.42,1.37-1.28,1.37-2.21v-2.28c0-.94-.53-1.79-1.37-2.21l-1.3-.65Z"/>
+    <line class="cls-1" x1="9.33" y1="18.67" x2="9.33" y2="13.33"/>
+    <line class="cls-1" x1="14.66" y1="18.67" x2="14.66" y2="13.33"/>
+  </g>
+</svg>

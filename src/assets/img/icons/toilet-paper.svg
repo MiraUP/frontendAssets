@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="toilet-paper">
+    <ellipse class="cls-1" cx="9.33" cy="13.3" rx="5.33" ry="8"/>
+    <path class="cls-1" d="M9.33,5.3h13.34c2.95,0,5.33,3.58,5.33,8v12.01c0,.73-.59,1.33-1.33,1.33h-10.68c-.73,0-1.33-.59-1.33-1.33v-12.01"/>
+    <line class="cls-1" x1="9.33" y1="14.63" x2="9.33" y2="11.97"/>
+    <line class="cls-1" x1="9.33" y1="21.3" x2="14.66" y2="21.3"/>
+    <line class="cls-1" x1="18.66" y1="22.67" x2="18.66" y2="22.67"/>
+    <line class="cls-1" x1="22.67" y1="22.67" x2="22.67" y2="22.67"/>
+    <line class="cls-1" x1="26.67" y1="22.67" x2="26.67" y2="22.67"/>
+  </g>
+</svg>

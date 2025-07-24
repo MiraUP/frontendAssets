@@ -1,0 +1,55 @@
+//Paths
+$imgPath: '/src/assets/img';
+$graphicPath: '#{$imgPath}/graphic/';
+
+//Gradients
+$gradients: (
+  'left': '-90deg',
+  'right': '90deg',
+  'top': '180deg',
+  'bottom': '-180deg',
+);
+
+$xs: '0';
+$sm: '600px';
+$md: '900px';
+$lg: '1200px';
+$xl: '1536px';
+
+.overflow {
+  &-hidden {
+    overflow: hidden;
+
+    &-y {
+      overflow-y: hidden;
+    }
+
+    &-x {
+      overflow-x: hidden;
+    }
+  }
+
+  &-auto {
+    overflow: auto;
+
+    &-y {
+      overflow-y: auto;
+    }
+
+    &-x {
+      overflow-x: auto;
+    }
+  }
+
+  &-scroll {
+    overflow: scroll;
+
+    &-y {
+      overflow-y: scroll;
+    }
+
+    &-x {
+      overflow-x: scroll;
+    }
+  }
+}

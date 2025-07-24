@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="column-01-average">
+    <rect class="cls-1" x="4" y="12" width="5.33" height="13.34" rx="2.67" ry="2.67"/>
+    <rect class="cls-1" x="13.33" y="18.67" width="5.33" height="6.67" rx="2.67" ry="2.67"/>
+    <rect class="cls-1" x="22.67" y="6.67" width="5.33" height="18.67" rx="2.67" ry="2.67"/>
+  </g>
+</svg>

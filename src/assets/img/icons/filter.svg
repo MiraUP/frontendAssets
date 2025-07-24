@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="filter">
+    <path class="cls-1" d="M24.96,6.08c-5.98-.99-11.96-.99-17.93,0-1.46.24-2.19,1.9-1.39,3.15l6.36,9.89v4.89c2.8,2.8,6.67,2.67,8,2.67v-7.56s6.36-9.89,6.36-9.89c.8-1.24.07-2.91-1.39-3.15Z"/>
+  </g>
+</svg>

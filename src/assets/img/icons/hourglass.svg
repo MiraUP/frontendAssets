@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="hourglass">
+    <path class="cls-1" d="M22.67,10.67v-5.33h-13.33v5.33c0,2.18,1.06,4.12,2.68,5.33-1.62,1.22-2.68,3.15-2.68,5.33v5.33h13.33v-5.33c0-2.18-1.06-4.12-2.68-5.33,1.62-1.22,2.68-3.15,2.68-5.33Z"/>
+    <line class="cls-1" x1="6.66" y1="26.67" x2="25.33" y2="26.67"/>
+    <line class="cls-1" x1="6.66" y1="5.33" x2="25.33" y2="5.33"/>
+    <path class="cls-1" d="M22.67,26.67h-13.33l3.98-3.98c1.48-1.48,3.89-1.48,5.37,0l3.98,3.98Z"/>
+    <path class="cls-2" d="M18.66,10.67c0,1.47-1.19,2.67-2.67,2.67s-2.67-1.19-2.67-2.67h5.33Z"/>
+  </g>
+</svg>

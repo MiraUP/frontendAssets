@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="toothbrush">
+    <rect class="cls-1" x="3.77" y="15.31" width="24.55" height="4.09" rx="2" ry="2" transform="translate(16.97 -6.26) rotate(45)"/>
+    <line class="cls-1" x1="10.74" y1="9.16" x2="14.6" y2="5.3"/>
+    <line class="cls-1" x1="16.53" y1="14.94" x2="20" y2="11.47"/>
+    <line class="cls-1" x1="13.63" y1="12.05" x2="17.33" y2="8.35"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="hand-sanitizer">
+    <path class="cls-1" d="M11.89,13.33h8.21c2.89,0,5.23,2.34,5.23,5.23v6.83c0,1.44-1.17,2.61-2.61,2.61h-13.45c-1.44,0-2.61-1.17-2.61-2.61v-6.83c0-2.89,2.34-5.23,5.23-5.23Z"/>
+    <path class="cls-1" d="M16,9.33h0c1.47,0,2.67,1.2,2.67,2.67v1.33h-5.33v-1.33c0-1.47,1.2-2.67,2.67-2.67Z"/>
+    <line class="cls-1" x1="16" y1="9.33" x2="16" y2="4"/>
+    <polyline class="cls-1" points="21.33 4 10.66 4 9.33 5.33"/>
+  </g>
+</svg>

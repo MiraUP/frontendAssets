@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="barcode">
+    <path class="cls-1" d="M4,13.33v-2.66c0-1.48,1.2-2.67,2.67-2.67h2.66"/>
+    <path class="cls-1" d="M4,18.66v2.66c0,1.48,1.2,2.67,2.67,2.67h2.66"/>
+    <path class="cls-1" d="M28,13.33v-2.66c0-1.48-1.2-2.67-2.67-2.67h-2.66"/>
+    <path class="cls-1" d="M28,18.66v2.66c0,1.48-1.2,2.67-2.67,2.67h-2.66"/>
+    <line class="cls-1" x1="9.33" y1="18.66" x2="9.33" y2="13.33"/>
+    <line class="cls-1" x1="18.66" y1="18.66" x2="18.66" y2="13.33"/>
+    <line class="cls-1" x1="22.67" y1="18.66" x2="22.67" y2="13.33"/>
+    <rect class="cls-1" x="13.33" y="13.33" width="1.33" height="5.33"/>
+  </g>
+</svg>

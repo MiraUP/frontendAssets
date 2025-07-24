@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="calculator">
+    <rect class="cls-1" x="6.66" y="4" width="18.67" height="24" rx="2.68" ry="2.68"/>
+    <line class="cls-1" x1="10.66" y1="9.33" x2="21.33" y2="9.33"/>
+    <line class="cls-1" x1="10.66" y1="14.67" x2="10.66" y2="14.67"/>
+    <line class="cls-1" x1="16" y1="14.67" x2="16" y2="14.67"/>
+    <line class="cls-1" x1="21.33" y1="14.67" x2="21.33" y2="14.67"/>
+    <line class="cls-1" x1="10.66" y1="18.67" x2="10.66" y2="18.67"/>
+    <line class="cls-1" x1="16" y1="18.67" x2="16" y2="18.67"/>
+    <line class="cls-1" x1="10.66" y1="22.67" x2="10.66" y2="22.67"/>
+    <line class="cls-1" x1="16" y1="22.67" x2="16" y2="22.67"/>
+    <line class="cls-1" x1="21.33" y1="18.67" x2="21.33" y2="22.67"/>
+  </g>
+</svg>

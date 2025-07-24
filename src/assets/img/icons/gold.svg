@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="gold">
+    <path class="cls-1" d="M12.06,16h-4.13c-1.49,0-2.76,1.1-2.97,2.58l-.97,6.76h12l-.97-6.76c-.21-1.48-1.48-2.58-2.97-2.58Z"/>
+    <path class="cls-1" d="M24.06,16h-4.13c-1.49,0-2.76,1.1-2.97,2.58l-.97,6.76h12l-.97-6.76c-.21-1.48-1.48-2.58-2.97-2.58Z"/>
+    <path class="cls-1" d="M18.06,6.67h-4.13c-1.49,0-2.76,1.1-2.97,2.58l-.97,6.76h12l-.97-6.76c-.21-1.48-1.48-2.58-2.97-2.58Z"/>
+  </g>
+</svg>

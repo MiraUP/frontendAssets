@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="text-field">
+    <path class="cls-1" d="M21.33,22.67h3.94c1.51,0,2.73-1.22,2.73-2.73v-7.88c0-1.51-1.22-2.73-2.73-2.73h-3.94"/>
+    <path class="cls-1" d="M17.33,9.33H6.72c-1.51,0-2.73,1.22-2.73,2.73v7.88c0,1.51,1.22,2.73,2.73,2.73h10.61"/>
+    <line class="cls-1" x1="17.33" y1="8" x2="17.33" y2="24"/>
+    <line class="cls-1" x1="8" y1="13.33" x2="13.33" y2="13.33"/>
+    <line class="cls-1" x1="10.66" y1="13.33" x2="10.66" y2="18.67"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="stichy-note">
+    <path class="cls-1" d="M28,7.4c0-1.88-1.52-3.4-3.4-3.4H7.4c-1.88,0-3.4,1.52-3.4,3.4v17.2c0,1.88,1.52,3.4,3.4,3.4h7.53c1.54,0,3.02-.61,4.11-1.7l7.26-7.26c1.09-1.09,1.7-2.57,1.7-4.11v-7.53Z"/>
+    <path class="cls-1" d="M27.48,17.33h-6.74c-1.88,0-3.4,1.52-3.4,3.4v6.74"/>
+  </g>
+</svg>

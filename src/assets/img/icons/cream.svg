@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="cream">
+    <path class="cls-1" d="M22.67,14.67h-13.34l4.94,12.15c.63,1.55,2.83,1.55,3.46,0l4.94-12.15Z"/>
+    <path class="cls-1" d="M22.09,8.57c-.29,0-.56.05-.83.13-.32-2.64-2.54-4.7-5.27-4.7s-4.95,2.06-5.27,4.7c-.26-.07-.54-.13-.83-.13-1.68,0-3.05,1.36-3.05,3.05s1.36,3.05,3.05,3.05h12.19c1.68,0,3.05-1.36,3.05-3.05s-1.36-3.05-3.05-3.05Z"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+/**** Abstracts ****/
+@import 'abstracts/_variables';
+@import 'abstracts/_mixins';
+@import 'abstracts/_animations';
+
+/**** Base ****/
+@import 'base/_colors';
+@import 'base/_typography';
+@import 'base/_base';
+
+/**** Components ****/
+@import 'components/_gradient';
+@import 'components/_divider';
+@import 'components/_button';
+@import 'components/_scrollbar';
+@import 'components/_badge';
+@import 'components/_carousel';
+@import 'components/_assetsCard';
+@import 'components/_switch';
+@import 'components/_dialog';
+@import 'components/_zebraStriping';
+
+/**** Layout ****/
+@import 'layout/_header';
+
+/**** Pages ****/
+@import 'pages/_login';
+@import 'pages/_home';
+@import 'pages/_search';
+@import 'pages/_singlePage';
+@import 'pages/_edit';

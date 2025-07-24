@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="moon">
+    <path class="cls-1" d="M19.2,19.88c-3.57-.59-6.47-3.48-7.07-7.05-.37-2.22.1-4.32,1.15-6.02.69-1.12-.43-2.45-1.66-1.97-4.57,1.81-7.76,6.36-7.57,11.62.23,6.19,5.36,11.31,11.56,11.53,5.29.19,9.85-3.05,11.64-7.67.47-1.23-.87-2.34-1.98-1.64-1.71,1.08-3.82,1.57-6.06,1.2Z"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="volume-up">
+    <path class="cls-1" d="M19.33,7.96c-.24-1.23-1.75-1.71-2.69-.88l-4.5,4h-5.49c-1.45,0-2.62,1.17-2.62,2.62v4.59c0,1.45,1.17,2.62,2.62,2.62h5.48l4.41,3.92c.96.85,2.48.32,2.7-.94.97-5.55,1.07-10.88.08-15.93Z"/>
+    <line class="cls-1" x1="25.33" y1="18.67" x2="25.33" y2="13.33"/>
+    <line class="cls-1" x1="28" y1="16" x2="22.67" y2="16"/>
+  </g>
+</svg>

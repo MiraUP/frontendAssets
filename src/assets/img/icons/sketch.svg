@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="sketch">
+    <path class="cls-1" d="M25.76,8.61c-.99-1.32-2.44-2.2-4.06-2.47l-4.36-.73c-.88-.15-1.78-.15-2.67,0l-4.37.73c-1.62.27-3.08,1.16-4.07,2.47l-1.68,2.24c-.53.71-.51,1.68.04,2.37l10.36,12.95c.54.67,1.55.67,2.09,0l10.36-12.96c.55-.69.57-1.66.04-2.37l-1.68-2.24Z"/>
+    <path class="cls-1" d="M8.45,8.27l6.97,17.73c.21.52.95.52,1.16,0l6.97-17.73"/>
+    <polyline class="cls-1" points="10.63 12.04 16.11 5.53 21.6 12.04"/>
+    <line class="cls-1" x1="4.57" y1="12.04" x2="27.18" y2="12.04"/>
+  </g>
+</svg>

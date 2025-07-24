@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="email-block">
+    <line class="cls-1" x1="7.99" y1="12" x2="16" y2="17.71"/>
+    <line class="cls-1" x1="24" y1="12" x2="16" y2="17.71"/>
+    <circle class="cls-1" cx="24" cy="22.67" r="4"/>
+    <line class="cls-1" x1="21.17" y1="19.84" x2="26.83" y2="25.5"/>
+    <path class="cls-1" d="M20.66,24.87c-4.59.28-9.17.15-13.76-.4-1.05-.13-2.12-1.11-2.32-2.16-.77-4.21-.77-8.41,0-12.61.19-1.05,1.27-2.04,2.32-2.16,6.07-.72,12.13-.72,18.2,0,1.05.13,2.13,1.11,2.33,2.16.69,3.77.76,7.54.21,11.32"/>
+  </g>
+</svg>

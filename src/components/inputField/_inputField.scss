@@ -1,0 +1,207 @@
+@import '../../assets/scss/abstracts/mixins';
+@import '../../assets/scss/abstracts/animations';
+
+.MuiAutocomplete-root {
+  @include anima-basic;
+
+  > * {
+    @include anima-basic;
+  }
+
+  &.Mui-expanded {
+    .MuiOutlinedInput-notchedOutline {
+      border-radius: px(5) px(5) 0 0;
+      border-bottom: none;
+    }
+  }
+
+  .MuiChip-root {
+    background-color: var(--mui-palette-action-selected);
+
+    .MuiChip-label {
+      color: var(--mui-palette-text-primary);
+    }
+
+    .MuiChip-deleteIcon {
+      color: rgba(var(--mui-palette-text-primaryChannel) / 0.7);
+    }
+  }
+}
+
+.MuiInput-underline {
+  padding-bottom: px(10);
+}
+
+.MuiAutocomplete-popper {
+  .MuiAutocomplete-paper {
+    backdrop-filter: blur(px(50));
+    border-radius: 0 0 px(5) px(5);
+    border: 2px solid;
+    border-top: none;
+    box-shadow: none;
+    background: transparent;
+    border-color: var(--mui-palette-main);
+
+    .MuiAutocomplete-option {
+      border-radius: px(5);
+      margin: px(3) px(8);
+      @include anima-basic;
+
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-main) !important;
+        color: var(--mui-palette-default-contrastText);
+      }
+    }
+  }
+}
+
+.MuiFormHelperText-root {
+  color: var(--mui-palette-text-primary) !important;
+}
+
+.MuiFormControl-root {
+  &.error {
+    .MuiFormHelperText-root {
+      color: var(--mui-palette-error-main) !important;
+    }
+
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-error-main);
+    }
+  }
+
+  &.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    @include prefix(user-select, none, moz webkit ms o);
+
+    .MuiFormLabel-root,
+    .Mui-disabled {
+      color: currentColor;
+      -webkit-text-fill-color: currentColor;
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &::before {
+        border-bottom-style: solid;
+      }
+    }
+  }
+}
+/*
+ * Palette colors
+*/
+.MuiFormControl-root.primary {
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-primary-main);
+    }
+  }
+  .MuiAutocomplete-paper {
+    border-color: var(--mui-palette-primary-main);
+
+    .MuiAutocomplete-option {
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-primary-main) !important;
+        color: var(--mui-palette-white-main);
+      }
+    }
+  }
+}
+
+.MuiFormControl-root.secondary {
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-secondary-main);
+    }
+  }
+  .MuiAutocomplete-paper {
+    border-color: var(--mui-palette-secondary-main);
+
+    .MuiAutocomplete-option {
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-secondary-main) !important;
+        color: var(--mui-palette-white-main);
+      }
+    }
+  }
+}
+
+.MuiFormControl-root.info {
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-cyan-main);
+    }
+  }
+  .MuiAutocomplete-paper {
+    border-color: var(--mui-palette-cyan-main);
+
+    .MuiAutocomplete-option {
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-cyan-main) !important;
+        color: var(--mui-palette-black-main);
+      }
+    }
+  }
+}
+
+.MuiFormControl-root.success {
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-success-main);
+    }
+  }
+  .MuiAutocomplete-paper {
+    border-color: var(--mui-palette-success-main);
+
+    .MuiAutocomplete-option {
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-success-main) !important;
+        color: var(--mui-palette-black-main);
+      }
+    }
+  }
+}
+
+.MuiFormControl-root.white {
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-white-main);
+    }
+  }
+  .MuiAutocomplete-paper {
+    border-color: var(--mui-palette-white-main);
+
+    .MuiAutocomplete-option {
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-white-main) !important;
+        color: var(--mui-palette-black-main);
+      }
+    }
+  }
+}
+
+.MuiFormControl-root.black {
+  .MuiAutocomplete-popper {
+    .MuiAutocomplete-paper {
+      border-color: var(--mui-palette-black-main);
+    }
+  }
+  .MuiAutocomplete-paper {
+    border-color: var(--mui-palette-black-main);
+
+    .MuiAutocomplete-option {
+      &[aria-selected='true'],
+      &[aria-selected='true'].Mui-focused {
+        background-color: var(--mui-palette-black-main) !important;
+        color: var(--mui-palette-white-main);
+      }
+    }
+  }
+}

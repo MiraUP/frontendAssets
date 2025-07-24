@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="petri-dish">
+    <circle class="cls-1" cx="16" cy="16" r="12"/>
+    <path class="cls-1" d="M18.66,21.33c0-1.47,1.19-2.67,2.67-2.67,1.47,0,2.67-1.19,2.67-2.67"/>
+    <line class="cls-1" x1="9.33" y1="20" x2="9.41" y2="19.99"/>
+    <line class="cls-1" x1="15.92" y1="16.01" x2="16" y2="16"/>
+    <line class="cls-1" x1="18.66" y1="10.67" x2="16" y2="8"/>
+    <line class="cls-1" x1="9.33" y1="14.67" x2="13.33" y2="12"/>
+    <line class="cls-1" x1="14.66" y1="22.67" x2="14.66" y2="22.67"/>
+  </g>
+</svg>

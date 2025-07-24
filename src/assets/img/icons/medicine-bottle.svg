@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="medicine-bottle">
+    <path class="cls-1" d="M8,10.67h16v13.38c0,1.45-1.18,2.63-2.63,2.63h-10.75c-1.45,0-2.63-1.18-2.63-2.63v-13.38h0Z"/>
+    <line class="cls-1" x1="16" y1="21.33" x2="16" y2="16"/>
+    <line class="cls-1" x1="13.33" y1="18.67" x2="18.66" y2="18.67"/>
+    <path class="cls-1" d="M9.78,5.33h12.44c1.72,0,3.11,1.4,3.11,3.11v2.22H6.66v-2.22c0-1.72,1.4-3.11,3.11-3.11Z"/>
+    <line class="cls-1" x1="10.66" y1="10.67" x2="10.66" y2="9.33"/>
+    <line class="cls-1" x1="16" y1="10.67" x2="16" y2="9.33"/>
+    <line class="cls-1" x1="21.33" y1="10.67" x2="21.33" y2="9.33"/>
+  </g>
+</svg>

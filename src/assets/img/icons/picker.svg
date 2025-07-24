@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="picker">
+    <path class="cls-1" d="M20.61,15.28l-3.88-3.88-5.75,5.75c-1.91,1.91-3.35,4.24-4.2,6.8h0c-.26.79.49,1.55,1.28,1.28h0c2.56-.85,4.89-2.29,6.8-4.2l5.75-5.75Z"/>
+    <path class="cls-1" d="M21.5,6.31h.15c1.47,0,2.67,1.2,2.67,2.67v5.57h-5.49v-5.57c0-1.47,1.2-2.67,2.67-2.67Z" transform="translate(13.69 -12.2) rotate(45)"/>
+    <line class="cls-1" x1="14.78" y1="9.45" x2="22.55" y2="17.22"/>
+  </g>
+</svg>

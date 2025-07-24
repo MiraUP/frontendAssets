@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="medical-chart">
+    <path class="cls-1" d="M21.33,6.69h1.39c1.44,0,2.61,1.17,2.61,2.61v16.08c0,1.44-1.17,2.61-2.61,2.61h-13.44c-1.44,0-2.61-1.17-2.61-2.61V9.31c0-1.44,1.17-2.61,2.61-2.61h1.39"/>
+    <path class="cls-1" d="M13.32,4.02h5.36c1.46,0,2.65,1.19,2.65,2.65v1.35h-10.66v-1.35c0-1.46,1.19-2.65,2.65-2.65Z"/>
+    <line class="cls-1" x1="12.01" y1="14.67" x2="20.01" y2="14.67"/>
+    <line class="cls-1" x1="12" y1="18.67" x2="20" y2="18.67"/>
+    <line class="cls-1" x1="12" y1="22.67" x2="16" y2="22.67"/>
+  </g>
+</svg>

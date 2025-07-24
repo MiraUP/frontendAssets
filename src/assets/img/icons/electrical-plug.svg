@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="electrical-plug">
+    <path class="cls-1" d="M20,5.33h4v8h-4c-2.21,0-4-1.79-4-4h0c0-2.21,1.79-4,4-4Z"/>
+    <line class="cls-1" x1="24" y1="6.67" x2="26.67" y2="6.67"/>
+    <line class="cls-1" x1="24" y1="12" x2="26.67" y2="12"/>
+    <path class="cls-1" d="M16,9.33h-6c-2.58,0-4.67,2.09-4.67,4.67h0c0,2.58,2.09,4.67,4.67,4.67h12.67c2.21,0,4,1.79,4,4h0c0,2.21-1.79,4-4,4H5.33"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="button">
+    <path class="cls-1" d="M25.27,21.33c1.51,0,2.73-1.22,2.73-2.73v-7.88c0-1.51-1.22-2.73-2.73-2.73H6.73c-1.51,0-2.73,1.22-2.73,2.73v7.88c0,1.51,1.22,2.73,2.73,2.73h8.72"/>
+    <polygon class="cls-1" points="22.74 19.73 18.97 21.64 17.06 25.41 13.33 16 22.74 19.73"/>
+    <line class="cls-1" x1="18.97" y1="21.64" x2="21.8" y2="24.47"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="archive">
+    <rect class="cls-1" x="4" y="4" width="24" height="8" rx="2.67" ry="2.67"/>
+    <path class="cls-1" d="M5.33,12h21.33v11.99c0,2.22-1.81,4.03-4.03,4.03h-13.27c-2.22,0-4.03-1.81-4.03-4.03v-11.99h0Z"/>
+    <line class="cls-1" x1="13.33" y1="17.33" x2="18.66" y2="17.33"/>
+  </g>
+</svg>

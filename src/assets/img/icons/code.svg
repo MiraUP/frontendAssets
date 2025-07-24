@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="code">
+    <polyline class="cls-1" points="18.65 18.69 21.34 16 18.65 13.31"/>
+    <polyline class="cls-1" points="13.33 18.69 10.64 16 13.33 13.31"/>
+    <rect class="cls-1" x="4" y="8" width="24" height="16" rx="2.78" ry="2.78"/>
+  </g>
+</svg>

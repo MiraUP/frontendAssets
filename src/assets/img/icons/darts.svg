@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="darts">
+    <rect class="cls-1" x="18.39" y="6.78" width="5.33" height="8.31" rx="2.67" ry="2.67" transform="translate(28.22 33.56) rotate(-135)"/>
+    <line class="cls-1" x1="26.67" y1="5.33" x2="24" y2="8"/>
+    <line class="cls-1" x1="18.12" y1="13.87" x2="13.33" y2="18.67"/>
+    <path class="cls-1" d="M14.51,22.86l-.59-2.94c-.19-.93-.91-1.66-1.84-1.84l-2.94-.59c-.71-.14-1.45.08-1.97.6l-1,1c-.85.85-.85,2.23,0,3.08l3.66,3.66c.85.85,2.23.85,3.08,0l1-1c.52-.52.74-1.25.6-1.97Z"/>
+  </g>
+</svg>

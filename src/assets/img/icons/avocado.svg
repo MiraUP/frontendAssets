@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="avocado">
+    <path class="cls-1" d="M23.98,17.1l3.03-4.38c1.53-2.2,1.26-5.18-.64-7.08h0c-1.9-1.9-4.88-2.16-7.08-.64l-4.25,2.94c-1.16.8-2.44,1.46-3.81,1.77-2.24.5-4.33,1.84-5.76,4.03-1.99,3.04-1.95,7.1.08,10.11,3.38,4.99,10.23,5.47,14.27,1.43,1.28-1.28,2.1-2.83,2.47-4.47.3-1.33.9-2.58,1.68-3.71Z"/>
+    <circle class="cls-1" cx="13.33" cy="18.67" r="4"/>
+  </g>
+</svg>

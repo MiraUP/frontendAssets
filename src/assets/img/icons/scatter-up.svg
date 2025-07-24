@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="scatter-up">
+    <circle class="cls-1" cx="25.33" cy="8" r="2.67"/>
+    <circle class="cls-1" cx="16" cy="12" r="2.67"/>
+    <circle class="cls-1" cx="6.66" cy="16" r="2.67"/>
+    <line class="cls-1" x1="6.66" y1="22.67" x2="6.66" y2="22.67"/>
+    <line class="cls-1" x1="6.66" y1="26.67" x2="6.66" y2="26.67"/>
+    <line class="cls-1" x1="16" y1="22.67" x2="16" y2="22.67"/>
+    <line class="cls-1" x1="16" y1="26.67" x2="16" y2="26.67"/>
+    <line class="cls-1" x1="25.33" y1="22.67" x2="25.33" y2="22.67"/>
+    <line class="cls-1" x1="25.33" y1="26.67" x2="25.33" y2="26.67"/>
+    <line class="cls-1" x1="25.33" y1="14.67" x2="25.33" y2="14.67"/>
+    <line class="cls-1" x1="25.33" y1="18.67" x2="25.33" y2="18.67"/>
+    <line class="cls-1" x1="16" y1="18.67" x2="16" y2="18.67"/>
+  </g>
+</svg>

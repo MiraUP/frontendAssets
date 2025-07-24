@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="pin-stuck">
+    <path class="cls-1" d="M20,14.07v-5.48c1.59-.92,2.67-2.62,2.67-4.59-4.44-.46-8.89-.46-13.34,0,0,1.97,1.08,3.67,2.67,4.59v5.48c-1.59.92-2.67,2.62-2.67,4.59,4.56.56,9.01.59,13.34,0,0-1.97-1.08-3.67-2.67-4.59Z"/>
+    <line class="cls-1" x1="16" y1="28.07" x2="16" y2="19.27"/>
+  </g>
+</svg>

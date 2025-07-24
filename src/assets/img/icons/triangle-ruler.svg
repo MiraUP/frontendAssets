@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="triangle-ruler">
+    <path class="cls-1" d="M5.33,7.35v17.3c0,1.11.9,2.02,2.02,2.02h17.3c1.8,0,2.69-2.17,1.43-3.44L8.77,5.93c-1.27-1.27-3.44-.37-3.44,1.43Z"/>
+    <polygon class="cls-1" points="12 18.67 12 20 13.33 20 12 18.67"/>
+    <line class="cls-1" x1="5.33" y1="20" x2="6.66" y2="20"/>
+    <line class="cls-1" x1="5.33" y1="13.33" x2="6.66" y2="13.33"/>
+    <line class="cls-1" x1="18.66" y1="26.67" x2="18.66" y2="25.33"/>
+    <line class="cls-1" x1="12" y1="26.67" x2="12" y2="25.33"/>
+  </g>
+</svg>

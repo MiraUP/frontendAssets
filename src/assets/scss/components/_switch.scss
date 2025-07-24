@@ -1,0 +1,14 @@
+.MuiSwitch {
+  &-sizeSmall {
+    padding: px(1) !important;
+  }
+
+  &-track {
+    border-radius: px(50) !important;
+    background-color: var(--mui-palette-black-c800) !important;
+
+    @include mode-light {
+      background-color: var(--mui-palette-white-c100) !important;
+    }
+  }
+}

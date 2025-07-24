@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="xls">
+    <path class="cls-1" d="M14.14,27.85l-8.1-2c-1.2-.3-2.04-1.37-2.04-2.6v-14.47c0-1.23.84-2.31,2.04-2.6l8.1-2c1.62-.4,3.19.83,3.19,2.5v18.67c0,1.67-1.57,2.9-3.19,2.5Z"/>
+    <path class="cls-1" d="M17.33,6.68h7.95c1.5,0,2.72,1.22,2.72,2.72v13.24c0,1.5-1.22,2.72-2.72,2.72h-7.95V6.68h0Z"/>
+    <line class="cls-1" x1="8" y1="20" x2="13.33" y2="12"/>
+    <line class="cls-1" x1="8" y1="12" x2="13.33" y2="20"/>
+    <line class="cls-1" x1="17.33" y1="10.67" x2="23.98" y2="10.67"/>
+    <line class="cls-1" x1="17.33" y1="16" x2="23.98" y2="16"/>
+    <line class="cls-1" x1="17.33" y1="21.33" x2="23.98" y2="21.33"/>
+    <line class="cls-1" x1="23.98" y1="10.67" x2="23.98" y2="21.33"/>
+    <line class="cls-1" x1="18.66" y1="10.67" x2="18.66" y2="21.27"/>
+  </g>
+</svg>

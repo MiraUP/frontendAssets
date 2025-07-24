@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="coins">
+    <circle class="cls-1" cx="12" cy="20" r="8"/>
+    <path class="cls-1" d="M24.42,18.67c2.16-1.43,3.58-3.89,3.58-6.67,0-4.42-3.58-8-8-8-2.78,0-5.23,1.42-6.67,3.58"/>
+  </g>
+</svg>

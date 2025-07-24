@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="heart-rate">
+    <path class="cls-1" d="M21.33,6.67c-2.18,0-4.12,1.06-5.33,2.68-1.22-1.62-3.15-2.68-5.33-2.68-3.68,0-6.67,2.99-6.67,6.67,0,8,12,13.34,12,13.34,0,0,12-5.33,12-13.34,0-3.68-2.99-6.67-6.67-6.67Z"/>
+    <polyline class="cls-1" points="4 20 12 20 14.66 13.33 17.33 21.33 20 17.33 28 17.33"/>
+  </g>
+</svg>

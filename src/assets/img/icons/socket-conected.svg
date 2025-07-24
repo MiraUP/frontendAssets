@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="socket-conected">
+    <path class="cls-1" d="M10.11,15.22h8v2c0,1.84-1.49,3.33-3.33,3.33h-1.33c-1.84,0-3.33-1.49-3.33-3.33v-2h0Z" transform="translate(16.78 -4.74) rotate(45)"/>
+    <line class="cls-1" x1="12.23" y1="19.77" x2="5.33" y2="26.67"/>
+    <path class="cls-2" d="M17.22,11.45h1.33c1.84,0,3.33,1.49,3.33,3.33v2h-8v-2c0-1.84,1.49-3.33,3.33-3.33Z" transform="translate(15.22 -8.51) rotate(45)"/>
+    <line class="cls-1" x1="19.77" y1="12.23" x2="26.67" y2="5.33"/>
+  </g>
+</svg>

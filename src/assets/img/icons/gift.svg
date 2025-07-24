@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="gift">
+    <path class="cls-1" d="M5.33,14.67h21.34v9.35c0,2.2-1.78,3.98-3.98,3.98h-13.37c-2.2,0-3.98-1.78-3.98-3.98v-9.35h0Z"/>
+    <rect class="cls-1" x="4" y="9.33" width="24" height="5.33" rx="2" ry="2"/>
+    <line class="cls-1" x1="16" y1="28" x2="16" y2="9.33"/>
+    <path class="cls-1" d="M18.67,4h0c1.47,0,2.67,1.19,2.67,2.67h0c0,1.47-1.19,2.67-2.67,2.67h-2.67v-2.67c0-1.47,1.19-2.67,2.67-2.67Z"/>
+    <path class="cls-1" d="M10.67,4h2.67c1.47,0,2.67,1.19,2.67,2.67h0c0,1.47-1.19,2.67-2.67,2.67h0c-1.47,0-2.67-1.19-2.67-2.67v-2.67h0Z" transform="translate(26.67 13.33) rotate(180)"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="database">
+    <ellipse class="cls-1" cx="16" cy="7.33" rx="10.67" ry="3.33"/>
+    <path class="cls-1" d="M26.67,7.33v17.33c0,1.84-4.78,3.33-10.67,3.33s-10.67-1.49-10.67-3.33V7.33"/>
+    <path class="cls-1" d="M5.33,16c0,1.84,4.78,3.33,10.67,3.33s10.67-1.49,10.67-3.33"/>
+  </g>
+</svg>

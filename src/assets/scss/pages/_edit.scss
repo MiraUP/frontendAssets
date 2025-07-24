@@ -1,0 +1,53 @@
+.pageeditAsset {
+  .edit {
+    &-banner {
+      position: relative;
+      min-height: px(400);
+      border-radius: px(5);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      overflow: hidden;
+
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--mui-palette-black-c300);
+        opacity: 0.7;
+        z-index: -1;
+      }
+
+      &::before {
+        top: 70%;
+        @include prefix(
+          background,
+          linear-gradient(
+            0deg,
+            var(--mui-palette-black-main) 0%,
+            var(--mui-palette-black-c500a000) 100%
+          ),
+          moz webkit ms o
+        );
+        opacity: 1;
+        z-index: 0;
+      }
+
+      &-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

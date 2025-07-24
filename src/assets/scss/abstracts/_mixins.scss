@@ -1,0 +1,52 @@
+//Include class "html.dark"
+@mixin mode-dark {
+  html.dark & {
+    @content;
+  }
+}
+
+//Include class "html.light"
+@mixin mode-light {
+  html.light & {
+    @content;
+  }
+}
+
+//Include class "body.nav-fixed"
+@mixin nav-fixed {
+  body.nav-fixed & {
+    @content;
+  }
+}
+
+@mixin media-min($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-max($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+//Add Prefix
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+//Convert px to rem
+@function px($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}
+
+//Paths
+$iconPath: 'src/assets/img/icon/';
+$graphicPath: 'src/assets/img/graphic/';
+$smillePath: 'src/assets/img/smilles/';

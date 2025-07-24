@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="test-tube">
+    <path class="cls-1" d="M9.33,4h13.34v17.34c0,3.68-2.99,6.67-6.67,6.67h0c-3.68,0-6.67-2.99-6.67-6.67V4h0Z"/>
+    <line class="cls-1" x1="6.66" y1="4" x2="25.33" y2="4"/>
+    <line class="cls-1" x1="9.52" y1="12" x2="22.47" y2="12"/>
+    <line class="cls-1" x1="16" y1="16" x2="16" y2="16"/>
+    <line class="cls-1" x1="18.66" y1="22.67" x2="18.66" y2="22.67"/>
+    <line class="cls-1" x1="13.33" y1="20" x2="13.33" y2="20"/>
+  </g>
+</svg>

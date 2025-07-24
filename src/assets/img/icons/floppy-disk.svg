@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="floppy-disk">
+    <path class="cls-1" d="M24.01,26.67H7.99c-1.47,0-2.66-1.19-2.66-2.66V7.99c0-1.47,1.19-2.66,2.66-2.66h11.44c1.22,0,2.4.49,3.26,1.35l2.63,2.63c.86.86,1.35,2.04,1.35,3.26v11.44c0,1.47-1.19,2.66-2.66,2.66Z"/>
+    <rect class="cls-1" x="10.66" y="18.67" width="10.67" height="8"/>
+    <polyline class="cls-1" points="20 5.33 20 10.67 12 10.67 12 5.33"/>
+  </g>
+</svg>

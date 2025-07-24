@@ -1,0 +1,28 @@
+@import '../../assets/scss/abstracts/mixins';
+@import '../../assets/scss/abstracts/animations';
+
+.MuiLinearProgress {
+  &-root {
+    background: none !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1500 !important;
+    width: 105%;
+  }
+
+  &-bar {
+    border-radius: 0 px(4) px(4) 0;
+    min-width: px(5) !important;
+    @include prefix(
+      background,
+      linear-gradient(
+        90deg,
+        var(--mui-palette-blue-main) 95%,
+        var(--mui-palette-cyan-main) 100%
+      ),
+      moz webkit ms o
+    );
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="paint-bucket">
+    <path class="cls-1" d="M28,17.81L15.74,5.55l-10.63,10.63c-1.42,1.42-1.42,3.72,0,5.14l5.23,5.23c1.42,1.42,3.72,1.42,5.14,0l6.86-6.86,5.66-1.89Z"/>
+    <path class="cls-1" d="M15.74,5.55c-2.08-2.08-5.46-2.08-7.54,0-2.08,2.08-2.08,5.46,0,7.54"/>
+    <line class="cls-1" x1="5.33" y1="21.33" x2="19.76" y2="21.33"/>
+    <path class="cls-2" d="M28,26.67c0-.74-1.33-2.67-1.33-2.67,0,0-1.33,1.93-1.33,2.67s.6,1.33,1.33,1.33,1.33-.6,1.33-1.33Z"/>
+  </g>
+</svg>

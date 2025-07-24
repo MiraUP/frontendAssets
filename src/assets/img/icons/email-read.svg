@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="email-read">
+    <path class="cls-1" d="M26.25,10.99c.59.41,1.05,1.04,1.18,1.7.77,4.2.77,8.41,0,12.61-.2,1.05-1.27,2.03-2.32,2.16-6.07.72-12.13.72-18.2,0-1.05-.13-2.13-1.11-2.32-2.16-.77-4.2-.77-8.41,0-12.61.12-.62.55-1.22,1.09-1.63"/>
+    <path class="cls-1" d="M26.34,11.05c-3.18-2.98-6.63-5.34-10.34-7.05h0c-3.86,1.84-7.28,4.22-10.34,7.05"/>
+    <polyline class="cls-1" points="4.06 16.86 16 21.33 27.93 16.86"/>
+  </g>
+</svg>

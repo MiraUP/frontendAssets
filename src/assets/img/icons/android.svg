@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="android">
+    <path class="cls-1" d="M16,5.3h0c3.68,0,6.67,2.99,6.67,6.67v9.38c0,1.47-1.19,2.66-2.66,2.66h-8.02c-1.47,0-2.66-1.19-2.66-2.66v-9.38c0-3.68,2.99-6.67,6.67-6.67Z"/>
+    <line class="cls-1" x1="20" y1="24" x2="20" y2="28"/>
+    <line class="cls-1" x1="12" y1="24" x2="12" y2="28"/>
+    <line class="cls-1" x1="9.33" y1="13.33" x2="22.67" y2="13.33"/>
+    <line class="cls-1" x1="28" y1="13.33" x2="28" y2="18.65"/>
+    <line class="cls-1" x1="4" y1="13.33" x2="4" y2="18.65"/>
+    <line class="cls-1" x1="20" y1="6.67" x2="21.33" y2="4.01"/>
+    <line class="cls-1" x1="11.99" y1="6.67" x2="10.66" y2="4.02"/>
+  </g>
+</svg>

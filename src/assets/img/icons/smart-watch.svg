@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="smart-watch">
+    <rect class="cls-1" x="8" y="8" width="16" height="16" rx="2.33" ry="2.33"/>
+    <path class="cls-1" d="M13.3,4h5.39c1.46,0,2.64,1.18,2.64,2.64v1.36h-10.67v-1.36c0-1.46,1.18-2.64,2.64-2.64Z"/>
+    <path class="cls-1" d="M10.66,24h10.67v1.36c0,1.46-1.18,2.64-2.64,2.64h-5.39c-1.46,0-2.64-1.18-2.64-2.64v-1.36h0Z"/>
+    <rect class="cls-1" x="24" y="14.67" width="2.67" height="2.67"/>
+  </g>
+</svg>

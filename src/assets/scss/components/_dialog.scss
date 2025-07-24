@@ -1,0 +1,13 @@
+.dialog {
+  &-confirm {
+    .MuiPaper {
+      &-root {
+        background-color: var(--mui-palette-black-c400);
+
+        @include mode-light {
+          background-color: var(--mui-palette-white-c800);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="_3d" data-name="3d">
+    <path class="cls-1" d="M9.33,13.92v4.17c0,1.09.58,2.1,1.53,2.65l3.61,2.08c.95.55,2.11.55,3.06,0l3.61-2.08c.95-.55,1.53-1.56,1.53-2.65v-4.17c0-1.09-.58-2.1-1.53-2.65l-3.61-2.08c-.95-.55-2.11-.55-3.06,0l-3.61,2.08c-.95.55-1.53,1.56-1.53,2.65Z"/>
+    <line class="cls-1" x1="16" y1="16.24" x2="10.16" y2="12.87"/>
+    <line class="cls-1" x1="16" y1="16.24" x2="21.84" y2="12.87"/>
+    <line class="cls-1" x1="16" y1="22.98" x2="16" y2="16.11"/>
+    <path class="cls-1" d="M4,9.33v-2.66c0-1.48,1.2-2.67,2.67-2.67h2.66"/>
+    <path class="cls-1" d="M4,22.67v2.66c0,1.48,1.2,2.67,2.67,2.67h2.66"/>
+    <path class="cls-1" d="M28,9.33v-2.66c0-1.48-1.2-2.67-2.67-2.67h-2.66"/>
+    <path class="cls-1" d="M28,22.67v2.66c0,1.48-1.2,2.67-2.67,2.67h-2.66"/>
+  </g>
+</svg>

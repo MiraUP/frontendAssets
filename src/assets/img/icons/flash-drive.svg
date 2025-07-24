@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="flash-drive">
+    <path class="cls-1" d="M6.18,11.15h14.67v9.22c0,3.01-2.44,5.45-5.45,5.45h-3.77c-3.01,0-5.45-2.44-5.45-5.45v-9.22h0Z" transform="translate(17.03 -4.14) rotate(45)"/>
+    <line class="cls-1" x1="10.06" y1="18.49" x2="13.51" y2="21.94"/>
+    <rect class="cls-1" x="15.97" y="8.09" width="9.78" height="6.11" transform="translate(13.99 -11.49) rotate(45)"/>
+  </g>
+</svg>

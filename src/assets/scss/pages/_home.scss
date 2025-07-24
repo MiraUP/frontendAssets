@@ -1,0 +1,74 @@
+.pagehome {
+  .home {
+    &-search {
+      border-radius: px(5);
+      margin-top: calc(px(-185/2));
+      @include prefix(backdrop-filter, blur(px(3)), moz webkit ms o);
+      background: var(--mui-palette-black-c400a100);
+      box-shadow: 0 10px 50px 0 var(--mui-palette-black-c300);
+
+      @include mode-light {
+        background: var(--mui-palette-white-c900);
+        box-shadow: 0 10px 30px 0 var(--mui-palette-black-a300);
+      }
+
+      &-input {
+        padding: px(30) 0;
+        cursor: pointer;
+
+        .btn-search {
+          @include anima-basic;
+        }
+
+        &:hover {
+          .btn-search {
+            @include prefix(transform-origin, center, moz webkit ms o);
+            @include prefix(transform, scale(1.2), moz webkit ms o);
+          }
+        }
+
+        input {
+          width: 100%;
+          font-size: px(32);
+          background: none;
+          @include fontBold;
+          @include fontTitle;
+          color: var(--mui-palette-text-primary);
+          outline: none;
+
+          &::placeholder {
+            color: var(--mui-palette-text-primary);
+          }
+        }
+      }
+
+      &-categorys {
+        border-top: px(1) solid var(--mui-palette-black-c800);
+
+        @include mode-light {
+          border-top: px(1) solid var(--mui-palette-black-a300);
+        }
+
+        .Mui {
+          &ToggleButton-root {
+            border: none !important;
+            padding: px(25);
+            text-transform: capitalize;
+            border-radius: 0;
+            margin-top: px(0);
+            height: px(70);
+            border-top: px(2) solid transparent;
+            white-space: nowrap;
+            @include fontLight;
+          }
+
+          &-selected {
+            @include fontBold;
+            background-color: transparent !important;
+            border-top: px(2) solid var(--mui-palette-background-contrast) !important;
+          }
+        }
+      }
+    }
+  }
+}

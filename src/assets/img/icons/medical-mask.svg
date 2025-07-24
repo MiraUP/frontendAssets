@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="medical-mask">
+    <path class="cls-1" d="M17.3,21.33h-2.61c-3.82,0-7.05-2.85-7.52-6.64l-.34-2.69c-.09-.74.43-1.42,1.16-1.52l5.5-.79c1.66-.24,3.35-.24,5.01,0l5.5.79c.74.11,1.26.78,1.16,1.52l-.34,2.69c-.47,3.79-3.7,6.64-7.52,6.64Z"/>
+    <line class="cls-1" x1="25.33" y1="13.33" x2="28" y2="12"/>
+    <line class="cls-1" x1="24.25" y1="16.79" x2="28" y2="18.67"/>
+    <line class="cls-1" x1="6.66" y1="13.33" x2="4" y2="12"/>
+    <line class="cls-1" x1="7.74" y1="16.79" x2="4" y2="18.67"/>
+  </g>
+</svg>

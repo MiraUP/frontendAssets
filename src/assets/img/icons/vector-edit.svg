@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="vector-edit">
+    <circle class="cls-1" cx="6.66" cy="24" r="2.67"/>
+    <circle class="cls-1" cx="25.33" cy="24" r="2.67"/>
+    <circle class="cls-1" cx="9.33" cy="8" r="2.67"/>
+    <circle class="cls-1" cx="22.67" cy="8" r="2.67"/>
+    <line class="cls-1" x1="23.11" y1="10.67" x2="24.89" y2="21.33"/>
+    <line class="cls-1" x1="12" y1="8" x2="20" y2="8"/>
+    <line class="cls-1" x1="7.1" y1="21.33" x2="8.89" y2="10.63"/>
+    <line class="cls-1" x1="22.67" y1="24" x2="9.33" y2="24"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="coffe">
+    <path class="cls-1" d="M5.33,10.67h17.34v5.84c0,3.4-2.76,6.16-6.16,6.16h-5.02c-3.4,0-6.16-2.76-6.16-6.16v-5.84h0Z"/>
+    <line class="cls-1" x1="8" y1="26.67" x2="21.33" y2="26.67"/>
+    <path class="cls-1" d="M22.67,10.67h1.33c1.47,0,2.67,1.2,2.67,2.67h0c0,1.47-1.2,2.67-2.67,2.67h-1.33v-5.33h0Z"/>
+    <line class="cls-1" x1="8" y1="10.67" x2="8" y2="8"/>
+    <line class="cls-1" x1="13.33" y1="4" x2="13.33" y2="6.67"/>
+    <line class="cls-1" x1="20" y1="6.67" x2="20" y2="10.45"/>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+::-webkit-scrollbar {
+  width: px(10);
+  height: px(10);
+  background: var(--mui-palette-black-c400);
+  border-radius: px(3);
+  @include mode-light {
+    background: var(--mui-palette-white-c200);
+  }
+
+  &-track {
+    background: none;
+  }
+
+  &-thumb {
+    background: var(--mui-palette-blue-main);
+    border-radius: px(3);
+
+    &:hover {
+      background: var(--mui-palette-cyan-main);
+
+      @include mode-light {
+        background: var(--mui-palette-cyan-c300);
+      }
+    }
+  }
+}
+
+textarea::-webkit-scrollbar {
+  background: var(--mui-palette-black-c200);
+
+  &-thumb {
+    background: var(--mui-palette-blue-c700);
+  }
+}
+
+.scrollbar-simple::-webkit-scrollbar {
+  width: px(5);
+  height: px(10);
+  background: transparent;
+  border-radius: px(3);
+
+  &-track {
+    background: none;
+  }
+
+  &-thumb {
+    background: var(--mui-palette-blue-main);
+    width: px(10);
+    border-radius: px(3);
+
+    &:hover {
+      background: var(--mui-palette-cyan-main);
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+}
+
+.overflow-auto {
+  overflow: auto;
+
+  &-x {
+    overflow-x: auto;
+  }
+
+  &-y {
+    overflow-y: auto;
+  }
+}

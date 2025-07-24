@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="16 18.67 28 13.33 16 8 4 13.33 16 18.67"/>
+  <path class="cls-1" d="M24,15.57v7.1c0,1.78-16,1.78-16,0v-7.1"/>
+  <line class="cls-1" x1="28" y1="13.33" x2="28" y2="22.67"/>
+</svg>

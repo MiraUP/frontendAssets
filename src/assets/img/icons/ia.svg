@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ia">
+    <polygon class="cls-1" points="16.14 13.48 18.66 6.67 21.19 13.48 28 16 21.19 18.52 18.66 25.33 16.14 18.52 9.33 16 16.14 13.48"/>
+    <polygon class="cls-1" points="8.65 23.26 9.36 21.33 10.07 23.26 12 23.97 10.07 24.68 9.36 26.61 8.65 24.68 6.73 23.97 8.65 23.26"/>
+    <polygon class="cls-1" points="6.01 7.29 6.73 5.36 7.44 7.29 9.36 8 7.44 8.71 6.73 10.63 6.01 8.71 4.09 8 6.01 7.29"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="table-tennis">
+    <path class="cls-1" d="M21.84,6.06c-1.6-1.29-3.63-2.06-5.84-2.06h0c-5.16,0-9.33,4.2-9.33,9.39v1.39c0,2.89,2.33,5.23,5.2,5.23h8.28c2.87,0,5.2-2.34,5.2-5.23v-1.39c0-1.04-.17-2.04-.48-2.97"/>
+    <line class="cls-1" x1="6.67" y1="14.51" x2="25.33" y2="14.51"/>
+    <circle class="cls-1" cx="23.66" cy="8" r="2.67"/>
+    <path class="cls-1" d="M18.66,20h-5.33l-.68,4.05c-.34,2.07,1.25,3.95,3.34,3.95h0c2.09,0,3.69-1.88,3.34-3.95l-.68-4.05Z"/>
+  </g>
+</svg>

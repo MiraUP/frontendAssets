@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="whistle">
+    <circle class="cls-1" cx="12" cy="17.33" r="2.67"/>
+    <path class="cls-1" d="M25.32,9.33h-3.54c-.9,0-1.68.53-2.13,1.32s-1.33,1.35-2.32,1.35-1.86-.54-2.32-1.35-1.23-1.32-2.13-1.32h-.88c-4.94,0-8.84,4.48-7.84,9.61.61,3.12,3.12,5.63,6.24,6.24,5.12,1,9.61-2.9,9.61-7.84h5.32c1.48,0,2.68-1.2,2.68-2.68v-2.64c0-1.48-1.2-2.68-2.68-2.68Z"/>
+  </g>
+</svg>

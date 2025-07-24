@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="cabinet-files">
+    <rect class="cls-1" x="4" y="4" width="24" height="24" rx="4.02" ry="4.02"/>
+    <line class="cls-1" x1="4.14" y1="16" x2="27.86" y2="16"/>
+    <line class="cls-1" x1="12" y1="9.33" x2="20" y2="9.33"/>
+    <line class="cls-1" x1="12" y1="22.67" x2="20" y2="22.67"/>
+  </g>
+</svg>

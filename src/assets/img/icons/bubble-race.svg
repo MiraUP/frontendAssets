@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="bubble-race">
+    <circle class="cls-1" cx="21.33" cy="13.33" r="6.67"/>
+    <circle class="cls-1" cx="7.33" cy="10.67" r="2"/>
+    <circle class="cls-1" cx="9.33" cy="22.67" r="4"/>
+  </g>
+</svg>

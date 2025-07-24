@@ -1,0 +1,100 @@
+.pagelogin,
+.pagecreate,
+.pagelost-pass,
+.pagecode {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &.auto-scroll {
+    overflow-y: auto;
+
+    .login-form {
+      margin: px(50) 0;
+    }
+  }
+
+  @include media-min($md) {
+    overflow-y: hidden;
+  }
+
+  .login {
+    &-form {
+      width: 100%;
+      background-image: none;
+      position: relative;
+      @include anima-basic;
+
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        background-color: var(--mui-palette-success-main);
+        position: absolute;
+        border-radius: px(5);
+        z-index: 1;
+        width: px(40);
+        height: px(40);
+        top: px(-20);
+        left: px(-20);
+      }
+
+      &:after {
+        width: px(60);
+        height: px(60);
+        top: calc(100% - px(30));
+        left: calc(100% - px(30));
+      }
+
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          display: inline-block;
+          width: 100%;
+        }
+
+        button {
+          display: flex;
+          gap: px(10);
+          width: 100%;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          @include fontTitle;
+          @include fontBold;
+          font-size: px(20);
+          padding: px(20) px(20) px(20) px(10);
+        }
+      }
+
+      .link.lost-password {
+        position: absolute;
+        bottom: px(-40);
+        display: flex;
+        gap: px(10);
+        align-items: 'center';
+
+        @include media-max($md) {
+          left: calc(50% - px(88.5));
+        }
+      }
+    }
+  }
+}
+
+.pagelost-pass,
+.pagecode {
+  background-image: url('#{$imgPath}/illustrations/security.svg');
+  background-position: center center;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media-max($md) {
+    background-image: none;
+  }
+}

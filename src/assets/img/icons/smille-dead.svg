@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="smille-dead">
+    <circle class="cls-1" cx="16" cy="16" r="12"/>
+    <line class="cls-1" x1="12" y1="21.33" x2="20" y2="21.33"/>
+    <line class="cls-1" x1="18.66" y1="16" x2="21.33" y2="13.33"/>
+    <line class="cls-1" x1="21.33" y1="16" x2="18.66" y2="13.33"/>
+    <line class="cls-1" x1="10.66" y1="16" x2="13.33" y2="13.33"/>
+    <line class="cls-1" x1="13.33" y1="16" x2="10.66" y2="13.33"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="full-screen">
+    <path class="cls-1" d="M4,9.33v-2.66c0-1.48,1.2-2.67,2.67-2.67h2.66"/>
+    <path class="cls-1" d="M4,22.67v2.66c0,1.48,1.2,2.67,2.67,2.67h2.66"/>
+    <path class="cls-1" d="M28,9.33v-2.66c0-1.48-1.2-2.67-2.67-2.67h-2.66"/>
+    <path class="cls-1" d="M28,22.67v2.66c0,1.48-1.2,2.67-2.67,2.67h-2.66"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="thermometer">
+    <path class="cls-1" d="M25.08,7.38h0c-2.08-2.08-5.46-2.08-7.54,0l-7,7c-.93.93-1.53,2.13-1.71,3.42l-.62,4.33c-.02.17.03.34.15.46l1.5,1.5c.12.12.29.18.46.15l4.33-.62c1.3-.19,2.5-.79,3.42-1.71l7-7c2.08-2.08,2.08-5.46,0-7.54Z"/>
+    <line class="cls-1" x1="21.31" y1="11.15" x2="19.64" y2="12.82"/>
+    <line class="cls-1" x1="9.11" y1="23.35" x2="6.12" y2="26.34"/>
+  </g>
+</svg>

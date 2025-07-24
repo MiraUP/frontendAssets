@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="magento">
+    <polyline class="cls-1" points="25.33 21.33 25.33 10.72 16 5.33 6.66 10.72 6.66 21.33"/>
+    <polyline class="cls-1" points="12 14.67 12 24.34 16 26.65 20 24.34 20 14.67"/>
+  </g>
+</svg>

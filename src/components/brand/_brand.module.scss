@@ -1,0 +1,14 @@
+.brand {
+  :global .BrandColorBase {
+    fill: #00abe6;
+  }
+}
+
+.colorSolid {
+  :global .BrandColorBase {
+    fill: var(--mui-palette-background-contrast);
+  }
+  :global .mask {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="pie-02">
+    <path class="cls-1" d="M16,5.33c5.89,0,10.67,4.78,10.67,10.67s-4.78,10.67-10.67,10.67-10.67-4.78-10.67-10.67h10.67V5.33Z"/>
+    <path class="cls-1" d="M12,5.33v6.67h-6.67c0-3.68,2.99-6.67,6.67-6.67Z"/>
+  </g>
+</svg>

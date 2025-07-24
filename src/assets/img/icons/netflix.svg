@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="netflix">
+    <path class="cls-1" d="M12,14.99l-5.33-7.46v17.81c0,1.47,1.19,2.67,2.67,2.67h0c1.47,0,2.67-1.19,2.67-2.67v-10.35Z"/>
+    <path class="cls-1" d="M22.67,4h0c-1.47,0-2.67,1.19-2.67,2.67v10.35s5.33,7.49,5.33,7.49V6.67c0-1.47-1.19-2.67-2.67-2.67Z"/>
+    <rect class="cls-1" x="13.33" y="1.87" width="5.33" height="28.26" rx="2.67" ry="2.67" transform="translate(-6.32 12.28) rotate(-35.54)"/>
+  </g>
+</svg>

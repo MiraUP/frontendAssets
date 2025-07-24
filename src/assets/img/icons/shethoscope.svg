@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="shethoscope">
+    <path class="cls-1" d="M14.01,4h1.19c.84,0,1.54.64,1.63,1.47l.52,5.23c.36,3.55-2.43,6.63-6,6.63h0c-3.57,0-6.36-3.08-6-6.63l.52-5.23c.08-.84.79-1.47,1.63-1.47h1.19"/>
+    <path class="cls-1" d="M24,17.33v4.34c0,3.49-2.83,6.33-6.33,6.33h0c-3.49,0-6.33-2.83-6.33-6.33v-4.34"/>
+    <circle class="cls-1" cx="24" cy="14.67" r="2.67"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="medal">
+    <circle class="cls-1" cx="16" cy="20" r="8"/>
+    <circle class="cls-1" cx="16" cy="20" r="2.67"/>
+    <path class="cls-1" d="M16,9.6l-3.05-4.27c-.6-.83-1.56-1.33-2.58-1.33h-3.74c-1.1,0-1.74,1.24-1.1,2.14l5.45,7.64c.9-.73,1.97-1.26,3.14-1.54l1.88-2.63Z"/>
+    <path class="cls-1" d="M16,12c1.9,0,3.65.67,5.02,1.77l5.45-7.64c.64-.9,0-2.14-1.1-2.14h-3.74c-1.02,0-1.99.49-2.58,1.33l-3.05,4.27-1.88,2.63c.6-.15,1.23-.23,1.88-.23Z"/>
+  </g>
+</svg>

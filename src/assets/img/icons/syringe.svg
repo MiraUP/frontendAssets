@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="syringe">
+    <path class="cls-1" d="M8.55,9.47h10.67v11.96c0,2.94-2.39,5.33-5.33,5.33h0c-2.94,0-5.33-2.39-5.33-5.33v-11.96h0Z" transform="translate(16.88 -4.51) rotate(45)"/>
+    <line class="cls-1" x1="7.77" y1="24.23" x2="4" y2="28"/>
+    <line class="cls-1" x1="14.66" y1="6.67" x2="25.33" y2="17.33"/>
+    <line class="cls-1" x1="20" y1="12" x2="25.33" y2="6.67"/>
+    <line class="cls-1" x1="22.67" y1="4" x2="28" y2="9.33"/>
+    <line class="cls-1" x1="20.91" y1="18.25" x2="18.66" y2="16"/>
+    <line class="cls-1" x1="15.58" y1="23.58" x2="13.33" y2="21.33"/>
+    <line class="cls-1" x1="18.07" y1="20.74" x2="14.66" y2="17.33"/>
+  </g>
+</svg>

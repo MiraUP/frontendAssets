@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="keyboard">
+    <rect class="cls-1" x="4" y="8" width="24" height="16" rx="2.69" ry="2.69"/>
+    <line class="cls-1" x1="13.33" y1="18.67" x2="18.66" y2="18.67"/>
+    <line class="cls-1" x1="22.66" y1="18.67" x2="22.66" y2="18.67"/>
+    <line class="cls-1" x1="20" y1="13.33" x2="22.66" y2="13.33"/>
+    <line class="cls-1" x1="9.33" y1="18.67" x2="9.33" y2="18.67"/>
+    <line class="cls-1" x1="9.33" y1="13.33" x2="9.33" y2="13.33"/>
+    <line class="cls-1" x1="14.66" y1="13.33" x2="14.66" y2="13.33"/>
+  </g>
+</svg>

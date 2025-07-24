@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="fast-backward">
+    <path class="cls-1" d="M6.14,17.37l10.02,6.37c1.09.69,2.51-.09,2.51-1.38v-12.73c0-1.29-1.42-2.07-2.51-1.38l-10.02,6.37c-1.01.64-1.01,2.11,0,2.75Z"/>
+    <rect class="cls-1" x="15.33" y="14" width="18.67" height="4" rx="1.04" ry="1.04" transform="translate(8.67 40.67) rotate(-90)"/>
+  </g>
+</svg>

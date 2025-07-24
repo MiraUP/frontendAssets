@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="umbrella">
+    <path class="cls-1" d="M26.67,17.33c0-5.89-4.78-10.67-10.67-10.67s-10.67,4.78-10.67,10.67"/>
+    <path class="cls-1" d="M25.35,15.99c-2.84,0-5.46.82-7.72,2.2-1.02.63-2.3.63-3.32,0-2.25-1.38-4.88-2.2-7.72-2.2"/>
+    <line class="cls-1" x1="16" y1="6.67" x2="16" y2="5.33"/>
+    <path class="cls-1" d="M16,18.67v6c0,1.1.9,2,2,2h0c1.1,0,2-.9,2-2"/>
+  </g>
+</svg>

@@ -1,0 +1,187 @@
+.search {
+  .page-anima {
+    height: calc(100vh - 105px);
+    padding-top: px(30);
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+
+    @include media-max($sm) {
+      height: calc(100vh - 105px);
+    }
+  }
+
+  .MuiPaper-root {
+    background: var(--mui-palette-background-default);
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: px(20);
+    padding: px(20) 0;
+  }
+
+  .header-gradient {
+    &::before,
+    &::after {
+      position: absolute;
+    }
+  }
+
+  &-input input {
+    font-size: px(40);
+    @include fontTitle;
+
+    &::placeholder {
+      opacity: 0.2;
+    }
+  }
+
+  &-filters {
+    width: px(370);
+    background: var(--mui-palette-black-c300);
+    overflow: hidden;
+    min-width: 0 !important;
+    border-radius: px(5);
+    position: fixed;
+    top: px(25);
+    bottom: px(25);
+    padding: px(35) px(25);
+    display: 'flex';
+    flex-direction: column;
+    justify-content: center;
+    @include anima-basic;
+
+    @include mode-light {
+      background-color: var(--mui-palette-white-c900) !important;
+    }
+
+    @include media-max('760px') {
+      width: px(270);
+      top: 0;
+      border-radius: 0 0 var(--mui-shape-borderRadius)
+        var(--mui-shape-borderRadius);
+      bottom: auto;
+      height: calc(100vh - px(300));
+    }
+
+    @include media-max($sm) {
+      width: 100%;
+      padding: px(5) px(25);
+    }
+
+    .btn-open {
+      position: absolute;
+      @include anima-basic;
+    }
+
+    &-open {
+      .btn-open {
+        left: px(-50);
+      }
+    }
+
+    &-close {
+      width: px(30);
+      overflow-y: hidden;
+
+      .btn-open {
+        left: px(0);
+      }
+
+      .search-filters-content {
+        opacity: 0.3;
+        transform: translateX(px(400));
+      }
+    }
+
+    &-content {
+      opacity: 1;
+      display: flex;
+      gap: px(20);
+      flex-direction: column;
+      @include anima-basic;
+    }
+
+    .MuiTypography-h3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .MuiTypography-h4 {
+      display: flex;
+      gap: px(10);
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        display: inline-flex;
+        gap: px(10);
+        font-weight: 400;
+        align-items: center;
+        font-size: px(18);
+        font-weight: 600;
+      }
+    }
+
+    .filters {
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: calc(100vh - px(300));
+      padding-top: px(10);
+      margin-right: px(-20);
+      padding-right: px(15);
+      gap: px(30);
+      display: flex;
+      flex-direction: column;
+
+      @include media-max($sm) {
+        height: calc(100vh - px(315));
+        padding: px(30) px(10) px(30) 0;
+      }
+    }
+  }
+
+  &-results {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    left: px(115);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: px(25) px(40) px(25) 0;
+    @include anima-basic;
+
+    &.filter-open {
+      left: px(440);
+
+      @include media-max('760px') {
+        left: px(320);
+      }
+
+      @include media-max($sm) {
+        left: px(0);
+        padding: px(25) px(25) px(25) px(25);
+      }
+    }
+
+    @include media-max($sm) {
+      top: px(100);
+      bottom: 0;
+    }
+  }
+
+  .infinite-scroll-component {
+    overflow-x: hidden !important;
+  }
+}

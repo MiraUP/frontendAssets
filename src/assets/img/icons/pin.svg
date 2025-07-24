@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="pin">
+    <path class="cls-1" d="M27.07,14.36c-2.73-3.59-5.88-6.73-9.43-9.43-1.39,1.39-1.83,3.36-1.36,5.13l-3.88,3.88c-1.78-.47-3.74-.03-5.13,1.36,2.86,3.57,5.99,6.74,9.43,9.43,1.39-1.39,1.83-3.36,1.36-5.13l3.88-3.88c1.78.47,3.74.03,5.13-1.36Z"/>
+    <line class="cls-1" x1="11.7" y1="20.29" x2="5.33" y2="26.67"/>
+  </g>
+</svg>

@@ -1,0 +1,276 @@
+/*** 
+  Import Fonts Familys
+  * Open Sans
+  * Ubuntu
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*** 
+  Fonts Variables
+*/
+:root {
+  --mui-typography-fontFamily: '"Open Sans", sans-serif';
+  --mui-typography-fontSize: 1rem;
+  --mui-typography-fontWeight: 400;
+  --mui-typography-lineHeight: 1.5;
+  --mui-typography-h1-fontSize: 2.5rem;
+  --mui-typography-h2-fontSize: 2rem;
+  --mui-typography-h3-fontSize: 1.75rem;
+  --mui-typography-h4-fontSize: 1.5rem;
+  --mui-typography-h5-fontSize: 1.25rem;
+
+  /* ============ Modo Automático ============ */
+  --mui-palette-background-default: $black;
+  --mui-palette-background-paper: $white;
+  --mui-palette-text-primary: $white;
+  --mui-palette-text-secondary: rgba(255, 255, 255, 0.7);
+  --mui-palette-text-disabled: rgba(255, 255, 255, 0.5);
+
+  /* ============ Modo Escuro ============ */
+  &[data-mui-color-scheme='dark'] {
+    --mui-palette-background-default: $black;
+    --mui-palette-background-paper: $white;
+    --mui-palette-text-primary: $white;
+    --mui-palette-text-secondary: rgba(255, 255, 255, 0.7);
+    --mui-palette-text-disabled: rgba(255, 255, 255, 0.5);
+  }
+  /* ============ Modo Claro ============ */
+  &[data-mui-color-scheme='light'] {
+    --mui-palette-background-default: $white;
+    --mui-palette-background-paper: $black;
+    --mui-palette-text-primary: $black;
+    --mui-palette-text-secondary: rgba(0, 0, 0, 0.7);
+    --mui-palette-text-disabled: rgba(0, 0, 0, 0.5);
+  }
+}
+
+$font-family-text: 'Open Sans', sans-serif;
+$font-family-title: 'Ubuntu', sans-serif;
+$font-family-icon: 'Miraup Icon';
+
+$font-size-base: 0.95rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+/*** 
+  1.3 Fonts Mixin
+*/
+@mixin fontText {
+  font-family: $font-family-text;
+}
+
+@mixin fontTitle {
+  font-family: $font-family-title;
+}
+
+@mixin fontBolder {
+  font-weight: $font-weight-bolder;
+}
+
+@mixin fontBold {
+  font-weight: $font-weight-bold;
+}
+
+@mixin fontNormal {
+  font-weight: $font-weight-normal;
+}
+
+@mixin fontItalic {
+  font-style: italic;
+}
+
+@mixin fontLight {
+  font-weight: $font-weight-light;
+}
+
+@mixin fontLighter {
+  font-weight: $font-weight-lighter;
+}
+
+@mixin fontWeight($weight) {
+  font-weight: $weight;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+}
+
+@mixin fontLineHeight($height) {
+  line-height: $height;
+}
+
+@mixin fontLineHeight-normal {
+  line-height: $line-height-base;
+}
+
+@mixin fontLineHeight-sm {
+  line-height: $line-height-sm;
+}
+
+@mixin fontLineHeight-lg {
+  line-height: $line-height-lg;
+}
+
+/*** 
+  1.4 Fonts Config css
+*/
+* {
+  @include fontText;
+  font-size: $font-size-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include fontTitle;
+  color: var(--bs-white);
+}
+
+h1 {
+  font-size: $h1-font-size;
+  @include fontBold;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  @include fontBold;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  @include fontBold;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+  @include fontLight;
+}
+
+h6 {
+  font-size: $h6-font-size;
+  @include fontLight;
+}
+
+a.link,
+.link {
+  color: var(--mui-palette-background-contrast);
+  text-decoration: none;
+  position: relative;
+  @include anima-basic;
+
+  @include mode-light {
+    &::after {
+      background: var(--mui-palette-blue-main) !important;
+    }
+    &:hover {
+      color: var(--mui-palette-blue-main) !important;
+      svg {
+        fill: var(--mui-palette-blue-main) !important;
+        stroke: var(--mui-palette-blue-main) !important;
+      }
+    }
+  }
+  @include mode-dark {
+    &::after {
+      background: var(--mui-palette-cyan-main) !important;
+    }
+    &:hover {
+      color: var(--mui-palette-cyan-main) !important;
+      svg {
+        fill: var(--mui-palette-cyan-main) !important;
+        stroke: var(--mui-palette-cyan-main) !important;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: px(-7);
+    border-radius: px(5);
+    left: 50%;
+    width: px(10);
+    height: px(2);
+  }
+
+  svg,
+  &::after {
+    @include anima-basic;
+  }
+
+  &:hover {
+    &::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.font-text {
+  @include fontText;
+}
+
+.font-title {
+  @include fontText;
+}
+
+.font-bolder {
+  @include fontBolder;
+}
+
+.font-bold {
+  @include fontBold;
+}
+
+.font-normal {
+  @include fontNormal;
+}
+
+.font-italic {
+  @include fontItalic;
+}
+
+.font-light {
+  @include fontLight;
+}
+
+.font-lighter {
+  @include fontLighter;
+}
+
+.line-height {
+  @include fontLineHeight-normal;
+}
+
+.line-height-sm {
+  @include fontLineHeight-sm;
+}
+
+.line-height-lg {
+  @include fontLineHeight-lg;
+}

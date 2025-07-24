@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="fencing">
+    <path class="cls-1" d="M9.1,20.23h0c1.47,0,2.67,1.2,2.67,2.67v2.67h-5.33v-2.67c0-1.47,1.2-2.67,2.67-2.67Z" transform="translate(18.86 .27) rotate(45)"/>
+    <line class="cls-1" x1="7.22" y1="24.78" x2="5.33" y2="26.67"/>
+    <line class="cls-1" x1="10.99" y1="21.01" x2="26.67" y2="5.33"/>
+    <path class="cls-1" d="M20.23,20.23h5.33v2.67c0,1.47-1.2,2.67-2.67,2.67h0c-1.47,0-2.67-1.2-2.67-2.67v-2.67h0Z" transform="translate(55.27 22.9) rotate(135)"/>
+    <line class="cls-1" x1="24.78" y1="24.78" x2="26.67" y2="26.67"/>
+    <line class="cls-1" x1="21.01" y1="21.01" x2="5.33" y2="5.33"/>
+  </g>
+</svg>

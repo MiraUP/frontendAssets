@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="music">
+    <circle class="cls-1" cx="7.33" cy="24" r="3.33"/>
+    <circle class="cls-1" cx="22" cy="24" r="3.33"/>
+    <polyline class="cls-1" points="25.33 24 28 6.67 13.33 6.67 10.66 24"/>
+    <line class="cls-1" x1="13.14" y1="12" x2="26.67" y2="12"/>
+  </g>
+</svg>

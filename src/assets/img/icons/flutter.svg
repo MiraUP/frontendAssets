@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="flutter">
+    <polygon class="cls-1" points="9.44 18.91 6.66 16.07 18.46 4 24.01 4 9.44 18.91"/>
+    <polygon class="cls-1" points="15.33 24.95 12.58 22.14 18.66 16 24 16 15.33 24.95"/>
+    <polygon class="cls-1" points="18.07 22.12 15.33 24.95 18.31 28 24 28 18.07 22.12"/>
+  </g>
+</svg>

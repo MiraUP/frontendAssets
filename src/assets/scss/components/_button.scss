@@ -1,0 +1,61 @@
+.MuiButton {
+  &-root {
+    text-transform: none !important;
+  }
+}
+
+.btn-top-page {
+  position: fixed !important;
+  bottom: px(16) !important;
+  right: px(16) !important;
+  box-shadow: none !important;
+  background: none !important;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--mui-palette-blue-a300);
+    width: px(60);
+    height: px(60);
+    z-index: -1;
+    @include anima-basic;
+  }
+
+  &:hover {
+    &::before {
+      background-color: var(--mui-palette-blue-main);
+    }
+  }
+}
+
+.MuiToggleButtonGroup-root {
+  .MuiButtonBase-root {
+    @include anima-basic;
+  }
+}
+
+.btn {
+  &-compatibility {
+    min-width: 0 !important;
+
+    svg {
+      opacity: 0.15;
+      @include anima-basic;
+      @include mode-light {
+        opacity: 0.7;
+      }
+    }
+
+    &.Mui-selected {
+      background-color: transparent !important;
+
+      svg {
+        opacity: 1 !important;
+      }
+    }
+  }
+}

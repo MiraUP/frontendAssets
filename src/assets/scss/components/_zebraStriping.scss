@@ -1,0 +1,17 @@
+.zebra-striping {
+  background-color: var(--mui-palette-white-c800);
+  color: var(--mui-palette-black-c700);
+
+  &:nth-child(even) {
+    background-color: var(--mui-palette-white-c400);
+  }
+
+  &-dark {
+    background-color: var(--mui-palette-black-c900);
+    color: var(--mui-palette-white-main);
+
+    &:nth-child(even) {
+      background-color: var(--mui-palette-black-c700);
+    }
+  }
+}

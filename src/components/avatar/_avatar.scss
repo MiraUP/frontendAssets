@@ -1,0 +1,48 @@
+@import '../../assets/scss/abstracts/mixins';
+@import '../../assets/scss/abstracts/animations';
+
+//Assets Smille
+//Emotions: Friendly, Grimace, Happy, Indifferent, Sad, Scared or Wink
+@mixin Smille($Emoticon) {
+  background-image: url('../../src/assets/img/smilles/Smille-' + $Emoticon + '.svg');
+
+  @if ($Emoticon == Friendly) {
+    background-size: 75%;
+  } @else if ($Emoticon == Grimace) {
+    background-size: 65%;
+  } @else if ($Emoticon == Happy) {
+    background-size: 75%;
+  } @else if ($Emoticon == Indifferent) {
+    background-size: 75%;
+  } @else if ($Emoticon == Sad) {
+    background-size: 75%;
+  } @else if ($Emoticon == Scared) {
+    background-size: 55%;
+  } @else if ($Emoticon == Wink) {
+    background-size: 75%;
+  }
+}
+
+.avatar {
+  content: '';
+  display: inline-flex;
+  position: relative;
+  width: px(50);
+  height: px(50);
+  border-radius: px(5);
+  border: solid var(--mui-palette-background-contrast) px(3);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include anima-basic;
+
+  &:hover {
+    border-radius: px(1000);
+  }
+
+  .contrastColors {
+    &-fill {
+      fill: var(--mui-palette-background-contrast);
+    }
+  }
+}

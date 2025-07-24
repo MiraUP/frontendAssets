@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="book">
+    <path class="cls-1" d="M16,5.33h-6.7c-1.45,0-2.63,1.18-2.63,2.63v17.41c0,1.45,1.18,2.63,2.63,2.63h13.41c1.45,0,2.63-1.18,2.63-2.63V8.03c0-1.49-1.21-2.69-2.69-2.69h-1.3"/>
+    <line class="cls-1" x1="25.33" y1="24" x2="13.33" y2="24"/>
+    <polygon class="cls-1" points="21.33 4 16 4 16 11.8 18.67 10.73 21.33 11.8 21.33 4"/>
+  </g>
+</svg>

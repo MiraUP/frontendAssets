@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="light-bulb">
+    <path class="cls-1" d="M12,22.67h8v2.7c0,1.45-1.18,2.63-2.63,2.63h-2.73c-1.45,0-2.63-1.18-2.63-2.63v-2.7h0Z"/>
+    <path class="cls-1" d="M24,12c0-4.72-4.09-8.49-8.92-7.95-3.52.39-6.44,3.17-6.99,6.67-.45,2.87.64,5.51,2.57,7.23.85.76,1.34,1.85,1.34,2.99v1.73h8v-1.73c0-1.13.48-2.22,1.32-2.98,1.64-1.46,2.68-3.59,2.68-5.96Z"/>
+    <line class="cls-1" x1="16" y1="22.67" x2="16" y2="17.22"/>
+    <polyline class="cls-1" points="13.45 14.67 16 17.22 18.55 14.67"/>
+  </g>
+</svg>

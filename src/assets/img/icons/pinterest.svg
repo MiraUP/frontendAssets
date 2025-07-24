@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="pinterest">
+    <circle class="cls-1" cx="16" cy="16" r="12"/>
+    <path class="cls-1" d="M13.99,22.36c.63.2,1.31.31,2,.31,3.68,0,6.67-2.99,6.67-6.67s-2.99-6.67-6.67-6.67-6.67,2.99-6.67,6.67c0,.95.2,1.85.55,2.67"/>
+    <line class="cls-1" x1="13.32" y1="26.71" x2="14.66" y2="16"/>
+  </g>
+</svg>

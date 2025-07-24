@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="subtitles">
+    <rect class="cls-1" x="4" y="6.67" width="24" height="18.67" rx="2.67" ry="2.67"/>
+    <line class="cls-1" x1="9.33" y1="20" x2="14.66" y2="20"/>
+    <line class="cls-1" x1="9.33" y1="16" x2="18.66" y2="16"/>
+    <line class="cls-1" x1="18.66" y1="20" x2="20" y2="20"/>
+    <line class="cls-1" x1="22.67" y1="16" x2="22.67" y2="16"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+.gradient {
+  &.gradient {
+    &-background {
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: calc(-1000px * 0.5) 0;
+
+      @include mode-dark {
+        background-image: url('#{$graphicPath}bg-gradient-dark.svg');
+      }
+
+      @include mode-light {
+        background-image: url('#{$graphicPath}bg-gradient-light.svg');
+      }
+    }
+  }
+}

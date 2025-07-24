@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="search-minus">
+    <circle class="cls-1" cx="15.33" cy="15.34" r="9.99"/>
+    <line class="cls-1" x1="22.66" y1="22.66" x2="26.67" y2="26.66"/>
+    <line class="cls-1" x1="11.99" y1="15.34" x2="18.67" y2="15.34"/>
+  </g>
+</svg>

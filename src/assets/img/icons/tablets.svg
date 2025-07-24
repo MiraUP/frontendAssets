@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="tablets">
+    <circle class="cls-1" cx="19.33" cy="19.4" r="8.67"/>
+    <path class="cls-1" d="M17.65,6.41c-3.12-3.12-8.19-3.12-11.32,0-3.12,3.12-3.12,8.19,0,11.32"/>
+    <line class="cls-1" x1="13.2" y1="25.53" x2="25.46" y2="13.27"/>
+  </g>
+</svg>

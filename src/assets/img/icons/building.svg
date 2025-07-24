@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="building">
+    <path class="cls-1" d="M6.94,4h7.46c1.62,0,2.94,1.32,2.94,2.94v21.06H6.94c-1.62,0-2.94-1.32-2.94-2.94V6.94c0-1.62,1.32-2.94,2.94-2.94Z"/>
+    <path class="cls-1" d="M16,16h13.34v7.73c0,1.62-1.32,2.94-2.94,2.94h-7.46c-1.62,0-2.94-1.32-2.94-2.94v-7.73h0Z" transform="translate(1.33 44) rotate(-90)"/>
+    <path class="cls-1" d="M10.58,24h.18c.69,0,1.25.56,1.25,1.25v2.76h-2.67v-2.76c0-.69.56-1.25,1.25-1.25Z"/>
+    <line class="cls-1" x1="9.33" y1="18.67" x2="12" y2="18.67"/>
+    <line class="cls-1" x1="9.33" y1="14" x2="12" y2="14"/>
+    <line class="cls-1" x1="9.33" y1="9.33" x2="12" y2="9.33"/>
+    <line class="cls-1" x1="22.67" y1="19.33" x2="22.67" y2="19.33"/>
+    <line class="cls-1" x1="22.67" y1="23.33" x2="22.67" y2="23.33"/>
+  </g>
+</svg>

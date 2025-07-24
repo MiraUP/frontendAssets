@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="table">
+    <path class="cls-1" d="M24.12,27.38c-5.41.83-10.82.83-16.24,0-1.51-.25-3.02-1.75-3.26-3.26-.83-5.41-.83-10.82,0-16.24.25-1.51,1.75-3.02,3.26-3.26,5.41-.83,10.82-.83,16.24,0,1.51.25,3.02,1.75,3.26,3.26.83,5.41.83,10.82,0,16.24-.25,1.51-1.75,3.02-3.26,3.26Z"/>
+    <line class="cls-1" x1="16" y1="26.67" x2="16" y2="5.33"/>
+    <line class="cls-1" x1="9.33" y1="26.67" x2="9.33" y2="5.33"/>
+    <line class="cls-1" x1="22.66" y1="26.67" x2="22.66" y2="5.33"/>
+    <line class="cls-1" x1="5.33" y1="16" x2="26.66" y2="16"/>
+    <line class="cls-1" x1="5.33" y1="9.33" x2="26.66" y2="9.33"/>
+    <line class="cls-1" x1="5.33" y1="22.67" x2="26.66" y2="22.67"/>
+  </g>
+</svg>

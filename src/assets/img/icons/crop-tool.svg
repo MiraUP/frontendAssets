@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="crop-tool">
+    <path class="cls-1" d="M24,28v-15.01c0-2.76-2.24-5-5-5H4"/>
+    <path class="cls-1" d="M7.99,4v15.02c0,2.76,2.24,5,5,5h15.02"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="hastag">
+    <line class="cls-1" x1="21.33" y1="6.67" x2="18.66" y2="25.33"/>
+    <line class="cls-1" x1="10.66" y1="25.33" x2="13.33" y2="6.67"/>
+    <line class="cls-1" x1="24" y1="20" x2="5.33" y2="20"/>
+    <line class="cls-1" x1="8" y1="12" x2="26.67" y2="12"/>
+  </g>
+</svg>

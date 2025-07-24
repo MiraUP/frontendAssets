@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="arrow-sync">
+    <polyline class="cls-1" points="4 21.34 7.99 25.33 11.98 21.34"/>
+    <path class="cls-1" d="M7.99,25.33v-14.69c0-2.2,1.78-3.98,3.98-3.98h1.35"/>
+    <polyline class="cls-1" points="27.99 10.66 24 6.67 20.01 10.66"/>
+    <path class="cls-1" d="M24,6.67v14.69c0,2.2-1.78,3.98-3.98,3.98h-1.35"/>
+  </g>
+</svg>

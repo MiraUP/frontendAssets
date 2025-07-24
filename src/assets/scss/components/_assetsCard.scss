@@ -1,0 +1,149 @@
+.assets {
+  &-card {
+    position: relative;
+    background: var(--mui-palette-blue-main)
+      url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style> .cls-1 { fill: none; } .cls-1, .cls-2 { stroke: %2348DAFA; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5px; } </style></defs><g id="image"><path class="cls-1" d="M21.42,27.72c-3.62.37-7.24.37-10.85,0-2.95-.35-5.95-3.35-6.3-6.3-.37-3.62-.37-7.24,0-10.85.35-2.95,3.35-5.95,6.3-6.3,3.62-.37,7.24-.37,10.85,0,2.95.35,5.95,3.35,6.3,6.3.37,3.62.37,7.24,0,10.85-.35,2.95-3.35,5.95-6.3,6.3Z"/><path class="cls-1" d="M5.33,21.33l3.62-2.71c1.05-.79,2.46-.92,3.63-.33l3.42,1.71,3.14-3.14c1.25-1.25,3.24-1.36,4.62-.26l3.67,2.94"/><circle class="cls-1 cls-2" cx="12" cy="12" r="1.33"/></g></svg>')
+      no-repeat center center !important;
+    background-size: 35% 35% !important;
+    overflow: visible !important;
+    border-radius: px(5);
+
+    .MuiCardActionArea-root {
+      height: px(300);
+      justify-content: center;
+      display: flex;
+      position: relative;
+      border-radius: px(5);
+
+      &::after {
+        content: '';
+        position: absolute;
+        border-radius: px(5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--mui-palette-violet-main)
+          url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style> .cls-1 { fill: none; stroke: %2348DAFA; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; } </style></defs><g id="eye"><path class="cls-1" d="M16,21.38c3.98,0,7.45-2.17,9.32-5.38-1.86-3.22-5.33-5.38-9.32-5.38s-7.45,2.17-9.32,5.38c1.86,3.22,5.33,5.38,9.32,5.38Z"/><path class="cls-1" d="M13.67,16c0,1.29,1.04,2.33,2.33,2.33s2.33-1.04,2.33-2.33-1.04-2.33-2.33-2.33"/></g></svg>')
+          no-repeat center 30%;
+        background-size: 50% 50% !important;
+        opacity: 0;
+        @include anima-basic;
+      }
+
+      .MuiTouchRipple-root {
+        z-index: 1;
+        border-radius: px(5);
+      }
+
+      .MuiCardMedia-root {
+        height: 100%;
+        border-radius: px(5);
+      }
+
+      .MuiCardContent-root {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        z-index: 1;
+        @include anima-basic;
+
+        .MuiTypography-root {
+          color: var(--mui-palette-white-main);
+          margin: px(8) px(8) 0 px(8);
+          opacity: 0;
+          text-align: start;
+          @include fontTitle;
+          @include anima-basic;
+
+          &.MuiTypography-h6 {
+            font-weight: 600 !important;
+            margin-top: 0;
+            padding-bottom: px(4);
+          }
+        }
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+
+        .MuiCardContent-root {
+          .MuiTypography-root {
+            color: var(--mui-palette-cyan-main);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .btns-actions {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      display: flex;
+
+      .MuiButtonGroup-root {
+        box-shadow: none;
+        overflow: hidden;
+        border-radius: 0 0 px(5) 0;
+        width: px(59);
+        @include anima-basic;
+
+        .MuiButtonBase-root {
+          box-shadow: none;
+          min-width: px(60);
+
+          &:first-child {
+            border-radius: px(5) 0 0 0 !important;
+          }
+
+          &:last-child {
+            border-radius: 0 0 px(5) 0;
+          }
+        }
+
+        @include media-max($md) {
+          width: px(120);
+        }
+
+        &:hover {
+          width: px(120);
+        }
+      }
+    }
+
+    .compability {
+      position: absolute;
+      top: px(-20/2);
+      right: px(-20/2);
+      z-index: 1;
+      background: var(--mui-palette-violet-c600);
+      color: var(--mui-palette-white-main);
+      border-radius: px(5);
+      overflow: hidden;
+      height: px(59);
+      max-height: fit-content;
+      z-index: 2;
+      @include anima-basic;
+
+      &:hover {
+        height: calc(100% + px(20));
+      }
+    }
+  }
+}
+
+.loading-assets {
+  .MuiSkeleton-root {
+    transform: none !important;
+  }
+}

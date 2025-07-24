@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="bank">
+    <rect class="cls-1" x="5.33" y="23.33" width="21.34" height="4" rx="1.37" ry="1.37"/>
+    <path class="cls-1" d="M24,12.67H7.99c-1.47,0-2.66-1.19-2.66-2.66v-1.34h-1.33s12-4,12-4l12,4h-1.33v1.34c0,1.47-1.19,2.66-2.66,2.66Z"/>
+    <line class="cls-1" x1="8" y1="23.33" x2="8" y2="12.67"/>
+    <line class="cls-1" x1="13.33" y1="23.33" x2="13.33" y2="12.67"/>
+    <line class="cls-1" x1="18.66" y1="23.33" x2="18.66" y2="12.67"/>
+    <line class="cls-1" x1="24" y1="23.33" x2="24" y2="12.67"/>
+  </g>
+</svg>

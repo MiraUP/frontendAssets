@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="file-php">
+    <path class="cls-1" d="M16,4.05v3.96c0,1.47,1.19,2.66,2.66,2.66h4"/>
+    <path class="cls-1" d="M22.67,17.33v-6.49c0-.96-.38-1.89-1.07-2.57l-3.2-3.2c-.68-.68-1.61-1.07-2.57-1.07H6.66c-1.47,0-2.66,1.19-2.66,2.66v18.67c0,1.47,1.19,2.66,2.66,2.66h8"/>
+  </g>
+  <rect class="cls-1" x="12" y="17.33" width="16" height="10.67" rx="1.33" ry="1.33"/>
+  <polygon class="cls-1" points="10.66 7.99 8.34 12.01 12.99 12.01 10.66 7.99"/>
+  <polygon class="cls-1" points="17.33 19.99 15.01 24.01 19.65 24.01 17.33 19.99"/>
+</svg>

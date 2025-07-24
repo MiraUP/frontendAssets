@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="beaker">
+    <path class="cls-1" d="M26.2,23.73l-5.85-8.78v-5.62h-8.7v5.62l-5.85,8.78c-1.22,1.83.09,4.27,2.29,4.27h15.83c2.2,0,3.5-2.45,2.29-4.27Z"/>
+    <line class="cls-1" x1="9.33" y1="9.33" x2="22.67" y2="9.33"/>
+    <line class="cls-1" x1="8.51" y1="20" x2="23.48" y2="20"/>
+    <line class="cls-1" x1="12" y1="5.33" x2="12" y2="5.33"/>
+    <line class="cls-1" x1="17.33" y1="4" x2="17.33" y2="4"/>
+    <line class="cls-1" x1="20" y1="8" x2="20" y2="8"/>
+  </g>
+</svg>

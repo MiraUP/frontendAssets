@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="play">
+    <path class="cls-1" d="M21.87,14.65l-10.08-6.4c-1.07-.68-2.46.09-2.46,1.35v12.81c0,1.26,1.4,2.03,2.46,1.35l10.08-6.4c.99-.63.99-2.08,0-2.71Z"/>
+  </g>
+</svg>

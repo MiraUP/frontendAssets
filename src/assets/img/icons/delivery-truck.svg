@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="delivery-truck">
+    <circle class="cls-1" cx="22.61" cy="22.67" r="2.67"/>
+    <circle class="cls-1" cx="9.33" cy="22.67" r="2.67"/>
+    <path class="cls-1" d="M6.66,22.65c-1.5-.14-2.67-1.4-2.67-2.93v-10.12c0-1.62,1.32-2.94,2.94-2.94h8.79c1.62,0,2.94,1.32,2.94,2.94v13.06h-6.67"/>
+    <path class="cls-1" d="M18.66,22.67v-10.67h4.82c1.13,0,2.17.64,2.67,1.65l1.53,3.05c.21.41.32.87.32,1.34v2.9c0,.96-.76,1.73-1.71,1.73h-1.01"/>
+  </g>
+</svg>
