@@ -2,19 +2,47 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), svgr()],
+  base: '/',
+  plugins: [
+    react(),
+    svgr({
+      svgrOptions: {
+        icon: true, // Melhor suporte para ícones SVG
+      },
+    }),
+  ],
   server: {
+    host: '0.0.0.0', // Permite conexões externas
+    port: 5173, // Porta fixa
+    strictPort: true, // Evita mudança automática de porta
     fs: {
-      // Permite servir arquivos da pasta src
       strict: false,
-      allow: ['..'],
+      allow: ['..'], // Permite acessar arquivos fora do root
+    },
+    // Opcional: Proxy para API local (ajuste conforme necessário)
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000', // Ou seu endpoint local
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
   },
-  // Garante que JSON seja tratado corretamente
-  assetsInclude: ['**/*.json'],
+  assetsInclude: ['**/*.json'], // Tratamento de arquivos JSON
   build: {
-    //assetsInlineLimit: 0, // Garante que os JSONs não sejam embutidos
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash].[ext]', // Organização dos assets
+      },
+    },
+    // sourcemap: true // Ative se precisar debugar produção
+  },
+  preview: {
+    port: 4173, // Porta para vite preview
+    host: true, // Permite acesso externo no preview
   },
 });

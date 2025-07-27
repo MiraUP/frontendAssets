@@ -108,7 +108,7 @@ const PageLogin = () => {
   return (
     <Container
       maxWidth="fullWidth"
-      className="gradient gradient-top gradient-background"
+      className="gradient gradient-top header-gradient"
     >
       <Grid
         container

@@ -18,7 +18,7 @@ import EditAsset from './pages/edit/editAsset';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <UserStorage>
         <SearchProvider>
           <IconLocalStorageManager>

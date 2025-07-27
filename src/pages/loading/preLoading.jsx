@@ -38,25 +38,27 @@ const PreLoading = () => {
     >
       <Brand
         style={{
-          width: '100px',
           position: 'absolute',
           top: '50%',
           left: '50%',
           margin: '-50px auto auto -50px',
           zIndex: 10,
         }}
+        width="100px"
+        height="100px"
         version="signature"
         gradient
         className="GradientAnimation"
       />
       <Brand
         style={{
-          width: '100px',
           position: 'absolute',
           top: '50%',
           left: '50%',
           margin: '-50px auto auto -50px',
         }}
+        width="100px"
+        height="100px"
         version="signature"
         className="baseAnimation"
       />

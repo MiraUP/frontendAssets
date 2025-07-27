@@ -99,11 +99,23 @@ function Header() {
                   sx={{ display: { xs: 'none', md: 'inline-block' } }}
                   className="brand"
                 >
-                  <Brand version="signature" className="signature" />
-                  <Brand version="extended" className="extended" />
+                  <Brand
+                    version="signature"
+                    className="signature"
+                    height="55px"
+                  />
+                  <Brand
+                    version="extended"
+                    className="extended"
+                    height="50px"
+                  />
                 </Box>
                 <Box sx={{ display: { xs: 'inline-block', md: 'none' } }}>
-                  <Brand version="signature" style={{ width: '50px' }} />
+                  <Brand
+                    version="signature"
+                    style={{ width: '50px' }}
+                    height="55px"
+                  />
                 </Box>
               </Link>
               <Divider orientation="vertical" variant="middle" flexItem />

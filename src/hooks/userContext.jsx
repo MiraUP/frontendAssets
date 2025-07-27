@@ -13,19 +13,34 @@ export const UserStorage = ({ children }) => {
   const [error, setError] = React.useState(null);
   const navigate = useNavigate();
   const location = useLocation();
+  const [initialCheckDone, setInitialCheckDone] = React.useState(false);
+
+  // No useEffect:
+  React.useEffect(() => {
+    if (!initialCheckDone) {
+      autoLogin().finally(() => setInitialCheckDone(true));
+    }
+  }, [initialCheckDone]);
 
   const userLogout = React.useCallback(
     async function () {
       setData(null);
       setError(null);
       setLoading(false);
-      setPreLoading(true);
       setLogin(false);
       window.localStorage.removeItem('token');
-      navigate('/login');
       setStatusAccount('');
+
+      // Redireciona apenas se não estiver já em uma rota de auth
+      if (
+        !['/login', '/criar-conta', '/recuperar-senha'].includes(
+          location.pathname,
+        )
+      ) {
+        navigate('/login');
+      }
     },
-    [navigate],
+    [navigate, location.pathname],
   );
 
   async function getUser(token) {
@@ -33,7 +48,6 @@ export const UserStorage = ({ children }) => {
     const response = await fetch(url, options);
     const json = await response.json();
     setData(json);
-    //setStatusAccount(json.data.status_account);
     setLogin(true);
 
     const authRoutes = new Set([
@@ -76,34 +90,37 @@ export const UserStorage = ({ children }) => {
 
   async function autoLogin() {
     const token = window.localStorage.getItem('token');
-    if (token) {
-      try {
-        setError(null);
-        setLoading(true);
-        const { url, options } = TOKEN_VALIDATE_POST(token);
-        const response = await fetch(url, options);
-        if (!response.ok) throw new Error('Token inválido');
-        await getUser(token);
-        setLogin(true);
+    if (!token) {
+      await userLogout(); // Adicionei await e parênteses
+      return;
+    }
 
-        const timerPreLoading = setTimeout(() => {
-          setPreLoading(false);
-        }, 4800);
-        return () => clearTimeout(timerPreLoading);
-      } catch (err) {
-        userLogout();
-        setPreLoading(true);
-      } finally {
-        setLoading(false);
-      }
-    } else {
-      userLogout;
+    try {
+      setError(null);
+      setLoading(true);
+      const { url, options } = TOKEN_VALIDATE_POST(token);
+      const response = await fetch(url, options);
+
+      if (!response.ok) throw new Error('Token inválido');
+
+      await getUser(token);
+      setLogin(true);
+
+      const timerPreLoading = setTimeout(() => {
+        setPreLoading(false);
+      }, 4800);
+
+      return () => clearTimeout(timerPreLoading);
+    } catch (err) {
+      await userLogout(); // Garante o redirecionamento
+    } finally {
+      setLoading(false);
     }
   }
 
   React.useEffect(() => {
     autoLogin();
-  }, [userLogout]);
+  }, []);
 
   return (
     <UserContext.Provider

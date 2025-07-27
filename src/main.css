@@ -438,12 +438,6 @@ a.link:hover::after,
   background-size: initial;
   background-position: -500px 0;
 }
-html.dark .gradient.gradient-background {
-  background-image: url("src/assets/img/graphic/bg-gradient-dark.svg");
-}
-html.light .gradient.gradient-background {
-  background-image: url("src/assets/img/graphic/bg-gradient-light.svg");
-}
 
 .MuiDivider-root {
   margin-top: -0.0625rem;
