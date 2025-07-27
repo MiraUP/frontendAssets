@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="file-archive">
+    <path class="cls-1" d="M18.67,4.03v3.97c0,1.47,1.19,2.66,2.66,2.66h4"/>
+    <path class="cls-1" d="M25.33,17.62v-6.78c0-.96-.38-1.89-1.07-2.57l-3.2-3.2c-.68-.68-1.61-1.07-2.57-1.07h-9.16c-1.47,0-2.66,1.19-2.66,2.66v18.67c0,1.47,1.19,2.66,2.66,2.66h13.34c1.47,0,2.66-1.19,2.66-2.66v-2.67"/>
+  </g>
+  <g id="edit">
+    <path class="cls-1" d="M27.4,19.08l-1.15-1.15c-.43-.43-1.13-.43-1.56,0l-4.59,4.59c-.33.33-.57.72-.72,1.16l-.69,2.06c-.18.55.34,1.07.89.89l2.06-.69c.44-.15.83-.39,1.16-.72l4.59-4.59c.43-.43.43-1.13,0-1.56Z"/>
+  </g>
+</svg>

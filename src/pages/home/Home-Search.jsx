@@ -114,23 +114,7 @@ const HomeSearch = ({ data, loading, onCategoryChange, currentCategory }) => {
           />
 
           <IconButton onClick={openSearch} aria-label="Abrir pesquisa">
-            <Icon
-              icon="image-search_19009353.json"
-              lottieColors={{
-                primary:
-                  mode === 'dark'
-                    ? BaseColors.White.main
-                    : BaseColors.Black.main,
-                secondary:
-                  mode === 'dark'
-                    ? BaseColors.White.main
-                    : BaseColors.Black.main,
-              }}
-              target=".home-search-input"
-              trigger="loop"
-              size={60}
-              className="btn-search"
-            />
+            <Icon icon="search" size={60} className="btn-search" />
           </IconButton>
         </Grid>
 

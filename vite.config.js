@@ -15,6 +15,6 @@ export default defineConfig({
   // Garante que JSON seja tratado corretamente
   assetsInclude: ['**/*.json'],
   build: {
-    assetsInlineLimit: 0, // Garante que os JSONs não sejam embutidos
+    //assetsInlineLimit: 0, // Garante que os JSONs não sejam embutidos
   },
 });

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="light-bulb">
+    <path class="cls-1" d="M12.67,23.56h6.67v1.81c0,1.45-1.18,2.63-2.63,2.63h-1.4c-1.45,0-2.63-1.18-2.63-2.63v-1.81h0Z"/>
+    <path class="cls-1" d="M22.67,14.67c0-3.93-3.41-7.07-7.43-6.63-2.93.33-5.37,2.64-5.82,5.56-.37,2.39.53,4.59,2.14,6.03.71.63,1.11,1.54,1.11,2.49v1.44h6.67v-1.44c0-.95.4-1.85,1.1-2.48,1.37-1.22,2.23-2.99,2.23-4.97Z"/>
+    <line class="cls-1" x1="16" y1="23.56" x2="16" y2="19.01"/>
+    <polyline class="cls-1" points="13.88 16.89 16 19.01 18.13 16.89"/>
+  </g>
+  <line class="cls-1" x1="11.58" y1="4" x2="12.43" y2="6.04"/>
+  <line class="cls-1" x1="20.42" y1="4" x2="19.56" y2="6.03"/>
+  <line class="cls-1" x1="26.67" y1="10.25" x2="24.62" y2="11.09"/>
+  <line class="cls-1" x1="26.67" y1="19.09" x2="24.62" y2="18.24"/>
+  <line class="cls-1" x1="5.33" y1="19.09" x2="7.37" y2="18.24"/>
+  <line class="cls-1" x1="5.33" y1="10.25" x2="7.37" y2="11.09"/>
+</svg>

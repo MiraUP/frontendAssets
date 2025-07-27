@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="stopwatch">
+    <circle class="cls-1" cx="16" cy="18" r="10"/>
+    <line class="cls-1" x1="12" y1="4" x2="20" y2="4"/>
+    <line class="cls-1" x1="26.67" y1="8" x2="25.33" y2="6.67"/>
+  </g>
+  <g>
+    <path class="cls-1" d="M15.49,19.6c0-.84.47-1.61,1.22-1.98h0c.75-.38,1.22-1.14,1.22-1.98h0c0-1.27-1.03-2.3-2.3-2.3h0c-.59,0-1.15.23-1.57.65"/>
+    <line class="cls-1" x1="15.49" y1="22.67" x2="15.49" y2="22.67"/>
+  </g>
+</svg>

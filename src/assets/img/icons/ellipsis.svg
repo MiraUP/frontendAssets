@@ -3,14 +3,24 @@
   <defs>
     <style>
       .cls-1 {
+        fill: none;
         stroke: #000;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 2px;
       }
+
+      .cls-2 {
+        fill: #7f7f7f;
+      }
     </style>
   </defs>
   <g id="ellipsis">
+    <circle class="cls-2" cx="16" cy="16" r="1.33"/>
+    <circle class="cls-2" cx="24" cy="16" r="1.33"/>
+    <circle class="cls-2" cx="8" cy="16" r="1.33"/>
+  </g>
+  <g id="ellipsis-2" data-name="ellipsis">
     <circle class="cls-1" cx="16" cy="16" r="1.33"/>
     <circle class="cls-1" cx="24" cy="16" r="1.33"/>
     <circle class="cls-1" cx="8" cy="16" r="1.33"/>

@@ -10,8 +10,11 @@
  */
 
 // Ambientes da API
-//export const API_URL = 'https://api.miraup.com.br/json'; // API Externa
-export const API_URL = 'http://miraup.test/json'; // API Local
+export const API_URL =
+  window.location.hostname.includes('localhost') ||
+  window.location.hostname.includes('miraup.test')
+    ? 'http://miraup.test/json'
+    : 'https://api.miraup.com.br/json';
 
 /**
  * Envia uma requisição POST para obter o token JWT

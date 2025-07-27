@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="arrow-down">
+    <polyline class="cls-1" points="21.33 6.67 25.33 6.67 25.33 10.67"/>
+    <line class="cls-1" x1="25.33" y1="6.67" x2="21.33" y2="10.67"/>
+  </g>
+  <g id="arrow-down-2" data-name="arrow-down">
+    <polyline class="cls-1" points="21.33 25.33 25.33 25.33 25.33 21.33"/>
+    <line class="cls-1" x1="25.33" y1="25.33" x2="21.33" y2="21.33"/>
+  </g>
+  <g id="arrow-down-3" data-name="arrow-down">
+    <polyline class="cls-1" points="10.66 6.67 6.66 6.67 6.66 10.67"/>
+    <line class="cls-1" x1="6.66" y1="6.67" x2="10.66" y2="10.67"/>
+  </g>
+  <g id="arrow-down-4" data-name="arrow-down">
+    <polyline class="cls-1" points="10.66 25.33 6.66 25.33 6.66 21.33"/>
+    <line class="cls-1" x1="6.66" y1="25.33" x2="10.66" y2="21.33"/>
+  </g>
+  <path id="square" class="cls-1" d="M17.81,19.91c-1.21.12-2.41.12-3.62,0-.98-.12-1.98-1.12-2.1-2.1-.12-1.21-.12-2.41,0-3.62.12-.98,1.12-1.98,2.1-2.1,1.21-.12,2.41-.12,3.62,0,.98.12,1.98,1.12,2.1,2.1.12,1.21.12,2.41,0,3.62-.12.98-1.12,1.98-2.1,2.1Z"/>
+</svg>

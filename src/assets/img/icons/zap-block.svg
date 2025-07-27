@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="lightning">
+    <path class="cls-1" d="M13.63,22.18l3.71,5.82-1.04-9.33h5.09c1.13,0,1.82-1.25,1.21-2.21l-1.26-1.99"/>
+    <path class="cls-1" d="M19.85,12.15L14.67,4l1.04,9.33h-5.09c-1.13,0-1.82,1.25-1.21,2.21l2.74,4.31"/>
+  </g>
+  <line class="cls-1" x1="5.33" y1="26.67" x2="26.67" y2="5.33"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="square" class="cls-1" d="M13.2,26.29c-1.77-1.44-3.38-3.05-4.82-4.82-1.16-1.47-1.16-4.13,0-5.6,1.44-1.77,3.05-3.38,4.82-4.82,1.47-1.16,4.13-1.16,5.6,0,1.77,1.44,3.38,3.05,4.82,4.82,1.16,1.47,1.16,4.13,0,5.6-1.44,1.77-3.05,3.38-4.82,4.82-1.47,1.16-4.13,1.16-5.6,0Z"/>
+  <path id="square-2" data-name="square" class="cls-1" d="M10.66,7.12s.09-.07.14-.11c2.73-2.15,7.67-2.15,10.4,0,1.43,1.16,2.79,2.38,4.11,3.66"/>
+  <polyline class="cls-1" points="22.64 10.67 25.3 10.67 25.3 8"/>
+</svg>

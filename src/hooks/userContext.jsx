@@ -1,6 +1,6 @@
 import React from 'react';
 import { TOKEN_POST, USER_GET, TOKEN_VALIDATE_POST } from './useFetch';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export const UserContext = React.createContext();
 
@@ -12,6 +12,7 @@ export const UserStorage = ({ children }) => {
   const [preLoading, setPreLoading] = React.useState(true);
   const [error, setError] = React.useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const userLogout = React.useCallback(
     async function () {
@@ -34,8 +35,22 @@ export const UserStorage = ({ children }) => {
     setData(json);
     //setStatusAccount(json.data.status_account);
     setLogin(true);
-    if (json.data.status_account === 'pending') {
-      navigate('/conta-pendente');
+
+    const authRoutes = new Set([
+      '/login',
+      '/criar-conta',
+      '/criar-conta/codigo',
+      '/recuperar-senha',
+    ]);
+
+    const currentPath = location.pathname.replace(/\/+$/, '');
+
+    if (authRoutes.has(currentPath)) {
+      return true;
+    } else {
+      if (json.data?.status_account === 'pending') {
+        navigate('/conta-pendente');
+      }
     }
   }
 
@@ -83,7 +98,6 @@ export const UserStorage = ({ children }) => {
       }
     } else {
       userLogout;
-      navigate('/login');
     }
   }
 

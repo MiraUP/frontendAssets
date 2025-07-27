@@ -4,19 +4,22 @@
     <style>
       .cls-1 {
         fill: none;
-      }
-
-      .cls-1, .cls-2 {
         stroke: #000;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 2px;
       }
+
+      .cls-2 {
+        fill: #7f7f7f;
+      }
     </style>
   </defs>
+  <circle class="cls-2" cx="10.66" cy="25.33" r="1.33"/>
+  <circle class="cls-2" cx="21.33" cy="25.33" r="1.33"/>
   <g id="shopping-cart">
-    <circle class="cls-2" cx="10.66" cy="25.33" r="1.33"/>
-    <circle class="cls-2" cx="21.33" cy="25.33" r="1.33"/>
+    <circle class="cls-1" cx="10.66" cy="25.33" r="1.33"/>
+    <circle class="cls-1" cx="21.33" cy="25.33" r="1.33"/>
     <path class="cls-1" d="M22.65,20h-10.65c-1.37,0-2.52-1.02-2.69-2.38l-1.04-8.29h19.73l-2.02,8.06c-.38,1.53-1.76,2.6-3.34,2.6Z"/>
     <path class="cls-1" d="M8.27,9.33l-.33-2.68c-.09-.75-.74-1.32-1.5-1.32h-2.44"/>
   </g>

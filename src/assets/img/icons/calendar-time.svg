@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="cabinet-files">
+    <path class="cls-1" d="M19.35,25.76c-4.13.19-8.26.03-12.39-.49-1.05-.14-2.13-1.12-2.34-2.17-.83-4.18-.83-8.36,0-12.54.21-1.04,1.3-2.03,2.34-2.17,6.03-.76,12.05-.76,18.08,0,1.05.14,2.13,1.12,2.34,2.17.73,3.66.82,7.33.27,10.99"/>
+    <line class="cls-1" x1="9.29" y1="10.16" x2="9.29" y2="6.16"/>
+    <line class="cls-1" x1="22.63" y1="10.16" x2="22.63" y2="6.16"/>
+  </g>
+  <g id="clock">
+    <line class="cls-1" x1="25.2" y1="23.34" x2="23.33" y2="23.34"/>
+    <line class="cls-1" x1="23.33" y1="23.34" x2="23.33" y2="21.26"/>
+    <g id="circle">
+      <circle class="cls-1" cx="23.33" cy="23.34" r="4.67"/>
+    </g>
+  </g>
+  <g id="cabinet-files-2" data-name="cabinet-files">
+    <line class="cls-1" x1="23.96" y1="15.5" x2="15.96" y2="15.5"/>
+    <line class="cls-1" x1="19.39" y1="20.83" x2="9.29" y2="20.83"/>
+  </g>
+</svg>

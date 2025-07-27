@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Tabs, Tab, Paper, Container } from '@mui/material';
+import { Tabs, Tab, Paper } from '@mui/material';
 
 const ScrollSpy = ({ sections }) => {
   const [activeSection, setActiveSection] = useState(sections[0]?.id || '');

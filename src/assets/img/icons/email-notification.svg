@@ -4,20 +4,22 @@
     <style>
       .cls-1 {
         fill: none;
-      }
-
-      .cls-1, .cls-2 {
         stroke: #000;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 2px;
       }
+
+      .cls-2 {
+        fill: #7f7f7f;
+      }
     </style>
   </defs>
+  <circle class="cls-2" cx="26.67" cy="8" r="1.33"/>
   <g id="email-notification">
     <line class="cls-1" x1="7.99" y1="12" x2="16" y2="17.71"/>
     <line class="cls-1" x1="22.67" y1="12.95" x2="16" y2="17.71"/>
     <path class="cls-1" d="M27.9,13.33c.23,2.99.07,5.98-.47,8.97-.2,1.05-1.27,2.03-2.32,2.16-6.07.72-12.13.72-18.2,0-1.05-.13-2.12-1.11-2.32-2.16-.77-4.2-.77-8.41,0-12.61.2-1.05,1.27-2.03,2.32-2.16,4.81-.57,9.62-.69,14.44-.35"/>
-    <circle class="cls-2" cx="26.67" cy="8" r="1.33"/>
+    <circle class="cls-1" cx="26.67" cy="8" r="1.33"/>
   </g>
 </svg>

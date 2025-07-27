@@ -106,22 +106,7 @@ const MenuNotification = () => {
             }
             invisible={false}
           >
-            <Icon
-              icon="notification_19001001.json"
-              size={40}
-              stroke={100}
-              target=".btn-notifications"
-              lottieColors={{
-                primary:
-                  mode === 'dark'
-                    ? BaseColors.White.main
-                    : BaseColors.Black.main,
-                secondary:
-                  mode === 'dark'
-                    ? BaseColors.White.main
-                    : BaseColors.Black.main,
-              }}
-            />
+            <Icon icon="bell" size={40} />
           </Badge>
         </IconButton>
       </Tooltip>
@@ -280,31 +265,20 @@ const MenuNotification = () => {
                                   icon={
                                     category.length > 0
                                       ? category[0].name === 'asset'
-                                        ? 'content-creator_19008661.json'
+                                        ? 'brand'
                                         : category[0].name === 'curation'
-                                        ? 'laptop_19009379.json'
+                                        ? 'search'
                                         : category[0].name === 'error_report'
-                                        ? 'network-error_19000814.json'
+                                        ? 'alert-triangle'
                                         : category[0].name === 'system'
-                                        ? 'system_19004061.json'
+                                        ? 'bot'
                                         : category[0].name === 'persona'
-                                        ? 'user_18986440.json'
-                                        : 'broken-computer_18996065.json'
-                                      : 'computer_18996054.json'
+                                        ? 'user'
+                                        : 'monitor'
+                                      : 'speak'
                                   }
                                   size={40}
                                   stroke="10px"
-                                  target={`#notifications-${id}`}
-                                  lottieColors={{
-                                    primary:
-                                      mode === 'dark'
-                                        ? BaseColors.White.main
-                                        : BaseColors.Black.main,
-                                    secondary:
-                                      mode === 'dark'
-                                        ? BaseColors.White.main
-                                        : BaseColors.Black.main,
-                                  }}
                                 />
                               </Badge>
                               <Typography>
@@ -351,21 +325,7 @@ const MenuNotification = () => {
                           <Typography variant="body1">
                             Nenhum notificação por enquanto.
                           </Typography>
-                          <Icon
-                            icon="like_18999148.json"
-                            trigger="loop"
-                            lottieColors={{
-                              primary:
-                                mode === 'dark'
-                                  ? BaseColors.White.main
-                                  : BaseColors.Black.main,
-                              secondary:
-                                mode === 'dark'
-                                  ? BaseColors.White.main
-                                  : BaseColors.Black.main,
-                            }}
-                            size={100}
-                          />
+                          <Icon icon="hand-ok" size={100} />
                         </Typography>
                       </>
                     )}

@@ -4,18 +4,20 @@
     <style>
       .cls-1 {
         fill: none;
-      }
-
-      .cls-1, .cls-2 {
         stroke: #000;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-width: 2px;
       }
+
+      .cls-2 {
+        fill: #7f7f7f;
+      }
     </style>
   </defs>
+  <polygon class="cls-2" points="16 21.33 12.21 26.67 19.79 26.67 16 21.33"/>
   <g id="airplay">
     <path class="cls-1" d="M8.01,23.97h-1.4c-1.44,0-2.61-1.17-2.61-2.61V7.91c0-1.44,1.17-2.61,2.61-2.61h18.77c1.44,0,2.61,1.17,2.61,2.61v13.44c0,1.44-1.17,2.61-2.61,2.61h-1.39"/>
-    <polygon class="cls-2" points="16 21.33 12.21 26.67 19.79 26.67 16 21.33"/>
+    <polygon class="cls-1" points="16 21.33 12.21 26.67 19.79 26.67 16 21.33"/>
   </g>
 </svg>

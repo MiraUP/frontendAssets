@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, Link, Navigate } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { useColorScheme } from '@mui/material/styles';
 import { Grid, Container, Box, Paper, Button, Divider } from '@mui/material';
 import PageLoginBrand from './Login-Brand';
@@ -101,7 +101,7 @@ const PageLogin = () => {
     } else if (location.pathname === '/resetar-senha') {
       return <LoginResetPass />;
     } else {
-      return <Navigate to="/login" replace />;
+      return <LoginResetPass />;
     }
   };
 

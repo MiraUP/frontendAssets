@@ -1,11 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Button, TextField, Typography } from '@mui/material';
-import { useColorScheme } from '@mui/material/styles';
 import HeadConfig from '../../components/headConfig';
 import { BaseColors } from '../../theme/theme';
 import Icon from '../../components/icon/icon';
-import { toHEX } from '../../utils/convertColors';
 import { useAlert } from '../../hooks/alertContext';
 import { USER_CODE_PUT } from '../../hooks/useFetch';
 import { USER_NEW_CODE } from '../../hooks/useFetch';
@@ -15,7 +13,6 @@ const PageLoginCreateCode = () => {
   const [codes, setCodes] = React.useState(Array(9).fill(''));
   const inputRefs = React.useRef(Array(9).fill(null));
   const fullCode = codes.join('');
-  const { mode, setMode } = useColorScheme();
   const token = window.localStorage.getItem('token');
   const userCreate = window.localStorage.getItem('create-user');
   const currentTime = window.localStorage.getItem('code-time');
@@ -200,20 +197,8 @@ const PageLoginCreateCode = () => {
               Bem vindo {userCreate},
             </Typography>
 
-            <div style={{ textAlign: 'center' }}>
-              <Icon
-                icon="confetti_18829745.json"
-                size={150}
-                trigger="loop"
-                delay={1}
-                lottieColors={{
-                  primary:
-                    mode === 'dark'
-                      ? BaseColors.White.main
-                      : BaseColors.Black.main,
-                  secondary: toHEX(BaseColors.Violet.c900),
-                }}
-              />
+            <div style={{ textAlign: 'center', margin: '20px 0 0 0' }}>
+              <Icon icon="ia" size={100} />
             </div>
 
             <Typography
@@ -262,7 +247,7 @@ const PageLoginCreateCode = () => {
               <Button
                 type="submit"
                 color="violet"
-                size="xsmall"
+                size="small"
                 variant="contained"
                 style={{
                   width: 'auto',
@@ -297,19 +282,8 @@ const PageLoginCreateCode = () => {
               Código expirado!
             </Typography>
 
-            <div style={{ textAlign: 'center' }}>
-              <Icon
-                icon="stopwatch_18830426.json"
-                size={150}
-                trigger="loop"
-                lottieColors={{
-                  primary:
-                    mode === 'dark'
-                      ? BaseColors.White.main
-                      : BaseColors.Black.main,
-                  secondary: toHEX(BaseColors.Violet.c900),
-                }}
-              />
+            <div style={{ textAlign: 'center', margin: '20px 0 0 0' }}>
+              <Icon icon="stopwatch-info" size={100} />
             </div>
             <Typography
               variant="body1"
@@ -323,7 +297,7 @@ const PageLoginCreateCode = () => {
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <Button
                 color="violet"
-                size="xsmall"
+                size="small"
                 variant="contained"
                 style={{
                   width: 'auto',

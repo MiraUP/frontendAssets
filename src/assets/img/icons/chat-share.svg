@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g id="arrow-fullscreen">
+      <polyline class="cls-1" points="19.26 9.96 21.33 12.04 19.26 14.11"/>
+    </g>
+    <path class="cls-1" d="M21.33,12.04h-2.7c-3.66,0-6.63,2.97-6.63,6.63h0"/>
+  </g>
+  <g id="comment">
+    <path class="cls-1" d="M27.42,8.36c-.2-1.05-1.27-2.03-2.33-2.16-6.07-.72-12.13-.72-18.2,0-1.05.13-2.13,1.11-2.33,2.16-.77,4.2-.77,8.41,0,12.61.2,1.05,1.27,2.03,2.33,2.16.81.1,1.62.18,2.43.25v1.94c0,1.17,1.28,1.88,2.27,1.26l4.66-2.91c2.95-.01,5.89-.19,8.84-.53,1.05-.13,2.13-1.11,2.33-2.16.77-4.2.77-8.41,0-12.61Z"/>
+  </g>
+</svg>

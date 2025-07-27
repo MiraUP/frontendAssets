@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import InitColorSchemeScript from '@mui/material/InitColorSchemeScript';
@@ -14,7 +13,6 @@ import PageHome from './pages/home/PageHome';
 import PageSearch from './pages/search/pageSearch';
 import { SearchProvider } from './hooks/searchContext';
 import SinglePage from './pages/singlePage/singlePage';
-import { IconProvider } from './hooks/iconContext';
 import IconLocalStorageManager from './hooks/LocalStorageManager';
 import EditAsset from './pages/edit/editAsset';
 
@@ -71,8 +69,8 @@ const App = () => {
                   />
 
                   <Route path="/login/" element={<PageLogin />} />
-                  <Route path="/recuperar-senha/*" element={<PageLogin />} />
-                  <Route path="/resetar-senha/*" element={<PageLogin />} />
+                  <Route path="/recuperar-senha/" element={<PageLogin />} />
+                  <Route path="/resetar-senha/" element={<PageLogin />} />
                   <Route path="/criar-conta/*" element={<PageLogin />} />
                 </Routes>
                 <GlobalSnackbar />

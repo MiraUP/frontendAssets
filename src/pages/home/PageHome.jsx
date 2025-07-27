@@ -236,7 +236,6 @@ const PageHome = () => {
                     {filters.new && `Nenhum ativo recente encontrado`}
                   </Typography>
                 </Container>
-                {/* <img src={DesertMUP} /> */}
               </Box>
             )
           )

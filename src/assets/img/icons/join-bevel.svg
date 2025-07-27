@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icones" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="21.33 12 13.33 4 8 9.33 14.66 16 8 22.67 13.33 28 21.33 20 21.33 12"/>
+  <line class="cls-1" x1="13.33" y1="9.04" x2="10.86" y2="6.57"/>
+  <polyline class="cls-1" points="16 20.29 17.99 18.3 17.99 13.7 16 11.71"/>
+  <line class="cls-1" x1="10.81" y1="25.48" x2="13.37" y2="22.92"/>
+</svg>
