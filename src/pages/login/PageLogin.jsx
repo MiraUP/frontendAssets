@@ -116,7 +116,7 @@ const PageLogin = () => {
         spacing={2}
         className="page-anima"
         sx={{
-          minHeight: { xs: 'auto', md: 'calc(100vh - 53px)' },
+          minHeight: { xs: 'auto', md: 'calc(100vh - 75px)' },
           boxSizing: 'border-box',
           alignItems: 'center',
           marginBottom: { xs: '50px', md: '0' },

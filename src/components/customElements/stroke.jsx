@@ -102,7 +102,7 @@ const StrokeWeight = () => {
                 color="neutral"
                 onClick={() => handleParamChange('linecap', 'round')}
               >
-                <Icon icon="line-cap-round" />
+                <Icon icon="stroke-point-round" />
               </Button>
               <Button
                 variant={
@@ -112,7 +112,7 @@ const StrokeWeight = () => {
                 color="neutral"
                 onClick={() => handleParamChange('linecap', 'none')}
               >
-                <Icon icon="line-cap-none" />
+                <Icon icon="stroke-point-square" />
               </Button>
             </ButtonGroup>
           </Box>

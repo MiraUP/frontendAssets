@@ -1,0 +1,87 @@
+.scrollSpy {
+  position: sticky;
+  top: 100px;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 16px;
+  background: none !important;
+  display: inline-flex;
+
+  :global .MuiTabs {
+    &-root {
+      overflow: visible !important;
+      display: inline-flex;
+    }
+
+    &-indicator {
+      background: var(--mui-palette-cyan-main);
+      width: 15px;
+      height: 15px !important;
+      border-radius: 30px;
+      margin-top: 24px;
+      transform: translateY(-50%);
+    }
+
+    &-scroller {
+      display: inline-flex;
+      overflow: visible !important;
+
+      .MuiButtonBase-root {
+        position: relative;
+        overflow: visible !important;
+        min-width: 0 !important;
+
+        &:hover {
+          .label {
+            opacity: 1;
+            width: auto;
+          }
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 30px;
+          border: 2px solid var(--mui-palette-cyan-main);
+          position: absolute;
+          right: 0;
+        }
+
+        .label {
+          display: inline-block;
+          position: absolute;
+          text-wrap: nowrap;
+          right: 30px;
+          background: var(--mui-palette-cyan-main);
+          padding: 10px;
+          border-radius: 4px;
+          text-transform: capitalize;
+          color: var(--mui-palette-black-main);
+          width: 0%;
+          opacity: 0;
+          font-weight: 800;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            z-index: -1;
+            right: -5px;
+            border-radius: 2px;
+            width: 20px;
+            height: 20px;
+            background: var(--mui-palette-cyan-main);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.scrollSpyRight {
+  margin-right: -24px;
+}

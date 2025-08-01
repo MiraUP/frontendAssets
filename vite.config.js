@@ -8,41 +8,34 @@ export default defineConfig({
     react(),
     svgr({
       svgrOptions: {
-        icon: true, // Melhor suporte para ícones SVG
+        icon: true,
       },
     }),
   ],
   server: {
-    host: '0.0.0.0', // Permite conexões externas
-    port: 5173, // Porta fixa
-    strictPort: true, // Evita mudança automática de porta
-    fs: {
-      strict: false,
-      allow: ['..'], // Permite acessar arquivos fora do root
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      protocol: 'ws',
+      host: '192.168.0.42',
     },
-    // Opcional: Proxy para API local (ajuste conforme necessário)
     proxy: {
-      '/api': {
-        target: 'http://localhost:3000', // Ou seu endpoint local
+      '/json': {
+        target: 'http://miraup.test', // Usando o domínio local do Local WP
         changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        secure: false, // Importante para certificado autoassinado
+        rewrite: (path) => path.replace(/^\/json/, '/json'),
       },
     },
   },
-  assetsInclude: ['**/*.json'], // Tratamento de arquivos JSON
+  assetsInclude: ['**/*.json'],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        assetFileNames: 'assets/[name].[hash].[ext]', // Organização dos assets
-      },
-    },
-    // sourcemap: true // Ative se precisar debugar produção
   },
   preview: {
-    port: 4173, // Porta para vite preview
-    host: true, // Permite acesso externo no preview
+    port: 4173,
+    host: true,
   },
 });

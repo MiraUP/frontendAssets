@@ -19,8 +19,7 @@ const PageLoginBrand = () => {
   const Illustration = () => {
     if (
       location.pathname === '/login' ||
-      location.pathname === '/criar-conta' ||
-      location.pathname === '/criar-conta/codigo'
+      location.pathname === '/criar-conta'
     ) {
       return (
         <Brand style={{ width: '250px' }} height="99px" version="extended" />

@@ -33,6 +33,17 @@ function Header() {
     disableHysteresis: true,
     threshold: 1,
   });
+  const OS = navigator.platform;
+
+  let systemOS = 'Desconhecido';
+
+  if (OS.indexOf('Win') > -1) {
+    systemOS = 'CTRL';
+  } else if (OS.indexOf('Mac') > -1) {
+    systemOS = <Icon icon="command" size={20} />;
+  } else if (OS.indexOf('Linux') > -1) {
+    systemOS = 'CTRL';
+  }
 
   React.useEffect(() => {
     const handleKeyDown = (e) => {
@@ -178,7 +189,7 @@ function Header() {
                           fontSize: '14px',
                         }}
                       >
-                        CTRL + K
+                        {systemOS} + K
                       </Typography>
                     </Button>
                   </Tooltip>
@@ -203,29 +214,31 @@ function Header() {
                     }}
                   >
                     <Tooltip title="Cadastre um Ativo Digital">
-                      <Button
-                        sx={{
-                          display: { xs: 'none', md: 'flex' },
-                          flexDirection: 'row',
-                          gap: 1,
-                          padding: '15px',
-                          minWidth: '20px',
-                        }}
-                        className="btn-new-assets"
-                      >
-                        <Icon icon="plus-square" size={25} stroke={2.5} />
-                        <Typography
-                          as="span"
+                      <Link to="/novo">
+                        <Button
                           sx={{
-                            display: {
-                              xs: 'none',
-                              lg: 'inline',
-                            },
+                            display: { xs: 'none', md: 'flex' },
+                            flexDirection: 'row',
+                            gap: 1,
+                            padding: '15px',
+                            minWidth: '20px',
                           }}
+                          className="btn-new-assets"
                         >
-                          Novo Ativo
-                        </Typography>
-                      </Button>
+                          <Icon icon="plus-square" size={25} stroke={2.5} />
+                          <Typography
+                            as="span"
+                            sx={{
+                              display: {
+                                xs: 'none',
+                                lg: 'inline',
+                              },
+                            }}
+                          >
+                            Novo Ativo
+                          </Typography>
+                        </Button>
+                      </Link>
                     </Tooltip>
                     {firstPathname === 'ativo' && (
                       <Tooltip title="Edite esse ativo">

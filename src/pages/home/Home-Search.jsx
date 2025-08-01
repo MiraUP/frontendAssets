@@ -11,9 +11,10 @@ import {
   Popover,
   MenuItem,
   ListItemText,
+  useMediaQuery,
 } from '@mui/material';
 import Icon from '../../components/icon/icon';
-import { BaseColors } from '../../theme/theme';
+import Theme, { BaseColors } from '../../theme/theme';
 import SkeletonMUP from '../../components/skeleton/skeleton';
 import { useSearch } from '../../hooks/searchContext';
 
@@ -21,11 +22,23 @@ const HomeSearch = ({ data, loading, onCategoryChange, currentCategory }) => {
   const { openSearch } = useSearch();
   const inputRef = React.useRef(null);
   const categoriesContainerRef = React.useRef(null);
+  const matchDownMd = useMediaQuery(Theme.breakpoints.down('md'));
   const { mode } = useColorScheme();
   const [showMoreButton, setShowMoreButton] = React.useState(false);
   const [hiddenCategories, setHiddenCategories] = React.useState([]);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [category, setCategory] = React.useState(currentCategory || 'all');
+  const OS = navigator.platform;
+
+  let systemOS = 'Atalho';
+
+  if (OS.indexOf('Win') > -1) {
+    systemOS = 'CTRL';
+  } else if (OS.indexOf('Mac') > -1) {
+    systemOS = <Icon icon="command" size={20} />;
+  } else if (OS.indexOf('Linux') > -1) {
+    systemOS = 'CTRL';
+  }
 
   // Verificar overflow das categorias
   const checkOverflow = () => {
@@ -95,15 +108,17 @@ const HomeSearch = ({ data, loading, onCategoryChange, currentCategory }) => {
           }}
           onClick={openSearch}
         >
-          <Button
-            size="small"
-            variant="contained"
-            sx={{ minWidth: '111px' }}
-            disabled
-            onClick={openSearch}
-          >
-            CTRL + K
-          </Button>
+          {!matchDownMd && (
+            <Button
+              size="small"
+              variant="contained"
+              sx={{ minWidth: '111px' }}
+              disabled
+              onClick={openSearch}
+            >
+              {systemOS} + K
+            </Button>
+          )}
 
           <input
             type="text"

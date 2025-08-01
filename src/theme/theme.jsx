@@ -437,6 +437,9 @@ const Theme = createTheme({
           backgroundColor: 'var(--mui-palette-background-tooltip)',
           color: 'var(--mui-palette-text-primary)',
         }),
+        arrow: ({ theme }) => ({
+          color: 'var(--mui-palette-background-tooltip)',
+        }),
       },
     },
     MuiDrawer: {

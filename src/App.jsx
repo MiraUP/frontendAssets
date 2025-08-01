@@ -15,6 +15,7 @@ import { SearchProvider } from './hooks/searchContext';
 import SinglePage from './pages/singlePage/singlePage';
 import IconLocalStorageManager from './hooks/LocalStorageManager';
 import EditAsset from './pages/edit/editAsset';
+import PostAsset from './pages/post/postAsset';
 
 const App = () => {
   return (
@@ -48,6 +49,14 @@ const App = () => {
                     element={
                       <ProtectedRouters>
                         <SinglePage />
+                      </ProtectedRouters>
+                    }
+                  />
+                  <Route
+                    path="/novo"
+                    element={
+                      <ProtectedRouters>
+                        <PostAsset />
                       </ProtectedRouters>
                     }
                   />

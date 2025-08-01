@@ -1,9 +1,46 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import { Marquee } from '@devnomic/marquee';
-import '@devnomic/marquee/dist/index.css';
 import { useAlert } from '../../hooks/alertContext';
 import SkeletonMUP from '../../components/skeleton/skeleton';
+
+const VerticalMarquee = ({ children, speed = 50 }) => {
+  const marqueeRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const marquee = marqueeRef.current;
+    let animationFrame;
+    let position = 0;
+
+    const animate = () => {
+      position -= 0.5; // Controla a velocidade
+      if (position <= -marquee.scrollHeight / 2) {
+        position = 0;
+      }
+      marquee.style.transform = `translateY(${position}px) rotate(-5deg)`;
+      animationFrame = requestAnimationFrame(animate);
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrame);
+  }, []);
+
+  return (
+    <Box
+      ref={marqueeRef}
+      sx={{
+        overflow: 'hidden',
+        transform: 'rotate(-5deg)',
+        transformOrigin: 'center',
+        '& > *': {
+          willChange: 'transform',
+        },
+      }}
+    >
+      {children}
+      {React.cloneElement(children, { key: 'clone' })}
+    </Box>
+  );
+};
 
 const HomeBanner = ({ data, loading }) => {
   const showAlert = useAlert();
@@ -52,28 +89,36 @@ const HomeBanner = ({ data, loading }) => {
               Contribua com o nosso banco de Ativos Digitais.
             </Typography>
           </Box>
-          <div className="marquee">
-            <Marquee
-              fade={false}
-              direction="up"
-              className="gap-[0rem] [--duration:10s]"
-              innerClassName="motion-reduce:animate-none motion-reduce:first:hidden"
-            >
-              <Grid container spacing={3} sx={{ marginBottom: '25px' }}>
-                {data && data.content.random_thumbnails.length > 0
-                  ? data.content.random_thumbnails.map(({ id, full_url }) => (
-                      <Grid size={6} key={id}>
-                        <img
-                          className="item"
-                          src={full_url}
-                          style={{ width: '100%' }}
-                        />
-                      </Grid>
-                    ))
-                  : 'Não encontrei nada por aqui...'}
-              </Grid>
-            </Marquee>
-          </div>
+
+          <Box
+            sx={{
+              position: 'relative',
+              height: '100%', // Ajuste conforme necessário
+              overflow: 'hidden',
+            }}
+          >
+            <div className="marquee">
+              <VerticalMarquee speed={40}>
+                <Grid container spacing={3} sx={{ marginBottom: '25px' }}>
+                  {data?.content.random_thumbnails?.map(({ id, full_url }) => (
+                    <Grid item size={6} key={id}>
+                      <Box
+                        sx={{
+                          width: '100%',
+                          transition: 'transform 0.3s ease',
+                          backgroundImage: `url(${full_url})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          backgroundRepeat: 'no-repeat',
+                          height: '500px',
+                        }}
+                      />
+                    </Grid>
+                  ))}
+                </Grid>
+              </VerticalMarquee>
+            </div>
+          </Box>
         </>
       )}
     </Box>

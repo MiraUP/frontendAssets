@@ -6,11 +6,11 @@ import { UserContext } from '../../hooks/userContext';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useAlert } from '../../hooks/alertContext';
 import Header from '../../layout/header';
-import { ASSETS_GET } from '../../hooks/useFetch';
+import { ASSETS_GET, TAXONOMY_GET } from '../../hooks/useFetch';
 import EditAssetBanner from './editAsset-Banner';
 import EditAssetDataMain from './EditAsset-DataMain';
 import ScrollSpy from '../../components/scrollSpy/scrollSpy';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 
 const EditAsset = () => {
   const token = window.localStorage.getItem('token');
@@ -20,7 +20,6 @@ const EditAsset = () => {
   const [dataAsset, setDataAsset] = React.useState();
   const [loadingAsset, setLoadingAsset] = React.useState(true);
   const navigate = useNavigate();
-
   React.useEffect(() => {
     setLoadingAsset(true);
     async function getSingleAssets() {
@@ -43,6 +42,35 @@ const EditAsset = () => {
     }
     getSingleAssets();
   }, [slug]);
+  const [loadingTaxonomy, setLoadingTaxonomy] = React.useState(true);
+  const [taxonomy, setTaxonomy] = React.useState({
+    name: 'category',
+    data: [],
+  });
+
+  // Buscar taxonomias
+  React.useEffect(() => {
+    async function getTaxonomy() {
+      try {
+        setLoadingTaxonomy(true);
+        const { url, options } = TAXONOMY_GET(token);
+        const response = await fetch(url, options);
+        const json = await response.json();
+        setTaxonomy((prev) => ({
+          ...prev,
+          data: json.data,
+        }));
+      } catch (err) {
+        showAlert(
+          err.message || err || 'Falha ao buscar as taxonomias.',
+          'error',
+        );
+      } finally {
+        setLoadingTaxonomy(false);
+      }
+    }
+    getTaxonomy();
+  }, []);
 
   const sectionsScrollSpy = [
     {
@@ -66,7 +94,7 @@ const EditAsset = () => {
       </>
     );
   };
-  console.log(data);
+
   if (data.data.roles[0] === 'subscriber') {
     navigate('/');
     return null;
@@ -77,26 +105,36 @@ const EditAsset = () => {
         <Header />
         <EditAssetBanner asset={dataAsset} loading={loadingAsset} />
         <Container>
-          <ScrollSpy
-            sections={[
-              { id: 'section1', label: 'Seção 1' },
-              { id: 'section2', label: 'Seção 2' },
-              { id: 'section3', label: 'Seção 3' },
-            ]}
-          />
+          <Grid container>
+            <Grid item size="grow">
+              <Box id="mainData">
+                <EditAssetDataMain
+                  asset={dataAsset}
+                  loading={loadingAsset || loadingTaxonomy}
+                  taxonomy={taxonomy}
+                  setTaxonomy={setTaxonomy}
+                />
+              </Box>
+              {console.log(taxonomy)}
 
-          <Box id="section1" sx={{ minHeight: '100vh', p: 3 }}>
-            <Typography variant="h4">Conteúdo da Seção 1</Typography>
-          </Box>
+              <Box id="section2" sx={{ minHeight: '100vh', p: 3 }}>
+                <Typography variant="h4">Conteúdo da Seção 2</Typography>
+              </Box>
 
-          <Box id="section2" sx={{ minHeight: '100vh', p: 3 }}>
-            <Typography variant="h4">Conteúdo da Seção 2</Typography>
-          </Box>
-
-          <Box id="section3" sx={{ minHeight: '100vh', p: 3 }}>
-            <Typography variant="h4">Conteúdo da Seção 3</Typography>
-          </Box>
-          <EditAssetDataMain asset={dataAsset} loading={loadingAsset} />
+              <Box id="section3" sx={{ minHeight: '100vh', p: 3 }}>
+                <Typography variant="h4">Conteúdo da Seção 3</Typography>
+              </Box>
+            </Grid>
+            <Grid item size="auto">
+              <ScrollSpy
+                sections={[
+                  { id: 'mainData', label: 'Dados Principais' },
+                  { id: 'section2', label: 'Seção 2' },
+                  { id: 'section3', label: 'Seção 3' },
+                ]}
+              />
+            </Grid>
+          </Grid>
         </Container>
       </>
     );

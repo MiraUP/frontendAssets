@@ -239,7 +239,7 @@ const MenuMain = () => {
               alignItems: 'center',
             }}
           >
-            <Brand version="extended" style={{ width: '150px' }} />
+            <Brand version="extended" width="150px" height="50px" />
             <IconButton
               onClick={toggleDrawer(false)}
               className="anima-rotate-zoom"
@@ -267,35 +267,37 @@ const MenuMain = () => {
           >
             {data.data.roles[0] !== 'subscriber' && (
               <ButtonGroup disableElevation>
-                <Button
-                  size="small"
-                  sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    gap: 1,
-                    padding: '15px',
-                  }}
-                  variant="contained"
-                  fullWidth
-                >
-                  <Icon
-                    icon="plus-square"
-                    size={25}
-                    stroke={2.5}
-                    color="var(--mui-palette-white-main)"
-                  />
-                  <Typography
-                    as="span"
+                <Link to="/novo" style={{ width: '100%' }}>
+                  <Button
+                    size="small"
                     sx={{
-                      display: 'inline',
-                      color: 'var(--mui-palette-white-main)',
+                      display: 'flex',
+                      flexDirection: 'row',
+                      gap: 1,
+                      padding: '15px',
                     }}
+                    variant="contained"
+                    fullWidth
                   >
-                    Novo Ativo
-                  </Typography>
-                </Button>
+                    <Icon
+                      icon="plus-square"
+                      size={25}
+                      stroke={2.5}
+                      color="var(--mui-palette-white-main)"
+                    />
+                    <Typography
+                      as="span"
+                      sx={{
+                        display: 'inline',
+                        color: 'var(--mui-palette-white-main)',
+                      }}
+                    >
+                      Novo Ativo
+                    </Typography>
+                  </Button>
+                </Link>
                 {firstPathname === 'ativo' && (
-                  <Link to={`/editar/${slug}`}>
+                  <Link to={`/editar/${slug}`} style={{ width: '100%' }}>
                     <Button
                       size="small"
                       sx={{

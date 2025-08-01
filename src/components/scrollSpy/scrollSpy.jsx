@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Tabs, Tab, Paper } from '@mui/material';
+import styles from './_scrollSpy.module.scss';
 
 const ScrollSpy = ({ sections }) => {
   const [activeSection, setActiveSection] = useState(sections[0]?.id || '');
@@ -10,18 +11,13 @@ const ScrollSpy = ({ sections }) => {
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
       (entries) => {
-        if (scrollingRef.current) return;
-
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
-      {
-        threshold: [0.25, 0.5, 0.75],
-        rootMargin: '-100px 0px -40% 0px',
-      },
+      { threshold: [0.25, 0.5, 0.75], rootMargin: '-100px 0px -40% 0px' },
     );
 
     // Observa todas as seções existentes na página
@@ -57,22 +53,24 @@ const ScrollSpy = ({ sections }) => {
   };
 
   return (
-    <Paper sx={{ position: 'sticky', top: 100, zIndex: 1, mb: 2 }}>
+    <Paper
+      className={`${styles.scrollSpy} ${styles.scrollSpyRight}`}
+      elevation={0}
+    >
       <Tabs
         value={activeSection}
         onChange={(_, newValue) => handleTabClick(newValue)}
         centered
         indicatorColor="primary"
         textColor="primary"
+        orientation="vertical"
       >
         {sections.map((section) => (
           <Tab
             key={section.id}
-            label={section.label}
+            label={<span className="label">{section.label}</span>}
             value={section.id}
-            sx={{
-              fontWeight: activeSection === section.id ? 'bold' : 'normal',
-            }}
+            disableRipple
           />
         ))}
       </Tabs>
