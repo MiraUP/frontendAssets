@@ -53,7 +53,7 @@ const App = () => {
                     }
                   />
                   <Route
-                    path="/novo"
+                    path="/novo/ativo"
                     element={
                       <ProtectedRouters>
                         <PostAsset />
@@ -69,7 +69,7 @@ const App = () => {
                     }
                   />
                   <Route
-                    path="/ativo/contribute/:slug"
+                    path="/contribute/ativo/:slug"
                     element={
                       <ProtectedRouters>
                         contribuir com o ativo

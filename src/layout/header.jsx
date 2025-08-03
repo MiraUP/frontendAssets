@@ -214,7 +214,7 @@ function Header() {
                     }}
                   >
                     <Tooltip title="Cadastre um Ativo Digital">
-                      <Link to="/novo">
+                      <Link to="/novo/ativo">
                         <Button
                           sx={{
                             display: { xs: 'none', md: 'flex' },
@@ -222,6 +222,7 @@ function Header() {
                             gap: 1,
                             padding: '15px',
                             minWidth: '20px',
+                            height: '100%',
                           }}
                           className="btn-new-assets"
                         >

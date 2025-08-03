@@ -267,7 +267,7 @@ const MenuMain = () => {
           >
             {data.data.roles[0] !== 'subscriber' && (
               <ButtonGroup disableElevation>
-                <Link to="/novo" style={{ width: '100%' }}>
+                <Link to="/novo/ativo" style={{ width: '100%' }}>
                   <Button
                     size="small"
                     sx={{

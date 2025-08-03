@@ -5,8 +5,7 @@ import HeadConfig from '../../components/headConfig';
 import { BaseColors } from '../../theme/theme';
 import Icon from '../../components/icon/icon';
 import { useAlert } from '../../hooks/alertContext';
-import { USER_CODE_PUT } from '../../hooks/useFetch';
-import { USER_NEW_CODE } from '../../hooks/useFetch';
+import { USER_NEW_CODE, USER_CODE_PUT } from '../../hooks/useFetch';
 import useScreenSize from '../../utils/windowSize';
 
 const PageLoginCreateCode = () => {

@@ -432,6 +432,11 @@ a.link:hover::after,
   text-decoration: none;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
 /**** Components ****/
 .gradient.gradient-background {
   background-repeat: no-repeat;
@@ -2509,7 +2514,41 @@ html.light .notification-error .MuiPaper-root {
   border-radius: 4px;
   border: 0.125rem solid var(--mui-palette-background-border);
   padding: 1.875rem;
+  position: relative;
 }
 .pageeditAsset .edit-contentEdit .title {
   padding: 0 1.25rem 0 0.625rem;
+}
+.pageeditAsset .edit-contentEdit .loadingUpdate {
+  position: absolute;
+  opacity: 0;
+  top: -0.625rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: var(--mui-palette-black-main);
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+html.light .pageeditAsset .edit-contentEdit .loadingUpdate {
+  background: var(--mui-palette-white-main);
+}
+.pageeditAsset .edit-contentEdit .loadingUpdate.show {
+  z-index: 10;
+  opacity: 0.8;
+  cursor: progress;
 }

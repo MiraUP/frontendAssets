@@ -48,7 +48,7 @@ export function TOKEN_VALIDATE_POST(token) {
     options: {
       method: 'POST',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -66,7 +66,7 @@ export function USER_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -84,7 +84,7 @@ export function USERS_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -123,7 +123,7 @@ export function USER_PUT(token, body) {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(body),
     },
@@ -144,7 +144,7 @@ export function USER_CODE_PUT(token, body) {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(body),
     },
@@ -164,7 +164,7 @@ export function USER_NEW_CODE(token) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -220,7 +220,7 @@ export function NOTIFICATIONS_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -230,7 +230,7 @@ export function NOTIFICATIONS_GET(token) {
  * Envia uma requisição POST para enviar uma notificação de erro no sistema
  *
  * @param {string} token - Token JWT do usuário autenticado
- * @param {string} editedComment - Texto novo do comentário editado
+ * @param {string} body - Formulário com os dados para API
  * @returns {Object} - Objeto contendo a URL e as opções da requisição
  */
 export function NOTIFICATION_ERROR(token, body) {
@@ -239,8 +239,8 @@ export function NOTIFICATION_ERROR(token, body) {
     options: {
       method: 'POST',
       headers: {
-        Authorization: 'Bearer ' + token,
         'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(body),
     },
@@ -259,7 +259,7 @@ export function STATISTICS_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -277,7 +277,7 @@ export function STATISTICS_POST(token) {
     options: {
       method: 'POST',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -295,7 +295,7 @@ export function SYSTEM_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -313,7 +313,7 @@ export function TAXONOMY_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -331,7 +331,7 @@ export function ASSETS_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -349,7 +349,65 @@ export function ASSETS_SEARCH(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  };
+}
+
+/**
+ * Envia uma requisição POST para atualizar um Ativo Digital
+ *
+ * @param {string} token - Token JWT do usuário autenticado
+ * @param {string} body - Formulário com os dados para API
+ * @returns {Object} - Objeto contendo a URL e as opções da requisição
+ */
+export function ASSETS_PUT(token, body) {
+  return {
+    url: API_URL + '/api/v1/asset-put',
+    options: {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      body: body,
+    },
+  };
+}
+
+/**
+ * Envia uma requisição POST fazer o upload de uma ou mais mídias para um Ativo Digital
+ *
+ * @param {string} token - Token JWT do usuário autenticado
+ * @param {string} body - Formulário com os dados para API
+ * @returns {Object} - Objeto contendo a URL e as opções da requisição
+ */
+export function MEDIA_POST(token, body) {
+  return {
+    url: API_URL + '/api/v1/media',
+    options: {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      body: body,
+    },
+  };
+}
+
+/**
+ * Envia uma requisição DELETE para remover uma mídia de um Ativo Digital
+ *
+ * @param {string} token - Token JWT do usuário autenticado
+ * @returns {Object} - Objeto contendo a URL e as opções da requisição
+ */
+export function MEDIA_DELETE(token) {
+  return {
+    url: API_URL + '/api/v1/media',
+    options: {
+      method: 'DELETE',
+      headers: {
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -370,7 +428,7 @@ export function FAVORITE_PUT(token, userId, { post_id, favorite }) {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
         user_id: userId,
@@ -394,7 +452,7 @@ export function PREVIEWS_GET(token) {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -412,7 +470,7 @@ export function COMMENT_GET(token) {
     options: {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };
@@ -432,7 +490,7 @@ export function COMMENT_POST(token, newComment) {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
         comment: newComment,
@@ -455,7 +513,7 @@ export function COMMENT_PUT(token, editedComment) {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
         content: editedComment,
@@ -477,7 +535,7 @@ export function COMMENT_DELETE(token) {
     options: {
       method: 'DELETE',
       headers: {
-        Authorization: 'Bearer ' + token,
+        Authorization: `Bearer ${token}`,
       },
     },
   };

@@ -8,7 +8,7 @@ import {
 import { useIcon } from '../../../hooks/iconContext';
 import { BaseColors } from '../../../theme/theme';
 
-const SvgReader = ({ svgUrl }) => {
+const SvgReader = ({ svgUrl, width, height }) => {
   const { styleIcon } = useIcon();
   const [svgContent, setSvgContent] = React.useState('');
   const [loading, setLoading] = React.useState(false);
@@ -29,8 +29,8 @@ const SvgReader = ({ svgUrl }) => {
       if (defs) defs.remove();
 
       // Aplica estilos base
-      svgElement.setAttribute('width', `40px`);
-      svgElement.setAttribute('height', `40px`);
+      svgElement.setAttribute('width', `${width > 0 ? width : 40}px`);
+      svgElement.setAttribute('height', `${height > 0 ? height : 40}px`);
     }
 
     return svgElement ? svgElement.outerHTML : svgString;

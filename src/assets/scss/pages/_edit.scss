@@ -56,9 +56,37 @@
       border-radius: 4px;
       border: px(2) solid var(--mui-palette-background-border);
       padding: px(30);
+      position: relative;
 
       .title {
         padding: 0 px(20) 0 px(10);
+      }
+
+      .loadingUpdate {
+        position: absolute;
+        opacity: 0;
+        top: px(-10);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: px(20);
+        background: var(--mui-palette-black-main);
+        @include anima-basic;
+
+        @include mode-light {
+          background: var(--mui-palette-white-main);
+        }
+
+        &.show {
+          z-index: 10;
+          opacity: 0.8;
+          cursor: progress;
+        }
       }
     }
   }

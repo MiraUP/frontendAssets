@@ -1,11 +1,9 @@
 import React from 'react';
 import { Container, Grid, Typography, useMediaQuery } from '@mui/material';
-import Icon from '../../../components/icon/icon';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { ScrollLoader } from '../../loading/messageScroll';
 import Theme from '../../../theme/theme';
 import { useIcon } from '../../../hooks/iconContext';
-import SvgEditor from '../../../components/icon/svgEditor';
 import SvgReader from './svgReader';
 
 const SingleIconPreview = ({
