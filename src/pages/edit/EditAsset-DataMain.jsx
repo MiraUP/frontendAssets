@@ -257,8 +257,8 @@ const EditAssetDataMain = ({
               required
               id="title"
               name="title"
-              value={formData.title}
               onChange={handleInputChange}
+              value={formData.title}
               label="Título Principal do Ativo"
               variant="standard"
               color="info"
@@ -406,6 +406,7 @@ const EditAssetDataMain = ({
         <Grid container spacing={3} size={12}>
           <Grid size={6}>
             <Autocomplete
+              freeSolo
               multiple
               limitTags={3}
               value={formData.post_tag || []}
@@ -451,6 +452,7 @@ const EditAssetDataMain = ({
           </Grid>
           <Grid size={6}>
             <Autocomplete
+              freeSolo
               multiple
               limitTags={3}
               value={formData.compatibility || []}

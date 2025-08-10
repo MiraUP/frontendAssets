@@ -88,6 +88,166 @@
           cursor: progress;
         }
       }
+
+      .contrast {
+        .list-icon-item {
+          background: var(--mui-palette-white-main);
+          color: var(--mui-palette-black-main);
+          @include anima-basic;
+
+          @include mode-light {
+            background: var(--mui-palette-black-main);
+            color: var(--mui-palette-white-main);
+          }
+        }
+
+        .selected {
+          background: var(--mui-palette-blue-main) !important;
+          border-color: var(--mui-palette-blue-main) !important;
+          color: var(--mui-palette-white-main);
+          @include anima-basic;
+        }
+      }
+
+      .list-icon {
+        &-item {
+          margin: px(-1) px(-1) 0 0;
+          border: px(1) solid var(--mui-palette-background-border);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          @include anima-basic;
+
+          &.selected {
+            border: px(1) solid var(--mui-palette-cyan-main);
+            z-index: 1;
+
+            .MuiButton-root,
+            .MuiTypography-caption {
+              opacity: 1;
+            }
+
+            .icon {
+              margin-top: px(-10) !important;
+            }
+
+            @include mode-light {
+              border: px(1) solid var(--mui-palette-blue-main);
+            }
+          }
+
+          .imageMUP {
+            padding: px(20) 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+              margin-top: 0;
+            }
+          }
+          .MuiButton-root,
+          .icon,
+          .MuiTypography-caption {
+            @include anima-basic;
+          }
+
+          .MuiButton-root {
+            border-radius: 0 0 0 px(4);
+            opacity: 0;
+          }
+
+          .MuiTypography-caption {
+            position: absolute;
+            bottom: px(4);
+            left: 0;
+            right: 0;
+            text-align: center;
+            opacity: 0;
+          }
+
+          &:hover {
+            .MuiButton-root,
+            .MuiTypography-caption {
+              opacity: 1;
+            }
+
+            .icon {
+              margin-top: px(-10);
+            }
+          }
+        }
+      }
+
+      .icon-detail {
+        position: sticky;
+        top: px(100);
+        background: var(--mui-palette-black-c400);
+        border-radius: px(5);
+
+        @include mode-light {
+          background: var(--mui-palette-white-c400);
+        }
+
+        .preview {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: px(30);
+          flex-direction: column;
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: px(20);
+            bottom: 0;
+            left: px(40);
+            right: px(40);
+            border-radius: px(5);
+            background: var(--mui-palette-white-main);
+            opacity: 0;
+            @include anima-basic;
+
+            @include mode-light {
+              background: var(--mui-palette-black-main);
+            }
+          }
+
+          input {
+            cursor: pointer;
+            text-align: center;
+            width: calc(100% - px(80));
+            @include anima-basic;
+            border-radius: px(3);
+            margin: 0 px(40);
+            border: px(1) solid transparent;
+            font-weight: bold;
+
+            &:hover {
+              border: px(1) solid var(--mui-palette-background-border);
+            }
+          }
+        }
+      }
+
+      .contrast {
+        .preview {
+          &::before {
+            opacity: 1;
+          }
+
+          input {
+            color: var(--mui-palette-black-main);
+
+            @include mode-light {
+              color: var(--mui-palette-white-main);
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Autocomplete,
   Box,
@@ -8,17 +9,18 @@ import {
   InputAdornment,
   Stack,
   TextField,
+  Tooltip,
   Typography,
   useColorScheme,
 } from '@mui/material';
-import React, { useCallback, useEffect } from 'react';
 import Icon from '../../components/icon/icon';
 import SkeletonMUP from '../../components/skeleton/skeleton';
 import { useAlert } from '../../hooks/alertContext';
 import { useDropzone } from 'react-dropzone';
 import ImageMUP from '../../components/image/image';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { MEDIA_DELETE, MEDIA_POST, PREVIEWS_GET } from '../../hooks/useFetch';
+import EditAssetDetailsIcons from './EditAsset-DetailsIcons';
+import EditAssetDeleteIcon from './EditAsset-DeleteIcon';
 
 const EditAssetIcons = ({
   asset,
@@ -39,22 +41,15 @@ const EditAssetIcons = ({
   const [isUploading, setIsUploading] = React.useState(false);
   const [uploadProgress, setUploadProgress] = React.useState({});
   const [searchTerm, setSearchTerm] = React.useState('');
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = React.useState('');
   const [isSearching, setIsSearching] = React.useState(false);
   const [contrast, setContrast] = React.useState(false);
-
-  useEffect(() => {
-    console.log('Estado atual dos ícones:', {
-      icons,
-      filesIcons,
-      uploadQueue,
-      uploadProgress,
-      isUploading,
-      formData,
-    });
-  }, [icons, filesIcons, uploadQueue, uploadProgress, isUploading]);
+  const [iconSelected, setIconSelected] = React.useState(0);
+  const [idIconDelete, setIdIconDelete] = React.useState(0);
+  const [iconData, setIconData] = React.useState(null);
 
   // Efeito para processar a fila de upload
-  useEffect(() => {
+  React.useEffect(() => {
     const processUploadQueue = async () => {
       if (uploadQueue.length > 0 && !isUploading) {
         setIsUploading(true);
@@ -81,12 +76,6 @@ const EditAssetIcons = ({
 
           const { url, options } = MEDIA_POST(token);
           options.body = uploadFormData;
-
-          console.log('Enviando upload com:', {
-            category: currentCategory,
-            style: currentStyle,
-            file: file.name, // Mudar de fileToUpload.file.name para file.name
-          });
 
           const response = await fetch(url, options);
           const json = await response.json();
@@ -233,21 +222,37 @@ const EditAssetIcons = ({
     return Number.isInteger(num) && num > 0 ? num : fallback;
   };
 
-  const loadIcons = useCallback(
+  // Efeito para debounce da pesquisa
+  React.useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedSearchTerm(searchTerm);
+    }, 1000); // 1 segundo de delay após parar de digitar
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [searchTerm]);
+
+  // Efeito que dispara a pesquisa quando o termo debounced muda
+  React.useEffect(() => {
+    if (debouncedSearchTerm !== '' || icons.length > 0) {
+      loadIcons(1, true); // Recarrega da página 1 quando o termo debounced muda
+    }
+  }, [debouncedSearchTerm]);
+
+  const loadIcons = React.useCallback(
     async (pageToLoad = 1, shouldReset = false) => {
       try {
         const pageNumber = ensurePositiveNumber(pageToLoad);
         setIsLoadingMore(true);
+        setIsSearching(true);
 
         const { url, options } = PREVIEWS_GET(token);
         let apiUrl = `${url}/${asset.id}?page=${pageNumber}&orderby=modified&order=DESC`;
 
-        // Adiciona o parâmetro de busca se houver termo
-        if (searchTerm) {
-          apiUrl += `&search=${encodeURIComponent(searchTerm)}`;
-          setIsSearching(true);
-        } else {
-          setIsSearching(false);
+        // Agora usa debouncedSearchTerm em vez de searchTerm
+        if (debouncedSearchTerm) {
+          apiUrl += `&search=${encodeURIComponent(debouncedSearchTerm)}`;
         }
 
         const response = await fetch(apiUrl, options);
@@ -269,12 +274,13 @@ const EditAssetIcons = ({
         showAlert(error.message || 'Erro ao carregar ícones', 'error');
       } finally {
         setIsLoadingMore(false);
+        setIsSearching(false);
       }
     },
-    [asset.id, token, showAlert, searchTerm], // Adicione searchTerm às dependências
+    [asset.id, debouncedSearchTerm], // Agora depende de debouncedSearchTerm
   );
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (asset?.id) {
       // Usa um debounce para evitar muitas requisições enquanto digita
       const handler = setTimeout(() => {
@@ -286,28 +292,28 @@ const EditAssetIcons = ({
   }, [searchTerm, asset?.id, loadIcons]);
 
   // Carregamento inicial
-  useEffect(() => {
+  React.useEffect(() => {
     if (asset?.id) {
       loadIcons(1, true); // Força reset começando da página 1
     }
-  }, [asset?.id, loadIcons]);
+  }, [asset?.id]);
 
   // Função para carregar mais itens
-  const loadMoreIcons = useCallback(() => {
+  const loadMoreIcons = React.useCallback(() => {
     if (!isLoadingMore && hasMore) {
       loadIcons(currentPage); // Usa currentPage atual sem reset
     }
   }, [isLoadingMore, hasMore, currentPage, loadIcons]);
 
   // Carrega os ícones iniciais
-  useEffect(() => {
+  React.useEffect(() => {
     if (asset?.id) {
       loadIcons(true);
     }
   }, [asset?.id, loadIcons]);
 
   // Limpa as URLs de preview quando o componente desmonta
-  useEffect(() => {
+  React.useEffect(() => {
     return () => {
       filesIcons.forEach((file) => URL.revokeObjectURL(file.preview));
     };
@@ -338,30 +344,6 @@ const EditAssetIcons = ({
           }
         : null,
     }));
-  };
-
-  // Remove um ícone existente
-  const handleRemoveExistingIcon = async (iconId) => {
-    try {
-      setIcons((prev) => prev.filter((icon) => icon.id !== iconId));
-
-      const { url, options } = MEDIA_DELETE(token);
-      const response = await fetch(
-        `${url}?media_type=preview&asset_id=${asset.id}&media_id=${iconId}`,
-        options,
-      );
-      const json = await response.json();
-
-      if (json.success) {
-        setIcons((prev) => prev.filter((icon) => icon.id !== iconId));
-        showAlert('Ícone removido com sucesso!', 'success');
-      } else {
-        console.log(json);
-        throw new Error('Falha ao remover ícone');
-      }
-    } catch (err) {
-      showAlert(err.message || 'Erro ao remover ícone', 'error');
-    }
   };
 
   // Remove um novo ícone que ainda não foi enviado
@@ -399,41 +381,25 @@ const EditAssetIcons = ({
     }
   };
 
-  // Componente de lista de ícones com Infinite Scroll
+  // Componente de lista de ícones
   const IconsList = () => (
-    <InfiniteScroll
-      dataLength={icons.length}
-      next={loadMoreIcons}
-      hasMore={hasMore}
-      loader={
-        <Box display="flex" justifyContent="center" py={2}>
-          <CircularProgress size={24} />
-        </Box>
-      }
-      endMessage={
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          textAlign="center"
-          py={2}
-        >
-          {icons.length === 0
-            ? 'Nenhum ícone encontrado'
-            : 'Todos os ícones foram carregados'}
-        </Typography>
-      }
-      style={{ overflow: 'visible' }}
-      shouldUpdateScroll={false}
-    >
+    <Box>
+      {/* Grid de ícones */}
       <Box
         display="grid"
         gridTemplateColumns="repeat(auto-fill, minmax(120px, 1fr))"
-        gap={2}
-        py={2}
+        className="list-icon"
       >
         {/* Ícones existentes */}
         {icons.map((icon) => (
-          <Box key={`${icon.id}-${Date.now()}`} position="relative">
+          <Box
+            key={`${icon.id}-${Date.now()}`}
+            className={`list-icon-item${
+              iconSelected > 0 && iconSelected === icon.id ? ' selected' : ''
+            }`}
+            position="relative"
+            onClick={() => setIconSelected(icon.id) + setIconData(icon)}
+          >
             {icon?.url ? (
               <ImageMUP
                 src={icon.url}
@@ -442,13 +408,14 @@ const EditAssetIcons = ({
                 onError={(e) => {
                   e.target.style.display = 'none';
                 }}
+                className="icon"
               />
             ) : (
               <Box
                 sx={{
                   width: 80,
                   height: 80,
-                  bgcolor: 'grey.200',
+                  bgcolor: 'var(--mui-palette-background-border)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -457,21 +424,26 @@ const EditAssetIcons = ({
                 <Icon icon="broken_image" size={24} />
               </Box>
             )}
-            <Button
-              variant="contained"
-              onClick={() => handleRemoveExistingIcon(icon.id)}
-              size="small"
-              color="error"
-              sx={{
-                position: 'absolute',
-                top: 4,
-                right: 4,
-                minWidth: 'auto',
-                p: 0.5,
-              }}
-            >
-              <Icon icon="close" size={16} />
-            </Button>
+            <Tooltip title="Excluir" arrow>
+              <Button
+                variant="contained"
+                onClick={() => setIdIconDelete(icon.id)}
+                size="small"
+                color="error"
+                sx={{
+                  position: 'absolute',
+                  top: 0,
+                  right: 0,
+                  minWidth: 'auto',
+                  p: 0.5,
+                }}
+              >
+                <Icon icon="close" size={16} />
+              </Button>
+            </Tooltip>
+            <Typography variant="caption" component="span">
+              {icon.title}
+            </Typography>
           </Box>
         ))}
 
@@ -531,14 +503,6 @@ const EditAssetIcons = ({
                   <CircularProgress size={24} />
                 </Box>
               )}
-              <ImageMUP
-                src={file.preview || null}
-                onLoad={() => file.preview && URL.revokeObjectURL(file.preview)}
-                width={80}
-                height={80}
-                sx={{ opacity: status === 'completed' ? 1 : 0.7 }}
-                alt="Ícone sendo enviado"
-              />
 
               <UploadStatusIndicator fileId={uploadId} />
               {status === 'failed' && (
@@ -563,11 +527,80 @@ const EditAssetIcons = ({
                   </Button>
                 </Tooltip>
               )}
+
+              <Tooltip title="Remover" arrow>
+                <Button
+                  variant="contained"
+                  onClick={() => handleRemoveNewIcon(uploadId)}
+                  size="small"
+                  color="error"
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    right: 0,
+                    minWidth: 'auto',
+                    p: 0.5,
+                  }}
+                >
+                  <Icon icon="close" size={16} />
+                </Button>
+              </Tooltip>
+              <Typography variant="caption" component="span">
+                {file.name}
+              </Typography>
             </Box>
           );
         })}
       </Box>
-    </InfiniteScroll>
+
+      {hasMore && (
+        <Box display="flex" justifyContent="center" sx={{ mt: 2, mb: 2 }}>
+          <Button
+            variant="contained"
+            size="small"
+            onClick={loadMoreIcons}
+            disabled={isLoadingMore}
+            startIcon={
+              isLoadingMore ? (
+                <CircularProgress size={16} />
+              ) : (
+                <Icon icon="expand_more" size={16} />
+              )
+            }
+            sx={{
+              minWidth: 200,
+              py: 1.5,
+            }}
+          >
+            {isLoadingMore ? 'Carregando...' : 'Carregar Mais Ícones'}
+          </Button>
+        </Box>
+      )}
+
+      {/* Mensagem de fim */}
+      {!hasMore && icons.length > 0 && (
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          textAlign="center"
+          sx={{ py: 2 }}
+        >
+          Todos os ícones foram carregados
+        </Typography>
+      )}
+
+      {/* Mensagem quando não há ícones */}
+      {!hasMore && icons.length === 0 && (
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          textAlign="center"
+          sx={{ py: 2 }}
+        >
+          Nenhum ícone encontrado
+        </Typography>
+      )}
+    </Box>
   );
 
   if (loading) {
@@ -631,7 +664,7 @@ const EditAssetIcons = ({
                 renderInput={(params) => (
                   <TextField
                     {...params}
-                    required
+                    //required
                     label="Categoria dos ícones"
                     color="info"
                     fullWidth
@@ -674,7 +707,7 @@ const EditAssetIcons = ({
                   <TextField
                     {...params}
                     fullWidth
-                    required
+                    //required
                     label="Estilo dos ícones"
                     color="info"
                     InputProps={{
@@ -728,6 +761,7 @@ const EditAssetIcons = ({
           <Grid size="grow">
             <TextField
               fullWidth
+              color="info"
               variant="outlined"
               placeholder="Pesquisar ícones..."
               value={searchTerm}
@@ -750,19 +784,65 @@ const EditAssetIcons = ({
             <Button
               size="small"
               variant="contained"
-              color="white"
+              color={contrast ? 'black' : 'white'}
               startIcon={<Icon icon="contrast" />}
-              sx={{ height: '100%', color: 'var(--mui-palette-black-main)' }}
+              sx={{
+                height: '100%',
+                color: contrast
+                  ? 'var(--mui-palette-white-main)'
+                  : 'var(--mui-palette-black-main)',
+              }}
               onClick={() => setContrast(!contrast)}
             >
               Constraste
             </Button>
           </Grid>
-          <Grid size={12} className={contrast ? 'contrast' : ''}>
-            <IconsList />
+          <Grid container size={12} gap={3}>
+            {isSearching ? (
+              <Grid
+                display="flex"
+                gap={2}
+                justifyContent="center"
+                alignItems="center"
+                container
+                size={iconSelected > 0 ? 8 : 12}
+              >
+                <CircularProgress color="neutral" /> Buscando...
+              </Grid>
+            ) : (
+              <Grid
+                size={iconSelected > 0 ? 8 : 12}
+                className={contrast ? 'contrast' : ''}
+              >
+                <IconsList />
+              </Grid>
+            )}
+
+            {iconSelected > 0 && iconData !== null && (
+              <Grid size={4}>
+                <EditAssetDetailsIcons
+                  contrast={contrast}
+                  setIconSelected={setIconSelected}
+                  iconData={iconData}
+                  setIconData={setIconData}
+                  taxonomy={taxonomy}
+                  setIcons={setIcons}
+                  idAsset={asset.id}
+                  slugAsset={asset.slug}
+                />
+              </Grid>
+            )}
           </Grid>
         </Grid>
       </Grid>
+      <EditAssetDeleteIcon
+        idIcon={idIconDelete}
+        idAsset={asset.id}
+        setIdIcon={setIdIconDelete}
+        iconData={iconData}
+        setIcons={setIcons}
+        setIconSelected={setIconSelected}
+      />
     </fieldset>
   );
 };

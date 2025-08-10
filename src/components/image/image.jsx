@@ -33,7 +33,10 @@ const ImageMUP = ({
     : (ComponentName = component);
 
   return (
-    <ComponentName className={styles.imageMUP} style={{ styleComponent }}>
+    <ComponentName
+      className={`${styles.imageMUP} imageMUP`}
+      style={{ styleComponent }}
+    >
       <div
         className={
           loading

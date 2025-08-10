@@ -2552,3 +2552,183 @@ html.light .pageeditAsset .edit-contentEdit .loadingUpdate {
   opacity: 0.8;
   cursor: progress;
 }
+.pageeditAsset .edit-contentEdit .contrast .list-icon-item {
+  background: var(--mui-palette-white-main);
+  color: var(--mui-palette-black-main);
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+html.light .pageeditAsset .edit-contentEdit .contrast .list-icon-item {
+  background: var(--mui-palette-black-main);
+  color: var(--mui-palette-white-main);
+}
+.pageeditAsset .edit-contentEdit .contrast .selected {
+  background: var(--mui-palette-blue-main) !important;
+  border-color: var(--mui-palette-blue-main) !important;
+  color: var(--mui-palette-white-main);
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+.pageeditAsset .edit-contentEdit .list-icon-item {
+  margin: -0.0625rem -0.0625rem 0 0;
+  border: 0.0625rem solid var(--mui-palette-background-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+.pageeditAsset .edit-contentEdit .list-icon-item.selected {
+  border: 0.0625rem solid var(--mui-palette-cyan-main);
+  z-index: 1;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item.selected .MuiButton-root,
+.pageeditAsset .edit-contentEdit .list-icon-item.selected .MuiTypography-caption {
+  opacity: 1;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item.selected .icon {
+  margin-top: -0.625rem !important;
+}
+html.light .pageeditAsset .edit-contentEdit .list-icon-item.selected {
+  border: 0.0625rem solid var(--mui-palette-blue-main);
+}
+.pageeditAsset .edit-contentEdit .list-icon-item .imageMUP {
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item .imageMUP .icon {
+  margin-top: 0;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item .MuiButton-root,
+.pageeditAsset .edit-contentEdit .list-icon-item .icon,
+.pageeditAsset .edit-contentEdit .list-icon-item .MuiTypography-caption {
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+.pageeditAsset .edit-contentEdit .list-icon-item .MuiButton-root {
+  border-radius: 0 0 0 0.25rem;
+  opacity: 0;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item .MuiTypography-caption {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item:hover .MuiButton-root,
+.pageeditAsset .edit-contentEdit .list-icon-item:hover .MuiTypography-caption {
+  opacity: 1;
+}
+.pageeditAsset .edit-contentEdit .list-icon-item:hover .icon {
+  margin-top: -0.625rem;
+}
+.pageeditAsset .edit-contentEdit .icon-detail {
+  position: sticky;
+  top: 6.25rem;
+  background: var(--mui-palette-black-c400);
+  border-radius: 0.3125rem;
+}
+html.light .pageeditAsset .edit-contentEdit .icon-detail {
+  background: var(--mui-palette-white-c400);
+}
+.pageeditAsset .edit-contentEdit .icon-detail .preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.875rem;
+  flex-direction: column;
+}
+.pageeditAsset .edit-contentEdit .icon-detail .preview::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1.25rem;
+  bottom: 0;
+  left: 2.5rem;
+  right: 2.5rem;
+  border-radius: 0.3125rem;
+  background: var(--mui-palette-white-main);
+  opacity: 0;
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+}
+html.light .pageeditAsset .edit-contentEdit .icon-detail .preview::before {
+  background: var(--mui-palette-black-main);
+}
+.pageeditAsset .edit-contentEdit .icon-detail .preview input {
+  cursor: pointer;
+  text-align: center;
+  width: calc(100% - 5rem);
+  -moz-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.8, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -ms-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  border-radius: 0.1875rem;
+  margin: 0 2.5rem;
+  border: 0.0625rem solid transparent;
+  font-weight: bold;
+}
+.pageeditAsset .edit-contentEdit .icon-detail .preview input:hover {
+  border: 0.0625rem solid var(--mui-palette-background-border);
+}
+.pageeditAsset .edit-contentEdit .contrast .preview::before {
+  opacity: 1;
+}
+.pageeditAsset .edit-contentEdit .contrast .preview input {
+  color: var(--mui-palette-black-main);
+}
+html.light .pageeditAsset .edit-contentEdit .contrast .preview input {
+  color: var(--mui-palette-white-main);
+}

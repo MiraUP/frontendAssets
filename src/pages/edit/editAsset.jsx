@@ -17,6 +17,7 @@ import EditAssetDataMain from './EditAsset-DataMain';
 import ScrollSpy from '../../components/scrollSpy/scrollSpy';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import EditAssetIcons from './EditAsset-icons';
+import EditAssetDataSecondary from './EditAsset-DataSecondary';
 
 const EditAsset = () => {
   const token = window.localStorage.getItem('token');
@@ -123,7 +124,6 @@ const EditAsset = () => {
       if (files.length > 0) {
         formDataToSend.append('thumbnail', files[0]);
       }
-      console.log(formDataToSend.thumbnail);
       const { url, options } = ASSETS_PUT(token, formDataToSend);
       const response = await fetch(url, options);
       const json = await response.json();
@@ -233,6 +233,19 @@ const EditAsset = () => {
                 </Box>
               )}
 
+              {formData?.category?.slug === 'icon' && (
+                <Box id="mainSecondary">
+                  <EditAssetDataSecondary
+                    asset={dataAsset}
+                    setDataAsset={setDataAsset}
+                    loading={loadingAsset || loadingTaxonomy}
+                    loadingUpdate={loadingUpdate}
+                    formData={formData}
+                    setFormData={setFormData}
+                  />
+                </Box>
+              )}
+
               <Box id="section3" sx={{ minHeight: '100vh', p: 3 }}>
                 <Typography variant="h4">Conteúdo da Seção 3</Typography>
               </Box>
@@ -244,6 +257,10 @@ const EditAsset = () => {
                   formData?.category?.slug === 'icon' && {
                     id: 'iconsData',
                     label: 'Enviar ícones',
+                  },
+                  formData?.category?.slug === 'icon' && {
+                    id: 'mainSecondary',
+                    label: 'Dados Secundários',
                   },
                   { id: 'section3', label: 'Seção 3' },
                 ].filter(Boolean)}

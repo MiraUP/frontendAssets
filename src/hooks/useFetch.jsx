@@ -376,7 +376,7 @@ export function ASSETS_PUT(token, body) {
 }
 
 /**
- * Envia uma requisição POST fazer o upload de uma ou mais mídias para um Ativo Digital
+ * Envia uma requisição POST para fazer o upload de uma ou mais mídias para um Ativo Digital
  *
  * @param {string} token - Token JWT do usuário autenticado
  * @param {string} body - Formulário com os dados para API
@@ -391,6 +391,43 @@ export function MEDIA_POST(token, body) {
         Authorization: `Bearer ${token}`,
       },
       body: body,
+    },
+  };
+}
+
+/**
+ * Envia uma requisição GET para buscar uma ou mais mídias de um Ativo Digital
+ *
+ * @param {string} token - Token JWT do usuário autenticado
+ * @returns {Object} - Objeto contendo a URL e as opções da requisição
+ */
+export function MEDIA_GET(token) {
+  return {
+    url: API_URL + '/api/v1/media',
+    options: {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  };
+}
+
+/**
+ * Envia uma requisição GET para buscar uma ou mais mídias de um Ativo Digital
+ *
+ * @param {string} token - Token JWT do usuário autenticado
+ * @returns {Object} - Objeto contendo a URL e as opções da requisição
+ */
+export function MEDIA_PUT(token) {
+  return {
+    url: API_URL + '/api/v1/media',
+    options: {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
     },
   };
 }
